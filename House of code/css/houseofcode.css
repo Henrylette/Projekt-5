@@ -1,0 +1,546 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+
+body{
+    background-color: #f7f7f7;
+    font-family: "roboto";
+}
+
+/* HEADER */
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+.logoimg {
+    width: 350px;
+}
+header ul {
+    width: 50%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    list-style-type: none;
+    height: 35px;
+}
+.rightside {
+    width: 50%;
+    float: right;
+}
+.logknap {
+    float: right;
+    margin-right: 10%;
+}
+header {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    background-color: #515f6d;
+    color: black; 
+    padding-top: 8px;
+    min-height: 40px;
+}
+
+
+header a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+header li{
+    display: inline;
+    padding: 0 40px 0 0px;
+}
+
+header .logknap{
+    display: inline;
+    padding: 0 5px 0 0px;
+}
+header nav{
+    margin-top: 10px;
+    margin-bottom: 12px;
+    margin-left: 5%;
+}
+/* :not(.active) = hover on all links which doesn't have an .active */
+header a:not(.active):hover{
+    color: white;
+    border-bottom: solid #dba45c 10px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+    transition-timing-function: linear;
+}
+@media (max-width: 600px) {
+    header a {
+        font-size: 10px;   
+    }
+}
+@media (max-width: 600px) {
+    .p2 {
+        font-size: 14px;   
+    }
+}
+
+@media screen and (min-width: 0-600px){
+    .main {
+        width: 20%;
+    }
+}
+nav .active {
+    border-bottom: solid #dba45c 10px;
+    padding-bottom: 2px;
+}
+
+/* ASIDE PROFIL + KARMAPOINT */
+
+aside{
+    margin-left: 5%;
+    width: 15%;
+    float: left;
+    height: 670px;
+    background-color: #515f6d;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: left;
+    font-family: "roboto";
+    font-weight: 700;
+    color: #dba45c;
+    font-size: 80px;
+    box-sizing: border-box;
+}
+
+.profilimg{
+    width: 100%;
+}
+
+.profilnavn{
+    width: 80%;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: left;
+    font-family: "roboto";
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+
+}
+
+.profiltxt{
+    float: left;
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 12px;
+    float: left;
+    margin: 5px 3px 0px 10px; 
+    color: white;
+}
+
+/* BOX SETTINGS GENERAL */
+
+.topdb {
+    float: left;
+    background-color: #515f6d;
+    height: 50px;
+    width: 100%;
+}
+.contentbox {
+    float: left;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(144,160,168,0.2);
+    margin-bottom: 10px;
+}
+
+.boxheadlines {
+    width: 80%;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: left;
+    font-family: "roboto";
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
+    margin left: 20px;
+}
+
+/* DASHBOARD MAIN-OMRÅDE*/
+
+main {
+    float: left;
+    width: 75%;
+    height: 600px;
+    margin-right: 5%;
+    margin-top: 30px;
+}
+
+.columndb1{
+    width: 100%;
+    height: 350px;
+    float: left;
+    
+}
+.columndb2{
+    width: 100%;
+    height: 320px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.boxdb1{
+    height: 350px;
+    float: left;
+    margin-left: 2%;
+    width: 31.33%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.boxdb2{
+    height: 350px;
+    float: left;
+    margin-left: 2%;
+    width: 31.33%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.boxdb3{
+    height: 350px;
+    float: left;
+    margin-left: 2%;
+    width: 31.33%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.boxdb4{
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    width: 31.33%;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.boxdb5{
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    width: 31.33%;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.boxdb6{
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    width: 31.33%;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+
+
+/*MUS SIDE MAIN-OMRÅDE */
+
+.columnmus1{
+    width: 100%;
+    height: 500px;
+    float: left; 
+}
+
+.boxmus1{
+    height: 500px;
+    float: left;
+    margin-left: 2%;
+    width: 58%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.boxmus2{
+    height: 500px;
+    float: left;
+    margin-left: 2%;
+    width: 38%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.textpartmus{
+    width: 70%;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.columnmus2{
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+.boxmus3{
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 98%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+
+/* KALENDER MAIN OMRÅDE*/
+
+.columncal1{
+    width: 100%;
+    height: 350px;
+    float: left;
+}
+
+
+.boxkal1{
+    height: 570px;
+    float: left;
+    margin-left: 2%;
+    width: 58%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.boxkal2{
+    height: 570px;
+    float: left;
+    margin-left: 2%;
+    width: 38%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+h2 {
+    font-family: "roboto";
+    float: left;
+    color: #90a1a8;
+    font-weight: 300;
+    font-size: 40px;
+    margin: 10px 3px 10px 20px;
+}
+
+.month{
+    float: left;
+    margin: 25px 0px 10px 0px;
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 20px;
+    color: #90a1a8;
+}
+
+h4{
+    width: 50%;
+    font-family: "roboto";
+    float: left;
+    color: #515f6d;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 6px 3px 0px 30px; 
+}
+
+.smalltxt{
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 12px;
+    float: left;
+    margin: 5px 3px 0px 30px; 
+    color: #515f6d;
+}
+
+/* NOTER MAIN-OMRÅDE */
+
+.columnnot1{
+    width: 100%;
+    height: 600px;
+    float: left;
+}
+
+.boxnot1{
+    height: 600px;
+    float: left;
+    margin-left: 2%;
+    width: 48%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.boxnot2{
+    height: 600px;
+    float: left;
+    margin-left: 2%;
+    width: 48%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.columnnot2{
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+.boxnot3{
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+    width: 98%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+/* MUS SKEMA */
+
+.mainskema{
+    float: left;
+    width: 90%;
+    height: 600px;
+    margin-right: 5%;
+    margin-top: 30px;
+}
+
+.columnskema1{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 100%;
+    height: 600px;
+    float: left;
+}
+
+.boxskema1{
+    height: 600px;
+    float: left;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 10px 15px #A3A1A8;
+}
+
+.colorfieldgrey{
+    width: 20%;
+    background-color: #90A1A8;
+    height: 50px; 
+}
+
+.txtbold{
+    font-weight: 700;
+    width: 100%;
+    font-size: 18px;
+    color: #515f6d;
+}
+
+.txtregu{
+
+    font-weight: 300;
+    width: 100%;
+    font-size: 18px;
+    color: #515f6d;
+    margin-top: 30px;
+}
+
+.textpart{
+    margin-top: 100px;
+    float: left;
+    width: 28%;
+    margin-left: 20%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+input{
+    float: left;
+    width: 60%;
+    height: 60px;
+    background-color: rgba(144,160,168,0.2);
+    margin-bottom: 20px; 
+    border-style: none;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: #dba45c;
+    opacity: 0.6;
+}
+
+.inputpart{
+    margin-top: 100px;
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    display: block;
+}
+
+/* GULE KNAPPER */
+
+main li{
+    display: inline;
+}
+
+main ul{
+    float: inherit;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.btn {
+    margin-left: auto;
+    margin-right: 1%;
+    margin-top: 20px;
+    width: auto;
+    height: 40px;
+    background-color: #dba45c;
+    font-family: 'Roboto';
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+
+
+.btn:hover {
+    background: #515f6d;
+    transition: 0.4s;
+}
+
+.btn:active {
+    background: #90a0a8;
+}
