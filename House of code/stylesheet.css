@@ -229,7 +229,7 @@ nav .active {
     background: #90a0a8;
 }
 .container {
-    width: 50%;
+    width: 100%;
     background: red;
     margin-left: 20%;
 }
