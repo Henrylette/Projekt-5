@@ -269,7 +269,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 /* DASHBOARD MAIN-OMRÅDE*/
 
-main {
+.main-style {
     float: left;
     width: 75%;
     height: 600px;
@@ -398,6 +398,10 @@ main {
 
 
 /* MUS SKEMA */
+
+.boks-test{
+    b
+}
 
 .mainskema{
     float: left;
