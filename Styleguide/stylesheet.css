@@ -267,6 +267,36 @@ h1 {
       margin-right: auto; 
       box-shadow: 0 10px 15px rgba(0,0,0,0.6);
 }
+.btn {
+    margin-left: auto;
+    margin-right: 1%;
+    margin-top: 20px;
+    width: auto;
+    height: 40px;
+    background-color: #dba45c;
+    font-family: 'Roboto';
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+}
+.btn:hover {
+    background: #515f6d;
+    transition: 0.4s;
+}
+.btn:active {
+    background: #90a0a8;
+}
+textarea {
+    width: 100%;
+    margin-left: 200px;
+}
 
 /*------ ICONS SIDE ------*/
 

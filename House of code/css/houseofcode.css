@@ -45,13 +45,10 @@ header {
     padding-top: 8px;
     min-height: 40px;
 }
-
-
 header a {
     color: white;
     font-size: 20px;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 header li{
     display: inline;
@@ -296,7 +293,7 @@ h4{
     width: 90%;
     background: rgba(144,160,168,0.2);
     text-align: center;
-    margin-top: 78px;
+    margin-top: 90px;
     margin-left: 5%;
 }
 
