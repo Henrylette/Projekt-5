@@ -193,6 +193,7 @@ main {
     width: 100%;
     height: 350px;
     float: left;
+    margin-bottom: 20px;
     
 }
 .columndb2{
@@ -202,7 +203,7 @@ main {
     margin-bottom: 50px;
 }
 
-.boxdb1{
+.boxxs{
     height: 350px;
     float: left;
     margin-left: 2%;
@@ -210,56 +211,6 @@ main {
     background-color: white;
     box-shadow: 0 10px 15px #A3A1A8;
 }
-
-.boxdb2{
-    height: 350px;
-    float: left;
-    margin-left: 2%;
-    width: 31.33%;
-    background-color: white;
-    box-shadow: 0 10px 15px #A3A1A8;
-}
-
-.boxdb3{
-    height: 350px;
-    float: left;
-    margin-left: 2%;
-    width: 31.33%;
-    background-color: white;
-    box-shadow: 0 10px 15px #A3A1A8;
-}
-
-.boxdb4{
-    height: 300px;
-    float: left;
-    margin-left: 2%;
-    width: 31.33%;
-    background-color: white;
-    margin-top: 20px;
-    box-shadow: 0 10px 15px #A3A1A8;
-}
-
-.boxdb5{
-    height: 300px;
-    float: left;
-    margin-left: 2%;
-    width: 31.33%;
-    background-color: white;
-    margin-top: 20px;
-    box-shadow: 0 10px 15px #A3A1A8;
-}
-
-.boxdb6{
-    height: 300px;
-    float: left;
-    margin-left: 2%;
-    width: 31.33%;
-    background-color: white;
-    margin-top: 20px;
-    box-shadow: 0 10px 15px #A3A1A8;
-}
-
-
 
 /*MUS SIDE MAIN-OMRÅDE */
 
@@ -321,7 +272,7 @@ main {
 
 
 .boxkal1{
-    height: 570px;
+    height: 500px;
     float: left;
     margin-left: 2%;
     width: 58%;
@@ -384,15 +335,6 @@ h4{
 }
 
 .boxnot1{
-    height: 600px;
-    float: left;
-    margin-left: 2%;
-    width: 48%;
-    background-color: white;
-    box-shadow: 0 10px 15px #A3A1A8;
-}
-
-.boxnot2{
     height: 600px;
     float: left;
     margin-left: 2%;
