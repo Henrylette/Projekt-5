@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+    <script src="javascript/noter.js" defer></script>
 </head>
 <body>
  
@@ -115,10 +116,55 @@
             <div class="topdb">
                 <h3 class="boxheadlines">Noter</h3>
             </div>
-            <ul><a href="#" class="btn">Se noter</a></ul>
+            <ul><button id="btn1" class="btn">Se note</button></ul>
         </div>
         
     </div>
+    
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- Modal content -->
+    <div class="popupbox">
+        <div class="topdb">
+            <h3 class="boxheadlines">Ny note</h3>
+            <span class="close">&times;</span>
+        </div>
+             
+            <div class="poptxt">
+                <p class="txtbold">Her kan du oprette en ny note, for at skabe overblik over de samtaler du har med din leder</p>
+                <p class="txtregu">Du kan også vælge om din note skal kunne ses af både dig og din leder eller om den skal være privat.</p>
+            </div>
+              
+                <div class="popfelt">
+                    <textarea id="subject" name="subject" placeholder="Skriv din note her..." style="height:200px"></textarea>
+                </div>
+                        
+                    <div>
+                        <label class="containerpopup">Private noter
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerpopup">Mus note
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerpopup">Delte noter
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerpopup">Walk & talk note
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <ul>
+                       <a href="Modaltest.html" class="btn3">Annuller</a>
+                        <a href="Modaltest.html" class="btn3">Gem i Noter</a>
+                    </ul>
+                
+    </div>
+</div>
+
 </main>
     
 </body>
