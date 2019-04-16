@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ED PLANNING</title>
+    <meta name="description" content="ED PLANNING dashboard hjælper dig med at få overblik over din udvikling i virksomheden. Her finder du også noter, kommende events, statistikker og meget mere.">
+    <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
+    <link href="css/houseofcode.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"/>
+
+	<script src="main.js" defer></script>
+
+	<script src="javascript/noter.js" defer></script>
+</head>
+<body>
+ 
+<!--HEADER-->
+
+<header>
+  <div class="logo"><img class="logoimg" src="images/logo.png" alt="ed logo" /></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="mus-side.html">MUS-side</a></li>
+      <li><a href="kalender.html">Kalender</a></li>
+      <li><a class="active" href="noter.html">Noter</a></li>
+    </ul>
+    <ul class="rightside">
+      <li class="logknap"><a href="#">Log ud</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!--ASIDE-->
+
+<aside>
+        <div class="container-aside">
+        <h3 class="karma-headline">Din karmascore</h3>
+        <h1 class="h1-karma">370</h1>
+        <img class="profilimg" src="images/Image%203.png" alt="profilbillede">
+        <h3 class="profilnavn">Martin Gjeldsted</h3>
+        <p class="profiltxt">Udvikler<br>House of Code</p>
+        </div>
+        <div class="trekantbox"><img class="trekant" src="images/trekant.png" alt="trekant"></div>  
+</aside>
+  
+<!--MAIN-->
+   
+<main class="main-style">
+    <div class="column">
+        <div class="boxm">
+            <div class="topdb">
+                <h3 class="boxheadlines">MUS-samtale noter</h3>
+            </div>
+
+							<!-- NY NOTE BOTTON-->   
+                <ul>
+                    <button id="btn1" class="btn">Tilføj ny note</button>
+                </ul>
+</div>
+        
+        <div class="boxm">
+            <div class="topdb">
+                <h3 class="boxheadlines">Walk & Talk noter</h3>
+            </div>
+                <ul>
+                    <button id="btn2" class="btn">Tilføj ny note</button>
+                </ul>
+        </div>
+    </div>
+    
+    <div class="column2">
+        <div class="boxxl">
+            <div class="topdb">
+                <h3 class="boxheadlines">Noter arkiv</h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- Modal content -->
+    <div class="popupbox">
+        <div class="topdb">
+            <h3 class="boxheadlines">Ny note</h3>
+            <span class="close">&times;</span>
+        </div>
+             
+            <div class="poptxt">
+                <p class="txtbold">Her kan du oprette en ny note, for at skabe overblik over de samtaler du har med din leder</p>
+                <p class="txtregu">Du kan også vælge om din note skal kunne ses af både dig og din leder eller om den skal være privat.</p>
+            </div>
+              
+                <div class="popfelt">
+                    <textarea class="subject" name="subject" placeholder="Skriv din note her..." style="height:200px"></textarea>
+                </div>
+                        
+                    <div>
+                        <label class="containerpopup">Private noter
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerpopup">Delte noter
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+                    <ul>
+                       <a href="noter.html" class="btn3">Annuller</a>
+                        <a href="noter.html" class="btn3">Gem i Noter</a>
+                    </ul>
+                
+    </div>
+</div>
+
+</main>
+
+</body>
+	
+</html>
