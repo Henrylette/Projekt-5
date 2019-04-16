@@ -404,7 +404,24 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 30px;
 }
 
+.barometer{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
 
+.notesblok{
+    width: 70%;
+    margin-left: 18%;
+    margin-top: 20px;
+}
+
+.klipimg{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
 
 /*MUS SIDE MAIN-OMRÅDE */
 
@@ -874,6 +891,7 @@ input[type=text], select, textarea {
     }
     
     .boxxs{
+        height: 380px;
         width: 92%;
         margin-left: 4%;
         margin-bottom: 20px;
