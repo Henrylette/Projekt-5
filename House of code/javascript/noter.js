@@ -4,12 +4,8 @@
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-<<<<<<< HEAD
 var btn = document.getElementById("btn1");
 var btn = document.getElementById("btn2");
-=======
-var btn1 = document.getElementById("btn1");
->>>>>>> d79467f147dcd189bfd75bb3f6f5d14d903e0d56
 
 var span = document.getElementsByClassName("close")[0];
 
