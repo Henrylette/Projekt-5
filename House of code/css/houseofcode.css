@@ -826,10 +826,10 @@ input[type=text], select, textarea {
   transform: rotate(45deg);
 }
 
-.subject{
-    font-family: "roboto"
-
-
+#subject{
+    font-family: "roboto";
+}
+        
         
 @media screen and (max-width: 800px) {
     
