@@ -36,3 +36,9 @@ $('.responsive').slick({
     // instead of a settings object
   ]
 }); 
+/* Kalender */ 
+function myFunction() {
+  var d = new Date();
+  var n = d.getDate();
+  document.getElementsByClassName("days").innerHTML = n;  
+}

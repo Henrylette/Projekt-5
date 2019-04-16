@@ -434,6 +434,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .month .prev {
     float: left;
     padding-top: 10px;
+    margin-left: 20px;
 }
 
 /* NEXT BUTTON */
@@ -441,6 +442,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .month .next {
     float: right;
     padding-top: 10px;
+    margin-right: 20px;
 }
   
 /* WEEKDAYS MON-SUN */
@@ -454,7 +456,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
   
 .weekdays li {
     display: inline-block;
-    width: 13.6%;
+    width: 12%;
     color: white;
     text-align: center;
     font-weight: 700;
