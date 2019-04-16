@@ -92,6 +92,14 @@ header {
     padding-top: 8px;
     min-height: 40px;
 }
+.header {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    color: black; 
+}
 header a {
     color: white;
     font-size: 20px;
@@ -179,16 +187,13 @@ aside{
     margin-bottom: 20px;
     
 }
-/* Denne er merget hvis det går */
-/*.column2{
+.column2{
     width: 100%;
     height: auto;
     float: left;
     margin-bottom: 50px;
 }
-<<<<<<< HEAD
-*/
-=======
+
 
 .container{
     float: left;
@@ -210,7 +215,6 @@ aside{
 }
 
 /* BOX SETTINGS GENERAL */
->>>>>>> cb719cf481045b86e9661218e1ffa9a993d25a93
 
 .topdb {
     float: left;
