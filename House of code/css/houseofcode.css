@@ -552,20 +552,17 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         width: 50%; ; 
     }
 }
-
 .top-color{
     background-color: #515f6d; 
     height: 50px;
     width: 80%; 
     float: left; 
 }
-
 @media screen and (max-width: 500px){
     .top-color{
         width: 50%; ; 
     }
 }
-
 .mus-skema1-sidea{ 
     width: 50%; 
     float: left; 
