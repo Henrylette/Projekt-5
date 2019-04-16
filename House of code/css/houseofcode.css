@@ -59,7 +59,7 @@ video {
     width: 350px;
 }
 header ul {
-    width: 50%;
+    width: 95%;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -72,7 +72,7 @@ header ul {
 }
 .logknap {
     float: right;
-    margin-right: 10%;
+    margin-right: 5px;
 }
 header {
     width: 100%;
@@ -96,10 +96,6 @@ header li{
     padding: 0 40px 0 0px;
 }
 
-header .logknap{
-    display: inline;
-    padding: 0 5px 0 0px;
-}
 header nav{
     margin-top: 10px;
     margin-bottom: 12px;
