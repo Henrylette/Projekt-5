@@ -92,13 +92,10 @@ header {
     padding-top: 8px;
     min-height: 40px;
 }
-
-
 header a {
     color: white;
     font-size: 20px;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 header li{
     display: inline;
@@ -150,10 +147,9 @@ aside{
     margin-left: 5%;
     width: 15%;
     float: left;
-    height: 670px;
+    height: 720px;
     background-color: #515f6d;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .profilimg{
@@ -190,7 +186,31 @@ aside{
     float: left;
     margin-bottom: 50px;
 }
+<<<<<<< HEAD
 */
+=======
+
+.container{
+    float: left;
+    width: 100%;
+    height: 490px;   
+}
+
+.trekantbox {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.trekant{
+    height: 230px; 
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+/* BOX SETTINGS GENERAL */
+>>>>>>> cb719cf481045b86e9661218e1ffa9a993d25a93
 
 .topdb {
     float: left;
@@ -347,7 +367,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 /* DASHBOARD MAIN-OMRÅDE*/
 
-main {
+.main-style {
     float: left;
     width: 75%;
     height: 600px;
@@ -382,7 +402,7 @@ main {
     width: 90%;
     background: rgba(144,160,168,0.2);
     text-align: center;
-    margin-top: 78px;
+    margin-top: 90px;
     margin-left: 5%;
 }
 
@@ -462,70 +482,80 @@ main {
 }
 
 
-/* MUS SKEMA */
+/* ----- Side med MUS SKEMA ------ */
 
-.mainskema{
-    float: left;
-    width: 90%;
-    height: 600px;
-    margin-right: 5%;
-    margin-top: 30px;
-}
-
-.columnskema1{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 100%;
-    height: 600px;
-    float: left;
-}
-
-.boxskema1{
-    height: 600px;
-    float: left;
-    width: 100%;
-    background-color: white;
+.mus-skema-box{
+    background-color: white; 
+    height: 400px;
+    width: 70%; 
+    margin-top: 30px; 
+    margin-left: auto; 
+    margin-right: auto; 
     box-shadow: 0 10px 15px #A3A1A8;
+    
 }
 
-.colorfieldgrey{
-    width: 20%;
-    background-color: #90A1A8;
+
+.top-color-side{
+    background-color: #90A0A8; 
     height: 50px; 
+    width: 20%; 
+    float: left; 
 }
 
-.textpart{
-    margin-top: 100px;
-    float: left;
-    width: 28%;
-    margin-left: 20%;
-    display: block;
-    margin-bottom: 30px;
+.top-color{
+    background-color: #515f6d; 
+    height: 50px;
+    width: 80%; 
+    float: left; 
 }
 
-input{
+.mus-skema1-sidea{ 
+    width: 50%; 
+    float: left; 
+    height: 260px;
+}
+
+
+.mus-skema-1-txt{
+    padding-right: 20px; 
+    padding-top: 60px; 
+    padding-left: 60px; 
+}
+
+.mus-skema1-sideb{
+    width: 50%;  
     float: left;
-    width: 60%;
-    height: 60px;
-    background-color: rgba(144,160,168,0.2);
-    margin-bottom: 20px; 
-    border-style: none;
-    padding-left: 10px;
-    font-size: 14px;
+    height: 260px;
+}
+
+
+.mus-skema1-bottum{
+    width: 100%; 
+    float: left; 
+    height: 70px;  
+}
+
+.mus-skema1-input-wrapper{
+    margin-top: 70px
+}
+
+.mus-skema1-input{
+    background-color: #E8EcED; 
+    width: 80%; 
+    height: 40px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    border-style: none; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    padding-left: 10px; 
 }
 
 ::placeholder {
     color: #dba45c;
     opacity: 0.6;
-}
-
-.inputpart{
-    margin-top: 100px;
-    float: left;
-    width: 48%;
-    margin-left: 2%;
-    margin-bottom: 30px;
-    display: block;
 }
 
 /* GULE KNAPPER */
