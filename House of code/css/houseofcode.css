@@ -210,7 +210,6 @@ aside{
 }
 
 /* BOX SETTINGS GENERAL */
->>>>>>> cb719cf481045b86e9661218e1ffa9a993d25a93
 
 .topdb {
     float: left;
@@ -230,7 +229,6 @@ aside{
     width: 80%;
     margin-top: 13px;
     margin-bottom: 10px;
-    /*margin-left: 10px; denne står 2 gange*/
     float: left;
     font-weight: 300;
     color: white;
