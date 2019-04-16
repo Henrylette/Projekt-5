@@ -223,6 +223,7 @@ aside{
     height: 50px;
     width: 100%;
 }
+
 .contentbox {
     float: left;
     width: 100%;
@@ -242,6 +243,9 @@ aside{
     margin-left: 20px;
 }
 
+<<<<<<< HEAD
+
+=======
 /* Dashboard */
 .boxall{
 	float: left;
@@ -249,6 +253,7 @@ aside{
     background-color: white;
     box-shadow: 0 10px 15px #A3A1A8;
 }
+>>>>>>> d0ffca09260e2f91c6b51ee7cb8822dc9c6b67b9
 .boxxs{
     height: 350px;
     float: left;
@@ -525,6 +530,12 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left; 
 }
 
+@media screen and (max-width: 500px){
+    .top-color-side{
+        width: 50%; ; 
+    }
+}
+
 .top-color{
     background-color: #515f6d; 
     height: 50px;
@@ -532,10 +543,15 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left; 
 }
 
+@media screen and (max-width: 500px){
+    .top-color{
+        width: 50%; ; 
+    }
+}
+
 .mus-skema1-sidea{ 
     width: 50%; 
     float: left; 
-    height: 260px;
     height: auto; 
 }
 
@@ -546,18 +562,17 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
 .mus-skema-1-txt{
     padding-right: 20px; 
     padding-top: 60px; 
     padding-left: 60px; 
 }
 
-
 @media screen and (max-width: 500px){
     .mus-skema-1-txt{
         padding-left: 30px;
         padding-top: 20px; 
+        padding-right: 30px; 
     }
 }
 
