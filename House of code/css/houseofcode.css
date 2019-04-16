@@ -889,7 +889,7 @@ input[type=text], select, textarea {
     }
     
     .column2{
-        display: none
+        display: none;
     }
     
     .boxl{
@@ -910,6 +910,12 @@ input[type=text], select, textarea {
         width: 12%
     }
 
+    .boxm{
+        width: 92%;
+        margin-left: 4%;
+        margin-bottom: 20px;
+        height: 600px;
+    }
 }
 
 .btn3 {
