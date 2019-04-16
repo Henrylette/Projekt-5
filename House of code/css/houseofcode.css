@@ -697,7 +697,6 @@ main ul{
     background: #90a0a8;
 }
 
-<<<<<<< HEAD
 /* herfra er det "popupes" kode */
 
 /* The Modal (background) */
@@ -831,82 +830,4 @@ input[type=text], select, textarea {
 
 #subject{
     font-family: "roboto"
-=======
-@media screen and (max-width: 800px) {
-    
-    aside {
-        width: 92%;
-        height: auto;
-        margin-left: 4%;
-        margin-top: 20px;
-    }
-    
-    .trekantbox{
-        display: none;
-    }
-    
-    .profilimg{
-        float: left;
-        width: 20%;
-    }
-    
-    .container-aside{
-        height: auto;
-    }
-    
-    .h1-karma{
-        display: none;
-    }
-
-    .profilnavn{
-        float: left;
-        width: 70%;
-        margin-top: 7px;
-    }
-    
-    .profiltxt{
-        float: left;
-    }
-    
-    .karma-headline{
-        display: none;
-    }
-    
-    .boxxs{
-        width: 92%;
-        margin-left: 4%;
-        margin-bottom: 20px;
-    }
-    
-    .column{
-        margin-bottom: 0px;
-    }
-    
-    .main-style{
-        width: 100%;
-        margin-top: 20px;
-    }
-    
-    .column2{
-        display: none
-    }
-    
-    .boxl{
-        width: 92%;
-        margin-left: 4%;
-        margin-bottom: 20px;
-    }
-    
-    .boxs{
-        width: 92%;
-        margin-left: 4%;
-        margin-bottom: 20px;
-        height: 570px
-    }
-    
-    .weekdays li{
-        font-size: 14px;
-        width: 12%
-    }
->>>>>>> 4cef3544dbc103c418137b95ff7c8cab1a7446ab
 }
