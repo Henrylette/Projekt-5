@@ -101,6 +101,33 @@ header nav{
     margin-bottom: 12px;
     margin-left: 5%;
 }
+
+nav .topnav .icon{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav li {
+        display: none;
+    }
+    nav .topnav .icon{
+    float: left;
+    display: block;
+    }
+    
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .topnav.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 /* :not(.active) = hover on all links which doesn't have an .active */
 header a:not(.active):hover{
     color: white;
