@@ -697,7 +697,7 @@ main ul{
     background: #90a0a8;
 }
 
-<<<<<<< HEAD
+
 /* herfra er det "popupes" kode */
 
 /* The Modal (background) */
@@ -829,9 +829,10 @@ input[type=text], select, textarea {
   transform: rotate(45deg);
 }
 
-#subject{
+.subject{
     font-family: "roboto"
-=======
+
+        
 @media screen and (max-width: 800px) {
     
     aside {
@@ -908,5 +909,5 @@ input[type=text], select, textarea {
         font-size: 14px;
         width: 12%
     }
->>>>>>> 4cef3544dbc103c418137b95ff7c8cab1a7446ab
+
 }

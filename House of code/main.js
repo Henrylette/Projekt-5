@@ -53,15 +53,15 @@ function myFunction() {
 // dette er js til popuppen
 
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("btn");
+var btn1 = document.getElementById("btn1");
 
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+btn1.onclick = function() {
   modal.style.display = "block";
 }
 
