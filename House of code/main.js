@@ -36,15 +36,18 @@ $('.responsive').slick({
     // instead of a settings object
   ]
 }); 
-<<<<<<< HEAD
+
+
 /* Kalender */ 
 function myFunction() {
   var d = new Date();
   var n = d.getDate();
   document.getElementsByClassName("days").innerHTML = n;  
 }
-=======
 
+
+
+/* Kalender */ 
 
 
 // dette er js til popuppen
@@ -76,8 +79,3 @@ window.onclick = function(event) {
 
 
 
-
-
-
-
->>>>>>> eadc3ab0246b5a0bb831410ac0283f8ac79bb4de
