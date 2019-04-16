@@ -274,12 +274,24 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #515f6d;
 }
 
+@media screen and (max-width: 500px){
+    .txtbold{
+        font-size: 12pt; 
+    }
+}
+
 .txtregu{                              /* ALT BRØDTEKST - REGULAR */
     font-weight: 300;
     width: 100%;
     font-size: 18px;
     color: #515f6d;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 500px){
+    .txtregu{
+        font-size: 12pt; 
+    }
 }
 
 /* DASHBOARD MAIN-OMRÅDE*/
@@ -416,13 +428,20 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 .mus-skema-box{
     background-color: white; 
-    height: 400px;
+    height:auto; 
     width: 70%; 
     margin-top: 30px; 
     margin-left: auto; 
     margin-right: auto; 
     box-shadow: 0 10px 15px #A3A1A8;
-    
+    display: table; 
+}
+
+
+@media screen and (max-width: 500px){
+    .mus-skema-box{
+        margin-bottom: 3%; 
+    }
 }
 
 
@@ -444,6 +463,14 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 50%; 
     float: left; 
     height: 260px;
+    height: auto; 
+}
+
+
+@media screen and (max-width: 500px){
+    .mus-skema1-sidea{
+        width: 100%; 
+    }
 }
 
 
@@ -453,40 +480,74 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     padding-left: 60px; 
 }
 
+
+@media screen and (max-width: 500px){
+    .mus-skema-1-txt{
+        padding-left: 30px;
+        padding-top: 20px; 
+    }
+}
+
+
 .mus-skema1-sideb{
     width: 50%;  
     float: left;
-    height: 260px;
+    height: 260px; 
 }
 
+
+@media screen and (max-width: 500px){
+    .mus-skema1-sideb{
+        width: 100%; 
+        height: auto; 
+    }
+} 
 
 .mus-skema1-bottum{
     width: 100%; 
     float: left; 
-    height: 70px;  
+    height: 70px; 
+    margin-bottom: 2%; 
 }
 
+
 .mus-skema1-input-wrapper{
-    margin-top: 70px
+    margin-top: 60px; 
+}
+
+
+
+@media screen and (max-width: 500px){
+    .mus-skema1-input-wrapper{
+        margin-top: 20px; 
+    }
 }
 
 .mus-skema1-input{
     background-color: #E8EcED; 
     width: 80%; 
-    height: 40px; 
+    height: 45px; 
     margin-left: auto; 
     margin-right: auto; 
     display: block; 
     border-style: none; 
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin-top: 12px; 
+    margin-bottom: 12px;
     padding-left: 10px; 
 }
+    
+
 
 ::placeholder {
     color: #dba45c;
     opacity: 0.6;
 }
+
+
+/*process bar*/
+
+
+
 
 /* GULE KNAPPER */
 
