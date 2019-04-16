@@ -243,21 +243,10 @@ aside{
     margin-left: 20px;
 }
 
-<<<<<<< HEAD
-
-=======
-/* Dashboard */
-.boxall{
-	float: left;
-    margin-left: 2%;
-    background-color: white;
-    box-shadow: 0 10px 15px #A3A1A8;
-}
->>>>>>> d0ffca09260e2f91c6b51ee7cb8822dc9c6b67b9
 .boxxs{
     height: 350px;
     float: left;
-    margin-left: 2%;
+    margin-left: 2%;    
     width: 31.33%;
     background-color: white;
     box-shadow: 0 10px 15px #A3A1A8;
