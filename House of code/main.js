@@ -37,6 +37,7 @@ $('.responsive').slick({
   ]
 }); 
 
+
 /* Kalender */ 
 function myFunction() {
   var d = new Date();
@@ -45,6 +46,8 @@ function myFunction() {
 }
 
 
+
+/* Kalender */ 
 
 
 // dette er js til popuppen
@@ -73,10 +76,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-
-
-
 
 
 
