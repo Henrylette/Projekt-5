@@ -1,23 +1,11 @@
-
-/* Kalender */ 
-function myFunction() {
-  var d = new Date();
-  var n = d.getDate();
-  document.getElementsByClassName("days").innerHTML = n;  
-}
-
-
-
-/* Kalender */ 
-
-
 // dette er js til popuppen
 
 // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn1 = document.getElementById("btn1");
+var btn = document.getElementById("btn1");
+var btn = document.getElementById("btn2");
 
 var span = document.getElementsByClassName("close")[0];
 
