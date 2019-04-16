@@ -69,7 +69,6 @@ header ul {
     float: left;
     margin: 0px;
     padding: 0px;
-    display: inline-block;
     list-style-type: none;
     height: 35px;
 }
@@ -722,7 +721,6 @@ main ul{
     
     .container-aside{
         height: auto;
-
     }
     
     .h1-karma{
@@ -732,6 +730,7 @@ main ul{
     .profilnavn{
         float: left;
         width: 70%;
+        margin-top: 7px;
     }
     
     .profiltxt{
