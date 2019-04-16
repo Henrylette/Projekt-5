@@ -916,6 +916,10 @@ input[type=text], select, textarea {
         margin-bottom: 20px;
         height: 600px;
     }
+    
+    .logoimg{
+        width: 250px;
+    }
 }
 
 .btn3 {
