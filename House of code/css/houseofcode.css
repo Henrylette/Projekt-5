@@ -1030,6 +1030,13 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .pbox-txt{
     width: 70%; 
 }
+@media screen and (max-width: 500px){
+    .pbox-txt{
+        width: 100%;
+        padding-top: 15%;
+        padding-left: 10%
+    }
+}
 
 .rediger{
     width: 5%; 
@@ -1049,6 +1056,11 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .skemap-hline{
     padding-top: 5%;
     padding-bottom: 2%; 
+}
+
+.pbox-maal{
+    font-size: 20pt; 
+    color: #515f6d; 
 }
 
 
