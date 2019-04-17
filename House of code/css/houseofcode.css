@@ -472,6 +472,19 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 /* ----- Side med MUS SKEMA ------ */
 
+.mus-skema textarea{
+    border: none;
+    background-color: #e8eced;
+    font-size: 11pt; 
+    color: #515f6d; 
+}
+
+.mus-skema textarea::placeholder {
+    color: #dba45c;
+    font-size: 11pt;
+    opacity: 0.6;
+}
+
 /*indstillinger til mus skema side*/
 .mus-skema-box{
     background-color: white; 
@@ -555,6 +568,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         width: 50%; ; 
     }
 }
+
+
 
 /*indstillinger mus-skema-værdier*/
 
@@ -911,12 +926,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 #skema8{
-    background-color:#e8eced;
     margin-left: 0%;
     float: left;
-    border-style: none; 
-    font-size: 11pt; 
-    color: #515f6d; 
     width: 90%;
     height: 100px; 
     margin-top: 2%; 
@@ -930,22 +941,51 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
  
-#skema8::placeholder {
-    color: #dba45c;
-    font-size: 11pt;
-}
+
 
 /*mus skema step 9*/
+
+.skema9-txt-wrapper{
+    text-align: center; 
+}
 
 #skema9{
     margin: 0; 
     height: 50px; 
+    width: 95%;  
+}
+
+.skema9-tal{
+    width: 5%; 
+    float: left; 
+    background-color: #e8eced;  
+    text-align: center; 
+    font-size: 40px; 
+    color: #90a1a8; 
+    padding-top: 3px;
+    padding-left: 2%; 
+}
+
+@media screen and (max-width: 500px){
+    .skema9-tal{
+        width: 10%; 
+    }
+    
+    #skema9{
+        width: 90%; 
+    }
+}
+
+/*mus skema step 10*/
+
+#skema10{
     width: 100%; 
+    margin-left: 0; 
+    margin-top: 0; 
 }
 
 
-
-/*process bar*/
+/*-------MUS skema slut-------*/
 
 
 /* Note slider */
@@ -1003,6 +1043,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 /* GULE KNAPPER */
 
+
 main li{
     display: inline;
 }
@@ -1014,6 +1055,7 @@ main ul{
     margin-left: auto;
     text-align: center;
 }
+
 
 .btn {
     margin-left: auto;
