@@ -621,10 +621,104 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #515f6d;
 }
 
+@media screen and (max-width: 500px){
+    .txtregu-skema{
+        font-size: 15px; 
+    }
+}
+
+
 .txthline-skema{
     font-weight: 700; 
     font-size: 16pt; 
 }
+
+
+.top-color-side-green{
+    background-color:#a6bb75; 
+    height: 50px; 
+    width: 20%; 
+    float: left; 
+}
+
+@media screen and (max-width: 500px){
+    .top-color-side-green{
+        width: 50%; ; 
+    }
+}
+
+/*indstillinger mus-skema-værdier*/
+
+.mus-skema-value-wrapper{
+    float: left; 
+    width: 100%; 
+    height: auto; 
+    padding-top: 60px;
+}
+
+.mus-skema-value-top1{
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema-value-top1{
+        width: 100%; 
+    }
+}
+
+.mus-skema-value-top-img{
+    height: auto;  
+    width: 30%; 
+    float: left;
+    text-align: center; 
+}
+
+.mus-skema-value-top-img img{
+    width: 50%; 
+}
+
+.mus-skema-value-txt1{
+    height:auto;  
+    width: 70%; 
+    float: left; 
+    padding-right: 4%; 
+}
+
+
+.mus-skema-value-txt2{
+    width: 90%; 
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema-value-txt2{
+        padding-left: 14%; 
+    }
+}
+
+.mus-skema4-top2{
+    height: 100px;
+    width: 50%;
+    float: left; 
+    margin-bottom: 5%;
+    padding-left: 4%;  
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema-value-top2{
+        width: 100%; 
+    }
+}
+
+.mus-skema-value-main{
+    width: 100%;
+    float: left; 
+    height: auto; 
+    margin-top: 5%; 
+}
+
+
 /*mus skema step 1*/
 
 .mus-skema1-sidea{ 
@@ -823,88 +917,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
-.mus-skema4-wrapper{
-    float: left; 
-    width: 100%; 
-    height: auto; 
-    padding-top: 60px;
-    padding-bottom: 60px; 
-}
-
-
-.mus-skema4-top1{
-    height: 100px;
-    width: 50%;
-    float: left; 
-}
-
-@media screen and (max-width: 500px){
-    .mus-skema4-top1{
-        width: 100%; 
-    }
-}
-
-.mus-skema4-top-img{
-    height: auto;  
-    width: 30%; 
-    float: left;
-    text-align: center; 
-}
-
-.mus-skema4-top-img img{
-    width: 50%; 
-}
-
-.mus-skema4-txt1{
-    height:auto;  
-    width: 70%; 
-    float: left; 
-    padding-right: 4%; 
-}
-
-
-.mus-skema4-txt2{
-    width: 90%; 
-}
-
-.mus-skema4-top2{
-    height: 100px;
-    width: 50%;
-    float: left; 
-    margin-bottom: 5%;
-    padding-left: 4%;  
-}
-
-@media screen and (max-width: 500px){
-    .mus-skema4-top2{
-        width: 100%; 
-    }
-}
-
-.mus-skema4-main{
-    width: 100%;
-    float: left; 
-    height: auto; 
-}
-
-.skema-checkbox{
-    background-color: bisque; 
-    width: 20%; 
-    float: left;
-    text-align: center; 
-}
-
-.skema-textarea{
-    background-color: gainsboro; 
-    width: 80%; 
-    float: left; 
-}
-
-
-
-
-
 /*mus skema step 5*/
 
 .top-color-side-purple{
@@ -937,7 +949,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 /*mus skema step 7*/
 
-.top-color-side-red{
+.top-color-side-blue{
     background-color:#6696ad; 
     height: 50px; 
     width: 20%; 
@@ -945,7 +957,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 @media screen and (max-width: 500px){
-    .top-color-side-red{
+    .top-color-side-blue{
         width: 50%; ; 
     }
 }
