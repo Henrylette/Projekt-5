@@ -502,6 +502,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left;
     padding-top: 10px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 /* NEXT BUTTON */
@@ -510,6 +511,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: right;
     padding-top: 10px;
     margin-right: 20px;
+    cursor: pointer;
 }
   
 /* WEEKDAYS MON-SUN */
@@ -543,7 +545,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.6%;
+    width: 12%;
     text-align: center;
     margin-bottom: 5px;
     font-size:25px;
@@ -556,8 +558,19 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .days li .active {
     padding: 5px;
     background: #515f6d;
-    color: white !important
+    color: white !important;
+    border-radius: 100%;
 }
+.movedays {
+    margin-right: 189px;
+}
+.movedays2 {
+    margin-left:
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+  } 
 
 
 /* ----- Side med MUS SKEMA ------ */
