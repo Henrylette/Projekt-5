@@ -482,6 +482,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left;
     padding-top: 10px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 /* NEXT BUTTON */
@@ -490,6 +491,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: right;
     padding-top: 10px;
     margin-right: 20px;
+    cursor: pointer;
 }
   
 /* WEEKDAYS MON-SUN */
@@ -523,7 +525,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.6%;
+    width: 12%;
     text-align: center;
     margin-bottom: 5px;
     font-size:25px;
@@ -536,8 +538,19 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .days li .active {
     padding: 5px;
     background: #515f6d;
-    color: white !important
+    color: white !important;
+    border-radius: 100%;
 }
+.movedays {
+    margin-right: 189px;
+}
+.movedays2 {
+    margin-left:
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+  } 
 
 
 /* ----- Side med MUS SKEMA ------ */
@@ -674,10 +687,18 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 /*mus skema step 2*/
 
 .mus-skema2-txt{
-    width: 80%; 
-    margin: auto;
+    float: left; 
+    width: 100%; 
+    padding-right: 5%; 
+    padding-left: 5%; 
     text-align: center; 
-    padding-top: 90px; 
+    padding-top: 60px; 
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema2-txt{
+        padding-top: 20px; 
+    }
 }
 
 .mus-skema2-headline{
@@ -692,6 +713,84 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     font-size: 20pt; 
     margin-top: 3%; 
 }
+
+/*mus skema step 3*/
+
+.mus-skema3-wrapper{
+    width: 90%; 
+    margin-right: auto; 
+    margin-left: auto; 
+    display: table; 
+    padding-top: 60px; 
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema3-wrapper{
+        width: 80%;
+        padding-top: 20px; 
+    }
+}
+
+.mus-skema3-txt{
+    float:left; 
+    width:85%; 
+    padding-left: 5%;
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema3-txt{
+        width: 100%; 
+    }
+}
+
+.skema3-txt-top{
+    font-size: 25px;
+}
+
+.skema3-txt{
+    color: #515f6d; 
+}
+
+.mus-skema3-icons{
+    width: 15%; 
+    float: left; 
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema3-icons{
+        width: 100%; 
+        padding-left: 5%;
+        text-align: center
+    }
+}
+
+.mus-skema3-icons img{
+    width: 100%
+}
+
+@media screen and (max-width: 500px){
+    
+    .mus-skema3-icons img{
+        width: 15%; 
+    }
+}
+
+.mus-skema3{
+    width: 50%;
+    height: auto; 
+    float: left; 
+    margin-bottom: 5%; 
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema3{
+        width: 100%; 
+        margin-bottom: 10%; 
+    }
+}
+
+
+/*mus skema step 4*/
 
 
 /*process bar*/
