@@ -1000,6 +1000,59 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 10%; 
     margin-bottom: 2%; 
 }
+
+/*mus skema step 13 - preview*/
+
+.pbox{
+    background-color: #e8eced; 
+    width: 100%;
+    float: left; 
+}
+
+.pbox-header{
+    width: 100%; 
+    float: left; 
+}
+
+.pbox-img{
+    width: 12%; 
+    float: left; 
+    padding: 2%;
+    margin-left: 5%
+}
+
+.pbox-hline{
+    width: 70%;
+    float: left;
+    padding-top: 2%;
+}
+
+.pbox-txt{
+    width: 70%; 
+}
+
+.rediger{
+    width: 5%; 
+    float: right; ; 
+}
+
+.pbox-header-2{
+    width: 100%; 
+    float: left; 
+    padding-left: 8%;  
+}
+
+.pbox-header-2 p{
+    padding-right: 5%; 
+}
+
+.skemap-hline{
+    padding-top: 5%;
+    padding-bottom: 2%; 
+}
+
+
+
 /*-------MUS skema slut-------*/
 
 
