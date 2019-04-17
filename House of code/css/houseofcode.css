@@ -569,12 +569,11 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
 .txthline-skema{
     font-weight: 700; 
-    font-size: 16pt; 
+    font-size: 16pt;
+    color: #6696ad; 
 }
-
 
 .top-color-side-green{
     background-color:#a6bb75; 
@@ -630,7 +629,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 
 .mus-skema-value-txt2{
-    width: 90%; 
+    width: 90%;
 }
 
 @media screen and (max-width: 500px){
@@ -639,7 +638,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-.mus-skema4-top2{
+.mus-skema-value-top2{
     height: 100px;
     width: 50%;
     float: left; 
@@ -657,7 +656,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 100%;
     float: left; 
     height: auto; 
-    margin-top: 5%; 
 }
 
 
@@ -704,7 +702,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 } 
 
 
-
 .mus-skema1-input-wrapper{
     margin-top: 60px; 
 }
@@ -730,9 +727,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
     
 
-
-::placeholder {
-    color: #dba45c;
+.mus-skema1-input::placeholder {
+    color: #d8a55b;
     opacity: 0.6;
 }
 
@@ -904,6 +900,78 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
+
+/*mus skema step 8*/
+
+
+.mus-skema8-txt{
+    height: auto; 
+    width: 100%;
+    float: left; 
+    padding-left: 10%; 
+    padding-top: 5%;
+    padding-bottom: 5%;  
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema8-txt{
+        padding-right: 10%; 
+    }
+}
+
+.mus-skema8-box{
+    height: auto; 
+    width: 50%; 
+    float: left; 
+    padding-bottom: 2%;
+}
+
+
+@media screen and (max-width: 500px){
+    .mus-skema8-box{
+        width: 100%; 
+    }
+}
+
+.mus-skema8-box-wrapper{
+    float: left; 
+    padding-left: 10%; 
+    padding-right: 10%; 
+}
+
+.skema8-label{ 
+    float: left; 
+    width: 100%;
+    padding-top: 5%;
+}
+
+#skema8{
+    background-color:#e8eced;
+    margin-left: 0%;
+    float: left;
+    border-style: none; 
+    font-size: 11pt; 
+    color: #515f6d; 
+    width: 90%;
+    height: 100px; 
+    margin-top: 2%; 
+}
+
+@media screen and (max-width: 500px){
+    #skema8{
+        width: 100%; 
+        margin-bottom: 0; 
+    }
+}
+
+ 
+#skema8::placeholder {
+    color: #dba45c;
+    font-size: 11pt;
+}
+
+/*mus skema step 9*/
+ 
 
 /*process bar*/
 
