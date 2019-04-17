@@ -577,7 +577,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 @media screen and (max-width: 500px){
     .mus-skema-box{
-        margin-bottom: 3%; 
+        margin-bottom: 3%;
+        width: 85%
     }
 }
 
@@ -606,7 +607,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
 .mus-skema-bottum{
     width: 100%; 
     float: left; 
@@ -614,6 +614,17 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-bottom: 2%; 
 }
 
+
+.txtregu-skema{
+    font-weight: 300;
+    font-size: 18px;
+    color: #515f6d;
+}
+
+.txthline-skema{
+    font-weight: 700; 
+    font-size: 16pt; 
+}
 /*mus skema step 1*/
 
 .mus-skema1-sidea{ 
@@ -798,6 +809,150 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 
 /*mus skema step 4*/
+
+.top-color-side-green{
+    background-color:#a6bb75; 
+    height: 50px; 
+    width: 20%; 
+    float: left; 
+}
+
+@media screen and (max-width: 500px){
+    .top-color-side-green{
+        width: 50%; ; 
+    }
+}
+
+
+.mus-skema4-wrapper{
+    float: left; 
+    width: 100%; 
+    height: auto; 
+    padding-top: 60px;
+    padding-bottom: 60px; 
+}
+
+
+.mus-skema4-top1{
+    height: 100px;
+    width: 50%;
+    float: left; 
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema4-top1{
+        width: 100%; 
+    }
+}
+
+.mus-skema4-top-img{
+    height: auto;  
+    width: 30%; 
+    float: left;
+    text-align: center; 
+}
+
+.mus-skema4-top-img img{
+    width: 50%; 
+}
+
+.mus-skema4-txt1{
+    height:auto;  
+    width: 70%; 
+    float: left; 
+    padding-right: 4%; 
+}
+
+
+.mus-skema4-txt2{
+    width: 90%; 
+}
+
+.mus-skema4-top2{
+    height: 100px;
+    width: 50%;
+    float: left; 
+    margin-bottom: 5%;
+    padding-left: 4%;  
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema4-top2{
+        width: 100%; 
+    }
+}
+
+.mus-skema4-main{
+    width: 100%;
+    float: left; 
+    height: auto; 
+}
+
+.skema-checkbox{
+    background-color: bisque; 
+    width: 10%; 
+    float: left;
+    text-align: center; 
+}
+
+.skema-textarea{
+    background-color: gainsboro; 
+    width: 90%; 
+    float: left; 
+}
+
+input[type="checkbox"]{
+    height: 500px; 
+    widows: 500px; 
+    
+}
+
+
+
+/*mus skema step 5*/
+
+.top-color-side-purple{
+    background-color:#aa81ac; 
+    height: 50px; 
+    width: 20%; 
+    float: left; 
+}
+
+@media screen and (max-width: 500px){
+    .top-color-side-purple{
+        width: 50%; ; 
+    }
+}
+
+/*mus skema step 6*/
+
+.top-color-side-red{
+    background-color:#d36d75; 
+    height: 50px; 
+    width: 20%; 
+    float: left; 
+}
+
+@media screen and (max-width: 500px){
+    .top-color-side-red{
+        width: 50%; ; 
+    }
+}
+
+/*mus skema step 7*/
+
+.top-color-side-red{
+    background-color:#6696ad; 
+    height: 50px; 
+    width: 20%; 
+    float: left; 
+}
+
+@media screen and (max-width: 500px){
+    .top-color-side-red{
+        width: 50%; ; 
+    }
+}
 
 
 /*process bar*/
