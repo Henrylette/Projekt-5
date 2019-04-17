@@ -283,6 +283,12 @@ aside{
     box-shadow: 0 10px 15px #A3A1A8;
 }
 
+.mapper-noter{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
 /* TEXT */
 
 h1 {
@@ -399,9 +405,23 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 /*MUS SIDE MAIN-OMRÅDE */
 
 .textpartmus{
-    width: 70%;
+    width: 72%;
     text-align: left;
     margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+.klip-musside{
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 15%;
+}
+
+.mapper-skemaer{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
 }
 
 /* KALENDER MAIN OMRÅDE*/
