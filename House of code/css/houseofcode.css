@@ -701,7 +701,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 } 
 
-
 .mus-skema1-input-wrapper{
     margin-top: 60px; 
 }
@@ -900,17 +899,15 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
 /*mus skema step 8*/
-
-
 .mus-skema8-txt{
     height: auto; 
     width: 100%;
     float: left; 
     padding-left: 10%; 
     padding-top: 5%;
-    padding-bottom: 5%;  
+    padding-bottom: 5%;
+    padding-right: 10%; 
 }
 
 @media screen and (max-width: 500px){
@@ -971,7 +968,14 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 /*mus skema step 9*/
- 
+
+#skema9{
+    margin: 0; 
+    height: 50px; 
+    width: 100%; 
+}
+
+
 
 /*process bar*/
 
