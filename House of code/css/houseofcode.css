@@ -416,9 +416,10 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 .notesblok{
-    width: 70%;
-    margin-left: 18%;
-    margin-top: 20px;
+    width: 60%;
+    margin-left: 23%;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .klipimg{
