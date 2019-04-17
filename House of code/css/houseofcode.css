@@ -210,7 +210,6 @@ aside{
     margin-bottom: 50px;
 }
 
-
 .container-aside{
     float: left;
     width: 100%;
@@ -376,6 +375,13 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #515f6d;
     margin-top: 30px;
 }
+
+@media screen and (max-width: 500px){
+    .txtregu{
+        font-size: 12pt; 
+    }
+}
+
 .profiltxt{
     float: left;
     font-weight: 300;
@@ -384,11 +390,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: white;
 }
 
-@media screen and (max-width: 500px){
-    .txtregu{
-        font-size: 12pt; 
-    }
-}
 
 /* DASHBOARD MAIN-OMRÅDE*/
 
@@ -534,6 +535,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 /* ----- Side med MUS SKEMA ------ */
 
+/*indstillinger til mus skema side*/
 .mus-skema-box{
     background-color: white; 
     height:auto; 
@@ -552,7 +554,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
 .top-color-side{
     background-color: #90A0A8; 
     height: 50px; 
@@ -565,6 +566,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         width: 50%; ; 
     }
 }
+
 .top-color{
     background-color: #515f6d; 
     height: 50px;
@@ -576,6 +578,17 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         width: 50%; ; 
     }
 }
+
+
+.mus-skema-bottum{
+    width: 100%; 
+    float: left; 
+    height: 70px; 
+    margin-bottom: 2%; 
+}
+
+/*mus skema step 1*/
+
 .mus-skema1-sidea{ 
     width: 50%; 
     float: left; 
@@ -603,13 +616,11 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
 .mus-skema1-sideb{
     width: 50%;  
     float: left;
     height: 260px; 
 }
-
 
 @media screen and (max-width: 500px){
     .mus-skema1-sideb{
@@ -618,18 +629,11 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 } 
 
-.mus-skema1-bottum{
-    width: 100%; 
-    float: left; 
-    height: 70px; 
-    margin-bottom: 2%; 
-}
 
 
 .mus-skema1-input-wrapper{
     margin-top: 60px; 
 }
-
 
 
 @media screen and (max-width: 500px){
@@ -656,6 +660,30 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 ::placeholder {
     color: #dba45c;
     opacity: 0.6;
+}
+
+
+
+/*mus skema step 2*/
+
+.mus-skema2-txt{
+    width: 80%; 
+    margin: auto;
+    text-align: center; 
+    padding-top: 90px; 
+}
+
+.mus-skema2-headline{
+    text-transform: uppercase; 
+    font-weight: 700; 
+}
+
+.txt-BeAwesome{
+    text-transform: uppercase;
+    color: #6696AD; 
+    font-weight: 700;
+    font-size: 20pt; 
+    margin-top: 3%; 
 }
 
 
