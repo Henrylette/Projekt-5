@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <script src="javascript/musskema.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript/burgermenu.js" defer></script>
 </head>
 <body>
   
@@ -18,15 +20,16 @@
  
 <header>
   <div class="logo"><img class="logoimg" src="images/logo.png" alt="ed logo"/></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Dashboard</a></li>
-      <li><a class="active" href="mus-side.html">MUS-side</a></li>
-      <li><a href="kalender.html">Kalender</a></li>
-      <li><a href="noter.html">Noter</a></li>
-      <li><a class="logknap" href="#">Log ud</a></li>
-    </ul>
-  </nav>
+  <div class="topnav" id="myTopnav">
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a class="active" href="index.html">Dashboard</a>
+      <a href="mus-side.html">MUS-side</a>
+      <a href="kalender.html">Kalender</a>
+      <a href="noter.html">Noter</a>
+      <a class="logknap" href="#">Log ud</a>
+  </div>
 </header>
   
 <!--MAIN-->            

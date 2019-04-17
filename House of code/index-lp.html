@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript/burgermenu.js" defer></script>
 </head>
 <body>
  
@@ -17,15 +19,15 @@
 
 <header>
 <div class="logo"><img class="logoimg" src="images/logo.png" alt="ed logo"/></div>
-  <nav>
-    <ul>
-      <li><a class="active" href="">Priser</a></li>
-      <li><a href="">Om os</a></li>
-    </ul>
-    <ul class="rightside">
-      <li class="logknap"><a href="#">Log ind</a></li>
-    </ul>
-  </nav>
+  <div class="topnav" id="myTopnav">
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a class="active" href="index-lp.html">Forside</a>
+      <a href="mus-side.html">Priser</a>
+      <a href="kalender.html">Om os</a>
+      <a class="logknap" href="#">Log ind</a>
+  </div>
 </header>
 
   
