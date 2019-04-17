@@ -101,6 +101,33 @@ header nav{
     margin-bottom: 12px;
     margin-left: 5%;
 }
+
+nav .topnav .icon{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav li {
+        display: none;
+    }
+    nav .topnav .icon{
+    float: left;
+    display: block;
+    }
+    
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .topnav.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 /* :not(.active) = hover on all links which doesn't have an .active */
 header a:not(.active):hover{
     color: white;
@@ -691,6 +718,57 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 
 /* Note slider */
+* { box-sizing: border-box; }
+
+.scene {
+  border: 1px solid #CCC;
+  position: relative;
+  width: 210px;
+  height: 240px;
+  margin: 40px auto;
+  margin-top: 150px;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-182px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 190px;
+  height: 220px;
+  left: 10px;
+  margin-top: 9px;
+  border: 2px solid black;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: gray;
+  text-align: center;
+}
+
+.carousel__cell:nth-child(9n+1) { background: hsla(  0, 0%, 100%, 100); }
+.carousel__cell:nth-child(9n+2) { background: hsla(  0, 0%, 100%, 100); }
+.carousel__cell:nth-child(9n+3) { background: hsla(  0, 0%, 100%, 100); }
+.carousel__cell:nth-child(9n+4) { background: hsla( 0, 0%, 100%, 100); }
+.carousel__cell:nth-child(9n+5) { background: hsla( 0, 0%, 100%, 100); }
+.carousel__cell:nth-child(9n+6) { background: hsla( 0, 0%, 100%, 100); }
+.carousel__cell:nth-child(9n+7) { background: hsla( 0, 0%, 100%, 100); }
+.carousel__cell:nth-child(9n+8) { background: hsla( 0, 0%, 100%, 100); }
+.carousel__cell:nth-child(9n+0) { background: hsla( 0, 0%, 100%, 100); }
+
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(182px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 60deg) translateZ(182px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 120deg) translateZ(182px); }
+.carousel__cell:nth-child(4) { transform: rotateY(180deg) translateZ(182px); }
+.carousel__cell:nth-child(5) { transform: rotateY(240deg) translateZ(182px); }
+.carousel__cell:nth-child(6) { transform: rotateY(300deg) translateZ(182px); }
 
 /* GULE KNAPPER */
 
