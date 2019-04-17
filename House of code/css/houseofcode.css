@@ -995,6 +995,11 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #dba45c;
     font-size: 80px;
 }
+
+.skema11-txt img{
+    width: 10%; 
+    margin-bottom: 2%; 
+}
 /*-------MUS skema slut-------*/
 
 
