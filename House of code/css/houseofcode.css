@@ -405,108 +405,49 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 /* KALENDER MAIN OMRÅDE*/
-
 .container{
-    float: left;
     width: 100%;
-    height: 490px;
-    margin-top: 35px;
+    height: auto;
+    display: inline-block;
+    background: green;
 }
-
-.date{
-    float: left;
-    margin: 25px 0px 10px 0px;
-    font-weight: 300;
-    font-size: 20px;
-    color: #90a1a8;
-}
-
-/* MONTH HEADER */ 
-
 .month {
-    padding: 70px 0;
+    height: 150px;
     width: 90%;
-    background: rgba(144,160,168,0.2);
-    text-align: center;
+    background: red;
     margin-left: 5%;
+    display: inline-block;
 }
-
-/* MONTH LIST */
-
-.month ul {
-    margin: 0;
-    padding: 0; 
+.datoer {
+    width: 90%;
+    background:black;
+    margin-left: 5%;
+    display: inline-block;
 }
-
-.month ul li {
-    color: #90a1a8;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-/* PREVIOUS BUTTON INSIDE MONTH HEADER */
-
-.month .prev {
+.dage {
+    width: 14.27%;
+    margin-bottom: 10px;
+    display: inline-block;
     float: left;
-    padding-top: 10px;
-    margin-left: 20px;
-}
-
-/* NEXT BUTTON */
-
-.month .next {
-    float: right;
-    padding-top: 10px;
-    margin-right: 20px;
-}
-  
-/* WEEKDAYS MON-SUN */
-
-.weekdays {
-    margin-left: 5%;
-    padding: 10px 0;
-    background-color: #515f6d;
-    width: 90%;
-}
-  
-.weekdays li {
+    box-sizing: border-box;
+    padding: 10px 16px 0px 16px;
+} 
+.dage a {
     display: inline-block;
-    width: 12%;
-    color: white;
-    text-align: center;
-    font-weight: 700;
+    width: 100%;
+    background: red;
+    color: #FFFFFF;
 }
-  
-/* DAYS (1-31) */
-
-.days {
-    padding: 10px 0;
-    margin: 0;
-    margin-left: 5%;
-    width: 90%;
-    height: 220px;
-    background-color: rgba(144,160,168,0.2);
-}
-  
-.days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:25px;
-    color: #90a1a8;
-    font-weight: 300;
-}
-  
-/* HIGHLIGHT THE CURRENT DAY */
-
-.days li .active {
-    padding: 5px;
-    background: #515f6d;
-    color: white !important
-}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+  }
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+  }
 
 
 /* ----- Side med MUS SKEMA ------ */
@@ -570,10 +511,102 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #515f6d;
 }
 
+@media screen and (max-width: 500px){
+    .txtregu-skema{
+        font-size: 15px; 
+    }
+}
+
 .txthline-skema{
     font-weight: 700; 
-    font-size: 16pt; 
+    font-size: 16pt;
+    color: #6696ad; 
 }
+
+.top-color-side-green{
+    background-color:#a6bb75; 
+    height: 50px; 
+    width: 20%; 
+    float: left; 
+}
+
+@media screen and (max-width: 500px){
+    .top-color-side-green{
+        width: 50%; ; 
+    }
+}
+
+/*indstillinger mus-skema-værdier*/
+
+.mus-skema-value-wrapper{
+    float: left; 
+    width: 100%; 
+    height: auto; 
+    padding-top: 60px;
+}
+
+.mus-skema-value-top1{
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema-value-top1{
+        width: 100%; 
+    }
+}
+
+.mus-skema-value-top-img{
+    height: auto;  
+    width: 30%; 
+    float: left;
+    text-align: center; 
+}
+
+.mus-skema-value-top-img img{
+    width: 50%; 
+}
+
+.mus-skema-value-txt1{
+    height:auto;  
+    width: 70%; 
+    float: left; 
+    padding-right: 4%; 
+}
+
+
+.mus-skema-value-txt2{
+    width: 90%;
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema-value-txt2{
+        padding-left: 14%; 
+    }
+}
+
+.mus-skema-value-top2{
+    height: 100px;
+    width: 50%;
+    float: left; 
+    margin-bottom: 5%;
+    padding-left: 4%;  
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema-value-top2{
+        width: 100%; 
+    }
+}
+
+.mus-skema-value-main{
+    width: 100%;
+    float: left; 
+    height: auto; 
+}
+
+
 /*mus skema step 1*/
 
 .mus-skema1-sidea{ 
@@ -617,7 +650,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 } 
 
 
-
 .mus-skema1-input-wrapper{
     margin-top: 60px; 
 }
@@ -643,9 +675,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
     
 
-
-::placeholder {
-    color: #dba45c;
+.mus-skema1-input::placeholder {
+    color: #d8a55b;
     opacity: 0.6;
 }
 
@@ -772,88 +803,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
-.mus-skema4-wrapper{
-    float: left; 
-    width: 100%; 
-    height: auto; 
-    padding-top: 60px;
-    padding-bottom: 60px; 
-}
-
-
-.mus-skema4-top1{
-    height: 100px;
-    width: 50%;
-    float: left; 
-}
-
-@media screen and (max-width: 500px){
-    .mus-skema4-top1{
-        width: 100%; 
-    }
-}
-
-.mus-skema4-top-img{
-    height: auto;  
-    width: 30%; 
-    float: left;
-    text-align: center; 
-}
-
-.mus-skema4-top-img img{
-    width: 50%; 
-}
-
-.mus-skema4-txt1{
-    height:auto;  
-    width: 70%; 
-    float: left; 
-    padding-right: 4%; 
-}
-
-
-.mus-skema4-txt2{
-    width: 90%; 
-}
-
-.mus-skema4-top2{
-    height: 100px;
-    width: 50%;
-    float: left; 
-    margin-bottom: 5%;
-    padding-left: 4%;  
-}
-
-@media screen and (max-width: 500px){
-    .mus-skema4-top2{
-        width: 100%; 
-    }
-}
-
-.mus-skema4-main{
-    width: 100%;
-    float: left; 
-    height: auto; 
-}
-
-.skema-checkbox{
-    background-color: bisque; 
-    width: 20%; 
-    float: left;
-    text-align: center; 
-}
-
-.skema-textarea{
-    background-color: gainsboro; 
-    width: 80%; 
-    float: left; 
-}
-
-
-
-
-
 /*mus skema step 5*/
 
 .top-color-side-purple{
@@ -886,7 +835,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 /*mus skema step 7*/
 
-.top-color-side-red{
+.top-color-side-blue{
     background-color:#6696ad; 
     height: 50px; 
     width: 20%; 
@@ -894,11 +843,83 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 @media screen and (max-width: 500px){
-    .top-color-side-red{
+    .top-color-side-blue{
         width: 50%; ; 
     }
 }
 
+
+/*mus skema step 8*/
+
+
+.mus-skema8-txt{
+    height: auto; 
+    width: 100%;
+    float: left; 
+    padding-left: 10%; 
+    padding-top: 5%;
+    padding-bottom: 5%;  
+}
+
+@media screen and (max-width: 500px){
+    .mus-skema8-txt{
+        padding-right: 10%; 
+    }
+}
+
+.mus-skema8-box{
+    height: auto; 
+    width: 50%; 
+    float: left; 
+    padding-bottom: 2%;
+}
+
+
+@media screen and (max-width: 500px){
+    .mus-skema8-box{
+        width: 100%; 
+    }
+}
+
+.mus-skema8-box-wrapper{
+    float: left; 
+    padding-left: 10%; 
+    padding-right: 10%; 
+}
+
+.skema8-label{ 
+    float: left; 
+    width: 100%;
+    padding-top: 5%;
+}
+
+#skema8{
+    background-color:#e8eced;
+    margin-left: 0%;
+    float: left;
+    border-style: none; 
+    font-size: 11pt; 
+    color: #515f6d; 
+    width: 90%;
+    height: 100px; 
+    margin-top: 2%; 
+}
+
+@media screen and (max-width: 500px){
+    #skema8{
+        width: 100%; 
+        margin-bottom: 0; 
+    }
+}
+
+ 
+#skema8::placeholder {
+    color: #dba45c;
+    font-size: 11pt;
+}
+
+/*mus skema step 9*/
+ 
 
 /*process bar*/
 
