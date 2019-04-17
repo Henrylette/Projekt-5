@@ -889,7 +889,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left; 
     padding-left: 10%; 
     padding-top: 5%;
-    padding-bottom: 5%;
     padding-right: 10%; 
 }
 
@@ -903,7 +902,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     height: auto; 
     width: 50%; 
     float: left; 
-    padding-bottom: 2%;
 }
 
 
@@ -939,9 +937,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         margin-bottom: 0; 
     }
 }
-
- 
-
 
 /*mus skema step 9*/
 
@@ -984,7 +979,22 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 0; 
 }
 
+/*mus skema step 11 - Tak for din besvarelse*/
 
+.skema11-txt{
+    text-align: center;
+    float: left; 
+    width: 100%; 
+    margin-top: 5%; 
+    padding-left: 10%; 
+    padding-right: 10%; 
+}
+
+.karma-skema{
+    font-weight: 700;
+    color: #dba45c;
+    font-size: 80px;
+}
 /*-------MUS skema slut-------*/
 
 
