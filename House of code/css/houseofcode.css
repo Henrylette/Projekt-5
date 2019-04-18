@@ -1197,6 +1197,34 @@ main ul{
     background: #90a0a8;
 }
 
+.btn4 {
+    margin-left: auto;
+    margin-right: 7%;
+    margin-top: 20px;
+    width: auto;
+    height: 40px;
+    background-color: #dba45c;
+    font-family: 'Roboto';
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.btn4:hover {
+    background: #515f6d;
+    transition: 0.4s;
+}
+
+.btn4:active {
+    background: #90a0a8;
+}
 
 /* herfra er det "pop-upes" kode */
 
@@ -1241,12 +1269,24 @@ main ul{
     background-color: white;
 }
 
+.popupbox1{
+    height: 1250px;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+}
+
 .poptxt{
     width: 60%;
     margin: auto; 
     padding-top: 80px;
 }
 
+.poptxt1{
+    width: 60%;
+    margin: auto; 
+    padding-bottom: 40px;
+}
 
 input[type=text], select, textarea {
     width: 60%;
@@ -1264,6 +1304,7 @@ input[type=text], select, textarea {
     opacity: 0.6;
 }
 
+/* ---container til tjek knapperne--- */
 .containerpopup {
     display: block;
     position: relative;
@@ -1290,7 +1331,6 @@ input[type=text], select, textarea {
     width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
     position: absolute;
     top: 0;
@@ -1301,29 +1341,24 @@ input[type=text], select, textarea {
     border-radius: 2px;
 }
 
-/* On mouse-over, add a grey background color */
 .containerpopup:hover input ~ .checkmark {
     background-color: #90A0A8;
 }
 
-/* When the checkbox is checked, add a blue background */
 .containerpopup input:checked ~ .checkmark {
     background-color: #D8A55B;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the checkmark when checked */
 .containerpopup input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Style the checkmark/indicator */
 .containerpopup .checkmark:after {
     left: 9px;
     top: 5px;
@@ -1336,10 +1371,298 @@ input[type=text], select, textarea {
     transform: rotate(45deg);
 }
 
+/* ---til den grønne tjek knap--- */
+.containerpopup1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+    margin-left: 150px;
+  margin-bottom: 12px;
+    width: 17%;
+    float: left;
+  cursor: pointer;
+  font-size: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup1:hover input ~ .checkmark {
+  background-color: #90A0A8;
+}
+
+.containerpopup1 input:checked ~ .checkmark {
+  background-color: #A6BB75;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerpopup1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerpopup1 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---til den lilla tjek knap--- */
+.containerpopup2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+    margin-left: 150px;
+  margin-bottom: 12px;
+    width: 17%;
+    float: left;
+  cursor: pointer;
+  font-size: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup2:hover input ~ .checkmark {
+  background-color: #90A0A8;
+}
+
+.containerpopup2 input:checked ~ .checkmark {
+  background-color: #AA81Ac;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerpopup2 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerpopup2 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---til den røde tjek knap--- */
+.containerpopup3 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+    margin-left: 150px;
+  margin-bottom: 12px;
+    width: 17%;
+    float: left;
+  cursor: pointer;
+  font-size: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup3 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup3:hover input ~ .checkmark {
+  background-color: #90A0A8;
+}
+
+
+.containerpopup3 input:checked ~ .checkmark {
+  background-color: #D36D75;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerpopup3 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerpopup3 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---til den blå tjek knap--- */
+.containerpopup4 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+    margin-left: 150px;
+  margin-bottom: 12px;
+    width: 17%;
+    float: left;
+  cursor: pointer;
+  font-size: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup4 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup4:hover input ~ .checkmark {
+  background-color: #90A0A8;
+}
+
+.containerpopup4 input:checked ~ .checkmark {
+  background-color: #6696AD;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerpopup4 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerpopup4 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* indtil her */
+
+img {
+  padding: 1px;
+  width: 45px;
+}
+
 #subject{
     font-family: "roboto";
 }
-        
+
+#subject1{
+    font-family: "roboto";
+    height: 42px;
+}
+
+#subject2{
+    font-family: "roboto";
+    height: 42px;
+    width: 175px;
+}
+
+#subject3{
+    font-family: "roboto";
+    height: 42px;
+    width: 175px;
+    margin-left: 20px
+}
         
 @media screen and (max-width: 800px) {
     
