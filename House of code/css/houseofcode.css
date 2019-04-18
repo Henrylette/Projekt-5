@@ -1259,6 +1259,11 @@ input[type=text], select, textarea {
     background-color: #E8ECED;
 }
 
+::placeholder {
+    color: #d8a55b;
+    opacity: 0.6;
+}
+
 .containerpopup {
     display: block;
     position: relative;
