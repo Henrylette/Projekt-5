@@ -13,6 +13,7 @@
     <script src="../House of code/javascript/kalender.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/burgermenu.js" defer></script>
+    <script src="javascript/begivenhed.js" defer></script>
 </head>
 <body>
  
@@ -116,10 +117,79 @@
                 <h4>Husmøde</h4>
                 <p class="smalltxt">Kl. 09.00<br>House of Code</p>
             </div>
-                <ul><a href="#" class="btn">Opret begivenhed</a></ul>
+                <ul><button id="btn1" class="btn">Opret begivenhed</button></ul>
         </div>
         
     </div>
+    
+     <!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- Modal content -->
+    <div class="popupbox1">
+        <div class="topdb">
+            <h3 class="boxheadlines">Ny note</h3>
+            <span class="close">&times;</span>
+        </div>
+             
+            <div class="poptxt">
+                <p class="txtbold">Her opretter du en begivenhed for alle eller udvalgte medarbejdere hos House of Code</p>    
+            </div>
+              
+                <div class="popfelt">
+                    
+                    <textarea id="subject1" name="subject" placeholder="Begivenhedens navn..."></textarea>
+           
+                    <textarea id="subject1" name="subject" placeholder="Lokation…"></textarea>
+  
+                    <textarea id="subject" name="subject" placeholder="Skriv din note her..." style="height:200px"></textarea>
+        
+                    <textarea id="subject2" name="subject" placeholder="Dato (dd-mm-yyyyy)" style="height: 42px"></textarea>
+        
+                    <textarea id="subject3" name="subject" placeholder="Tidspunkt (hh:mm)" style="height: 42px"></textarea>
+        
+                    <textarea id="subject1" name="subject" placeholder="Hvem skal inviteres? Start med at taste et navn…"></textarea>
+        
+                    <textarea id="subject1" name="subject" placeholder="Medorganisatorer? Start med at taste et navn…"></textarea>
+                 </div>
+                      
+                <div class="poptxt1">
+                <p class="txtregu">Vælg den værdi som matcher begivenheden:</p>    
+                </div>   
+                       <div>
+                        <label class="containerpopup1">Højt drive
+                            <input type="checkbox" checked="checked">
+                            <img src="images/icongreen.png">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerpopup2">Et stærkt team
+                            <input type="checkbox">
+                            <img src="images/iconpurple.png">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerpopup3">God karma
+                            <input type="checkbox">
+                            <img src="images/iconred.png">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerpopup4">Ha' det sjovt
+                            <input type="checkbox">
+                            <img src="images/iconblue.png">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+
+                        
+                    <ul>
+                        <a href="kalender.html" class="btn4">Gem & opret</a>
+                    </ul>
+                        
+    </div>
+</div>
+                        
 </main>
 <script>
         const months = [
