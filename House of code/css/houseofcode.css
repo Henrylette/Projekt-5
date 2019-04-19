@@ -526,16 +526,16 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     height:auto; 
     width: 70%; 
     margin-top: 30px; 
+    margin-bottom: 30px; 
     margin-left: auto; 
     margin-right: auto; 
     box-shadow: 0 10px 15px #A3A1A8;
-    display: table; 
+    display: none; 
 }
 
 
 @media screen and (max-width: 500px){
     .mus-skema-box{
-        margin-bottom: 3%;
         width: 85%
     }
 }
