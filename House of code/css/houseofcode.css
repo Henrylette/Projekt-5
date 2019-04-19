@@ -1395,6 +1395,12 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 90%; 
 }
 
+.previewtxt textarea{
+    color: #d8a55b;
+    font-size: 12pt;
+    font-weight: 700; 
+}
+
 
 
 /*-------MUS skema slut-------*/
