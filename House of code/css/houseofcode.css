@@ -533,7 +533,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     display: none; 
 }
 
-
 @media screen and (max-width: 500px){
     .mus-skema-box{
         width: 85%
@@ -680,7 +679,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 /*mus skema step 1*/
 
 .mus-skema1-sidea{ 
-    width: 50%; 
+    width: 59%; 
     float: left; 
     height: auto; 
 }
@@ -707,9 +706,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 .mus-skema1-sideb{
-    width: 50%;  
+    width: 41%;  
     float: left;
-    height: 260px; 
 }
 
 @media screen and (max-width: 500px){
@@ -726,30 +724,18 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 @media screen and (max-width: 500px){
     .mus-skema1-input-wrapper{
-        margin-top: 20px; 
+        margin-top: 20px;
+        margin-right: -10%; 
     }
 }
 
-.mus-skema1-input{
-    background-color: #E8EcED; 
+.skema1{
+    height: 43px;
     width: 80%; 
-    height: 45px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    display: block; 
-    border-style: none; 
-    margin-top: 12px; 
-    margin-bottom: 12px;
-    padding-left: 10px; 
+    margin-top: 1%; 
+    margin-bottom: 1%; 
+    margin-left: 5%; 
 }
-    
-
-.mus-skema1-input::placeholder {
-    color: #d8a55b;
-    opacity: 0.6;
-}
-
-
 
 /*mus skema step 2*/
 
@@ -958,7 +944,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     padding-top: 5%;
 }
 
-#skema8{
+.skema8{
     margin-left: 0%;
     float: left;
     width: 90%;
@@ -967,7 +953,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 @media screen and (max-width: 500px){
-    #skema8{
+    .skema8{
         width: 100%; 
         margin-bottom: 0; 
     }
@@ -979,7 +965,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     text-align: center; 
 }
 
-#skema9{
+.skema9{
     margin-bottom: 3%; 
     margin-left: 0;
     margin-top: 0; 
@@ -1003,14 +989,14 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         width: 10%; 
     }
     
-    #skema9{
+    .skema9{
         width: 90%; 
     }
 }
 
 /*mus skema step 10*/
 
-#skema10{
+.skema10{
     width: 100%; 
     margin-left: 0; 
     margin-top: 0; 

@@ -41,6 +41,7 @@
           <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
           <div class="top-color"></div>
+          
   
 <!--Siden a med tekst i main boksen--> 
   <div class="mus-skema1-sidea">
@@ -53,9 +54,9 @@
 <!--Siden b med indput  felter i main boksen-->                                 
   <div class="mus-skema1-sideb">
     <div class="mus-skema1-input-wrapper">
-        <input class="mus-skema1-input" type="text" placeholder="Medarbejderens navn..." name="Medarbejderens navn" required>
-        <input class="mus-skema1-input" type="text" placeholder="Skema udfyldes af..." name="Skema udfyldes af" required>
-        <input class="mus-skema1-input" type="text" placeholder="Dags dato (dd-mm-yy)" name="dato" required>
+       <textarea placeholder="Medarbejderens navn..." name="" id="" class="skema1"></textarea>
+       <textarea placeholder="Skema udfyldes af..." name="" id="" class="skema1"></textarea>
+       <textarea placeholder="Dags dato (dd-mm-yy)" name="" id="" class="skema1"></textarea>
     </div>
   </div>
   
@@ -394,22 +395,22 @@
           <div class="mus-skema8-box-wrapper">
            <div class="mus-skema8-box">
                <label for="" class="skema8-label"><p class="txtbold">Faglige stærke sider</p></label>
-               <textarea placeholder="Skriv her.." name="" id="skema8"></textarea>
+               <textarea placeholder="Skriv her.." name="" id="" class="skema8"></textarea>
            </div>
                         
            <div class="mus-skema8-box">
-               <label for="" class="skema8-label"><p class="txtbold">Faglige stærke sider</p></label>
-               <textarea placeholder="Skriv her.." name="" id="skema8"></textarea>
+               <label for="" class="skema8-label"><p class="txtbold">Faglige udviklingsområder</p></label>
+               <textarea placeholder="Skriv her.." name="" id="" class="skema8"></textarea>
            </div>
            
            <div class="mus-skema8-box">
-               <label for="" class="skema8-label"><p class="txtbold">Faglige stærke sider</p></label>
-               <textarea placeholder="Skriv her.." name="" id="skema8"></textarea>
+               <label for="" class="skema8-label"><p class="txtbold">Personlige stærke sider</p></label>
+               <textarea placeholder="Skriv her.." name="" id="" class="skema8"></textarea>
            </div>
            
            <div class="mus-skema8-box">
-               <label for="" class="skema8-label"><p class="txtbold">Faglige stærke sider</p></label>
-                <textarea placeholder="Skriv her.." name="" id="skema8"></textarea>
+               <label for="" class="skema8-label"><p class="txtbold">Personlige udviklingsområder</p></label>
+                <textarea placeholder="Skriv her.." name="" id="" class="skema8"></textarea>
            </div>
            </div>
         
@@ -463,11 +464,11 @@
             
             <br>
             <div class="skema9-tal">1</div>
-            <textarea placeholder="Skrive her.." name="" id="skema9"></textarea>
+            <textarea placeholder="Skrive her.." name="" id="" class="skema9"></textarea>
             <div class="skema9-tal">2</div>
-            <textarea placeholder="Skrive her.." name="" id="skema9"></textarea>
+            <textarea placeholder="Skrive her.." name="" id="" class="skema9"></textarea>
             <div class="skema9-tal">3</div>
-            <textarea placeholder="Skrive her.." name="" id="skema9"></textarea>
+            <textarea placeholder="Skrive her.." name="" id="" class="skema9"></textarea>
         </div>
         
          <div class="mus-skema-bottum">
@@ -496,19 +497,19 @@
             <br>
             
             <p class="txtbold">Hvad vil du udvikle?</p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." name="" id="" class="skema10"></textarea>
         
             <p class="txtbold">Hvordan vil du gøre det? </p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." name="" id="" class="skema10"></textarea>
             
             <p class="txtbold">Hvilke ressourcer får du brug for? </p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." name="" id="" class="skema10"></textarea>
             
             <p class="txtbold">Hvordan vil du måle fremgang/resultater? </p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." name="" id="input1" class="skema10"></textarea>
             
             <p class="txtbold">Hvornår vil du gøre det? </p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." name="" id="input2" class="skema10"></textarea>
         </div>
         
         
@@ -549,7 +550,7 @@
          <div class="mus-skema-bottum">
             <ul>
              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
-              <li><a href="#" class="btn" onclick="next(2)">Preview</a></li>
+              <li><a href="#" class="btn" onclick="next(2);showPreview()">Preview</a></li>
               <li><a href="#" class="btn" onclick="next(1)">Send nu</a></li>
             </ul>
      </div>
@@ -591,6 +592,7 @@
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
         <div class="top-color"></div>
         
+                   
         <div class="mus-skema8-txt">
             <p class="txtbold">Herunder ser du et preview af det udfyldte MUS-skema. Du kan stadig redigere i skemaet ved at trykke på rediger-ikonet i højre hjørne af den grå boks. </p>
             <br>
@@ -604,8 +606,10 @@
                    </div>
                    <div class="pbox-txt">
                    <p class="txtbold">Vi er passionerede appudviklere der brænder for at levere awesome løsninger</p>
-                   <br>
                    </div>
+                   <textarea name="" id="output1" cols="30" rows="10"></textarea>
+                   
+                   <textarea name="" id="output2" cols="30" rows="10"></textarea>
                </div>
             </div>
         </div>
@@ -776,8 +780,8 @@
     </div>
 
 
-</main>  
-
+</main> 
+ 
 
 </body>
 </html>
