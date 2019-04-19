@@ -58,9 +58,17 @@
 
 
             <div class="container">
-                <div class="month"><a id="monthName">(dette bliver slettet af JS)</a>
-                    <a class="prev" onclick="fetchCalendar('prev');">&#10094;</a>
+                <div class="month"><a class="prev" onclick="fetchCalendar('prev');">&#10094;</a> <a id="monthName">(dette bliver slettet af JS)</a>
                     <a class="next" onclick="fetchCalendar('next');">&#10095;</a>
+                </div>  
+                <div class="week">
+                    <div class="weekdays">Man</div>
+                    <div class="weekdays">Tirs</div>
+                    <div class="weekdays">Ons</div>
+                    <div class="weekdays">Tors</div>
+                    <div class="weekdays">Fre</div>
+                    <div class="weekdays">Lør</div>
+                    <div class="weekdays">Søn</div>   
                 </div>
                 <div class="datoer" id="monthDays">
                     <div class="dage"> <a>1</a> </div>
