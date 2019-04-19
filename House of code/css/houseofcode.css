@@ -429,18 +429,41 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 100%;
     height: auto;
     display: inline-block;
-    background: green;
+    margin-top: 85px;
+}
+.monthbox {
+    width: 90%;
+    height: 100px;
+    background: rgba(144,160,168,0.2);
+    margin-left: 5%;
 }
 .month {
     height: 150px;
     width: 90%;
-    background: red;
     margin-left: 5%;
+    margin-top: 2%;
     display: inline-block;
+    color: #90a1a8;
+    font-size: 30px;
+    text-align: center;
+}
+.week {
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    background-color: #90a1a8;
+}
+.weekdays {
+    display: inline-block;
+    width: 14.27%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px 16px 0px 16px;
+    color: white;
 }
 .datoer {
     width: 90%;
-    background:black;
+    background: rgba(144,160,168,0.2);
     margin-left: 5%;
     display: inline-block;
 }
@@ -455,22 +478,47 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .dage a {
     display: inline-block;
     width: 100%;
-    background: red;
-    color: #FFFFFF;
+    font-size: 20px;
+    color: #90a1a8;
 }
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
     cursor: pointer;
   }
+.next, .prev {
+    font-size: 50px;
+    margin-right: 15%;
+    margin-left: 15%;
+
+}
 .prev {
     left: 0;
     border-radius: 3px 0 0 3px;
     cursor: pointer;
   }
-
+.date {
+        float: left;
+        margin: 25px 0px 10px 0px;
+        font-weight: 300;
+        font-size: 20px;
+        color: #90a1a8;
+}
 
 /* ----- Side med MUS SKEMA ------ */
+
+.mus-skema textarea{
+    border: none;
+    background-color: #e8eced;
+    font-size: 11pt; 
+    color: #515f6d; 
+}
+
+.mus-skema textarea::placeholder {
+    color: #dba45c;
+    font-size: 11pt;
+    opacity: 0.6;
+}
 
 /*indstillinger til mus skema side*/
 .mus-skema-box{
@@ -555,6 +603,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         width: 50%; ; 
     }
 }
+
+
 
 /*indstillinger mus-skema-værdier*/
 
@@ -668,7 +718,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         height: auto; 
     }
 } 
-
 
 .mus-skema1-input-wrapper{
     margin-top: 60px; 
@@ -868,17 +917,14 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
 /*mus skema step 8*/
-
-
 .mus-skema8-txt{
     height: auto; 
     width: 100%;
     float: left; 
     padding-left: 10%; 
     padding-top: 5%;
-    padding-bottom: 5%;  
+    padding-right: 10%; 
 }
 
 @media screen and (max-width: 500px){
@@ -891,7 +937,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     height: auto; 
     width: 50%; 
     float: left; 
-    padding-bottom: 2%;
 }
 
 
@@ -914,12 +959,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 #skema8{
-    background-color:#e8eced;
     margin-left: 0%;
     float: left;
-    border-style: none; 
-    font-size: 11pt; 
-    color: #515f6d; 
     width: 90%;
     height: 100px; 
     margin-top: 2%; 
@@ -932,16 +973,136 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
- 
-#skema8::placeholder {
-    color: #dba45c;
-    font-size: 11pt;
+/*mus skema step 9*/
+
+.skema9-txt-wrapper{
+    text-align: center; 
 }
 
-/*mus skema step 9*/
- 
+#skema9{
+    margin-bottom: 3%; 
+    margin-left: 0;
+    margin-top: 0; 
+    height: 50px; 
+    width: 95%;  
+}
 
-/*process bar*/
+.skema9-tal{
+    width: 5%; 
+    float: left; 
+    background-color: #e8eced;  
+    text-align: center; 
+    font-size: 40px; 
+    color: #90a1a8; 
+    padding-top: 3px;
+    padding-left: 2%; 
+}
+
+@media screen and (max-width: 500px){
+    .skema9-tal{
+        width: 10%; 
+    }
+    
+    #skema9{
+        width: 90%; 
+    }
+}
+
+/*mus skema step 10*/
+
+#skema10{
+    width: 100%; 
+    margin-left: 0; 
+    margin-top: 0; 
+}
+
+/*mus skema step 11 - Tak for din besvarelse*/
+
+.skema11-txt{
+    text-align: center;
+    float: left; 
+    width: 100%; 
+    margin-top: 5%; 
+    padding-left: 10%; 
+    padding-right: 10%; 
+}
+
+.karma-skema{
+    font-weight: 700;
+    color: #dba45c;
+    font-size: 80px;
+}
+
+.skema11-txt img{
+    width: 10%; 
+    margin-bottom: 2%; 
+}
+
+/*mus skema step 13 - preview*/
+
+.pbox{
+    background-color: #e8eced; 
+    width: 100%;
+    float: left; 
+}
+
+.pbox-header{
+    width: 100%; 
+    float: left; 
+}
+
+.pbox-img{
+    width: 12%; 
+    float: left; 
+    padding: 2%;
+    margin-left: 5%
+}
+
+.pbox-hline{
+    width: 70%;
+    float: left;
+    padding-top: 2%;
+}
+
+.pbox-txt{
+    width: 70%; 
+}
+@media screen and (max-width: 500px){
+    .pbox-txt{
+        width: 100%;
+        padding-top: 15%;
+        padding-left: 10%
+    }
+}
+
+.rediger{
+    width: 5%; 
+    float: right; ; 
+}
+
+.pbox-header-2{
+    width: 100%; 
+    float: left; 
+    padding-left: 8%;  
+}
+
+.pbox-header-2 p{
+    padding-right: 5%; 
+}
+
+.skemap-hline{
+    padding-top: 5%;
+    padding-bottom: 2%; 
+}
+
+.pbox-maal{
+    font-size: 20pt; 
+    color: #515f6d; 
+}
+
+
+
+/*-------MUS skema slut-------*/
 
 
 /* Note slider */
@@ -999,6 +1160,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 /* GULE KNAPPER */
 
+
 main li{
     display: inline;
 }
@@ -1011,13 +1173,14 @@ main ul{
     text-align: center;
 }
 
+
 .btn {
     margin-left: auto;
     margin-right: 1%;
     margin-top: 20px;
     width: auto;
     height: 40px;
-    background-color: #dba45c;
+    background-color: #D8A55B;
     font-family: 'Roboto';
     color: white;
     border: 0;
@@ -1042,6 +1205,35 @@ main ul{
 
 .btn3 {
     margin-left: auto;
+    margin-right: 16%;
+    margin-top: 15px;
+    width: auto;
+    height: 40px;
+    background-color: #D8A55B;
+    font-family: 'Roboto';
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.btn3:hover {
+    background: #515f6d;
+    transition: 0.4s;
+}
+
+.btn3:active {
+    background: #90a0a8;
+}
+
+.btn4 {
+    margin-left: auto;
     margin-right: 7%;
     margin-top: 20px;
     width: auto;
@@ -1060,19 +1252,16 @@ main ul{
     
 }
 
-
-
-.btn3:hover {
+.btn4:hover {
     background: #515f6d;
     transition: 0.4s;
 }
 
-.btn3:active {
+.btn4:active {
     background: #90a0a8;
 }
 
-
-/* herfra er det "popupes" kode */
+/* herfra er det "pop-upes" kode */
 
 /* The Modal (background) */
 .modal {
@@ -1115,12 +1304,24 @@ main ul{
     background-color: white;
 }
 
+.popupbox1{
+    height: 1060px;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+}
+
 .poptxt{
     width: 60%;
     margin: auto; 
     padding-top: 80px;
 }
 
+.poptxt1{
+    width: 60%;
+    margin: auto; 
+    padding-bottom: 40px;
+}
 
 input[type=text], select, textarea {
     width: 60%;
@@ -1133,6 +1334,12 @@ input[type=text], select, textarea {
     background-color: #E8ECED;
 }
 
+::placeholder {
+    color: #d8a55b;
+    opacity: 0.6;
+}
+
+/* ---container til tjek knapperne--- */
 .containerpopup {
     display: block;
     position: relative;
@@ -1141,7 +1348,7 @@ input[type=text], select, textarea {
     margin-bottom: 12px;
     width: 17%;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1159,7 +1366,6 @@ input[type=text], select, textarea {
     width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
     position: absolute;
     top: 0;
@@ -1170,29 +1376,24 @@ input[type=text], select, textarea {
     border-radius: 2px;
 }
 
-/* On mouse-over, add a grey background color */
 .containerpopup:hover input ~ .checkmark {
     background-color: #90A0A8;
 }
 
-/* When the checkbox is checked, add a blue background */
 .containerpopup input:checked ~ .checkmark {
     background-color: #D8A55B;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the checkmark when checked */
 .containerpopup input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Style the checkmark/indicator */
 .containerpopup .checkmark:after {
     left: 9px;
     top: 5px;
@@ -1205,10 +1406,298 @@ input[type=text], select, textarea {
     transform: rotate(45deg);
 }
 
+/* ---til den grønne tjek knap--- */
+.containerpopup1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+    margin-left: 100px;
+  margin-bottom: 12px;
+    width: 17%;
+    float: left;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup1:hover input ~ .checkmark {
+  background-color: #90A0A8;
+}
+
+.containerpopup1 input:checked ~ .checkmark {
+  background-color: #A6BB75;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerpopup1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerpopup1 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---til den lilla tjek knap--- */
+.containerpopup2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+    margin-left: 15px;
+  margin-bottom: 12px;
+    width: 17%;
+    float: left;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup2:hover input ~ .checkmark {
+  background-color: #90A0A8;
+}
+
+.containerpopup2 input:checked ~ .checkmark {
+  background-color: #AA81Ac;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerpopup2 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerpopup2 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---til den røde tjek knap--- */
+.containerpopup3 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+    margin-left: 15px;
+  margin-bottom: 12px;
+    width: 17%;
+    float: left;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup3 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup3:hover input ~ .checkmark {
+  background-color: #90A0A8;
+}
+
+
+.containerpopup3 input:checked ~ .checkmark {
+  background-color: #D36D75;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerpopup3 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerpopup3 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---til den blå tjek knap--- */
+.containerpopup4 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+    margin-left: 15px;
+  margin-bottom: 12px;
+    width: 17%;
+    float: left;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup4 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup4:hover input ~ .checkmark {
+  background-color: #90A0A8;
+}
+
+.containerpopup4 input:checked ~ .checkmark {
+  background-color: #6696AD;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerpopup4 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerpopup4 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* indtil her */
+
+img {
+  padding: 1px;
+  width: 45px;
+}
+
 #subject{
     font-family: "roboto";
 }
-        
+
+#subject1{
+    font-family: "roboto";
+    height: 42px;
+}
+
+#subject2{
+    font-family: "roboto";
+    height: 42px;
+    width: 175px;
+}
+
+#subject3{
+    font-family: "roboto";
+    height: 42px;
+    width: 175px;
+    margin-left: 20px
+}
         
 @media screen and (max-width: 800px) {
     
@@ -1355,4 +1844,26 @@ input[type=text], select, textarea {
         transition-timing-function: linear;
     }
 }
+/* responsiv kalender */ 
+@media screen and (max-width: 600px) {
+    .month {
+        font-size: 20px;
+
+    }
+    .next, .prev {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .weekdays {
+        padding: 5px 7px 0px 7px;
+    }
+    .dage {
+        padding: 5px 7px 0px 7px; 
+    }
+    .dage a {
+        font-size: 14px;
+    }
+}
+
 
