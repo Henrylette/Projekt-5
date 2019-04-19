@@ -429,13 +429,19 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 100%;
     height: auto;
     display: inline-block;
-    margin-top: 55px;
+    margin-top: 85px;
+}
+.monthbox {
+    width: 90%;
+    height: 100px;
+    background: rgba(144,160,168,0.2);
+    margin-left: 5%;
 }
 .month {
     height: 150px;
     width: 90%;
-    background: rgba(144,160,168,0.2);
     margin-left: 5%;
+    margin-top: 2%;
     display: inline-block;
     color: #90a1a8;
     font-size: 30px;
@@ -472,6 +478,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .dage a {
     display: inline-block;
     width: 100%;
+    font-size: 20px;
     color: #90a1a8;
 }
 .next {
@@ -1837,4 +1844,26 @@ img {
         transition-timing-function: linear;
     }
 }
+/* responsiv kalender */ 
+@media screen and (max-width: 600px) {
+    .month {
+        font-size: 20px;
+
+    }
+    .next, .prev {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .weekdays {
+        padding: 5px 7px 0px 7px;
+    }
+    .dage {
+        padding: 5px 7px 0px 7px; 
+    }
+    .dage a {
+        font-size: 14px;
+    }
+}
+
 
