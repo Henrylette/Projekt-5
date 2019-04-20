@@ -77,8 +77,6 @@ function showPreview() {
     var outputSkema32 = document.getElementById("input32").value;
 
  
- 
-    
     //skema - Højt drive
     document.getElementById("output1").innerText = outputSkema1; 
     document.getElementById("output2").innerText = outputSkema2;
@@ -126,6 +124,10 @@ function showPreview() {
     document.getElementById("output32").innerText = outputSkema32;
 
 }
+
+
+
+
 
 
 
