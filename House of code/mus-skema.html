@@ -36,11 +36,34 @@
 
                     <!----STEP 1----->
 <!--Bok indstillinger-->   
-<main class="mus-skema"> 
+<main id="musSkema" class="mus-skema"> 
     <div class="mus-skema-box">
           <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-          <div class="top-color"></div>
+          <div class="top-color">
+           <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+          </div>
+          
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
+
   
 <!--Siden a med tekst i main boksen--> 
   <div class="mus-skema1-sidea">
@@ -53,17 +76,17 @@
 <!--Siden b med indput  felter i main boksen-->                                 
   <div class="mus-skema1-sideb">
     <div class="mus-skema1-input-wrapper">
-        <input class="mus-skema1-input" type="text" placeholder="Medarbejderens navn..." name="Medarbejderens navn" required>
-        <input class="mus-skema1-input" type="text" placeholder="Skema udfyldes af..." name="Skema udfyldes af" required>
-        <input class="mus-skema1-input" type="text" placeholder="Dags dato (dd-mm-yy)" name="dato" required>
+       <textarea placeholder="Medarbejderens navn..." name="" id="" class="skema1"></textarea>
+       <textarea placeholder="Skema udfyldes af..." name="" id="" class="skema1"></textarea>
+       <textarea placeholder="Dags dato (dd-mm-yy)" name="" id="" class="skema1"></textarea>
     </div>
   </div>
   
   <div class="mus-skema-bottum">
         <ul>
-          <li><a href="#" class="btn">Afbryd</a></li>
+          <li><a href="mus-side.html" class="btn">Tilbage</a></li>
           <li><a href="#" class="btn">Gem</a></li>
-          <li><a href="#" class="btn">Næste</a></li>
+          <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
         </ul>
      </div>
 </div>
@@ -73,7 +96,30 @@
      <div class="mus-skema-box">
         <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-          <div class="top-color"></div>
+          <div class="top-color">
+              <span class="close-skema">
+                    <a class="close" href="mus-side.html">&times;</a>
+              </span>
+          </div>
+          
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
+      
          
             <div class="mus-skema2-txt">
              <p class="txtbold">Det er vigtig for House of Code at vi sammen arbejder med vores værdier.
@@ -95,9 +141,9 @@
           
         <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
          
@@ -108,7 +154,30 @@
     <div class="mus-skema-box">
         <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
+          
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
+        
         
         <div class="mus-skema3-wrapper">
         <div class="mus-skema3">
@@ -117,7 +186,7 @@
                </div>
                 <div class="mus-skema3-txt">
                     <span style="color: #A6BB75"><p class="skema3-txt-top">Højt drive</p></span>
-             <p class="skema3-txt">
+             <p class="txtregu">
                  Vi er passionerede appudviklere der brænder for at levere awesome løsninger.
              </p>
             </div>
@@ -129,19 +198,19 @@
             </div>
             <div class="mus-skema3-txt">
                     <span style="color: #AA81AC"><p class="skema3-txt-top">Et stærkt team</p></span>
-             <p class="skema3-txt">
+             <p class="txtregu">
                  Vi spiller hinanden bedre. Derfor bygger vi på tætte relationer og et stærkt samarbejde, internt såvel som eksternt.
              </p>
             </div>
         </div>
         
-        <div class="mus-skema3">
+        <div class="mus-skema3" id="skema3-clear">
            <div class="mus-skema3-icons">
             <img src="images/iconred.png" alt="">
             </div>
             <div class="mus-skema3-txt">
                     <span style="color: #D36D75"><p class="skema3-txt-top">God karma</p></span>
-             <p class="skema3-txt">
+             <p class="txtregu">
                  Vi møder alle med tillid og åbenhed; det gør en forskel.
              </p>
             </div>
@@ -153,18 +222,18 @@
             </div>
             <div class="mus-skema3-txt">
                     <span style="color: #6696AD"><p class="skema3-txt-top">Ha’ det sjovt</p></span>
-             <p class="skema3-txt">
+             <p class="txtregu">
                  Vi har det sjovt, men arbejder hårdt og når vores mål.
              </p>
             </div>
         </div>
         </div>
-        
+       
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
     </div>
@@ -175,16 +244,35 @@
   <div class="mus-skema-box">
         <div class="top-color-side-green"> 
               <h3 class="boxheadlines">MUS-Skema</h3></div>
-        <div class="top-color"></div>
-        
+        <div class="top-color"><span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span></div>
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
+          
         <div class="mus-skema-value-wrapper">
         
         <div class="mus-skema-value-top1">
             <div class="mus-skema-value-top-img"> <img src="images/icongreen.png" alt=""></div>
             
             <div class="mus-skema-value-txt1">
-            <span style="color: #a6bb75">
-            <p class="txthline-skema">Højt drive</p></span>
+            
+            <p class="txthline-skema"><span style="color: #a6bb75">Højt drive</span></p>
             <p class="txtbold">Vi er passionerede appudviklere der brænder for at levere awesome løsninger</p></div>
             
         </div>
@@ -196,25 +284,59 @@
         </div>
         
         <div class="mus-skema-value-main">
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-       
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
+          
+          <div class="mus-skema-value-maintxt">
+           <p class="txtregu">Jeg arbejder med mit eget fagområde uden for arbejdstiden.</p>
+            <label class="checkgreen">
+                <input type="checkbox">
+                <textarea id="input1" placeholder="Eksempel: Når jeg har fri arbejder jeg på mine egne projekter"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg opsøger ny viden inden for mit eget og andres fagområder i og uden for arbejdstiden.</p>
+            <label class="checkgreen">
+                <input type="checkbox">
+                <textarea id="input2" placeholder="Eksempel: Jeg læser fagbøger for at udvide min horisont"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg deler min nye tilegnet viden med kolleger og dokumenterer dette</p>
+            <label class="checkgreen">
+                <input type="checkbox">
+                <textarea id="input3" placeholder="Eksempel: Best practice deles på Slack/Confluence"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg holder mig opdateret omkring apps, design og arbejdsmetoder.</p>
+            <label class="checkgreen">
+                <input type="checkbox">
+                <textarea id="input4" placeholder="Eksempel: Når jeg er færdig med mine opgaver, spørger jeg om andre har brug for hjælp"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg opsøger selv nye opgaver der skaber værdi for House of Code eller giver input til eksisterende opgaver der skaber værdi for House of Code eller vores samarbejdspartnere</p>
+            <label class="checkgreen">
+                <input type="checkbox">
+                <textarea id="input5" placeholder="Eksempel: Jeg læser bøger, artikler, følger med på LinkedIn"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
         </div>
-        
         </div>
         
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
     
@@ -225,7 +347,29 @@
   <div class="mus-skema-box">
         <div class="top-color-side-purple"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
+        
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
         
         <div class="mus-skema-value-wrapper">
         
@@ -233,8 +377,7 @@
             <div class="mus-skema-value-top-img"> <img src="images/iconpurple.png" alt=""></div>
             
             <div class="mus-skema-value-txt1">
-            <span style="color: #aa81ac">
-            <p class="txthline-skema">Et stærkt team</p></span>
+            <p class="txthline-skema"><span style="color: #aa81ac">Et stærkt team</span></p>
             <p class="txtbold">Vi spiller hinanden bedre. Derfor bygger vi på tætte relationer og et stærkt samarbejde, internt såvel som eksternt</p></div>
             
         </div>
@@ -247,24 +390,55 @@
         
         <div class="mus-skema-value-main">
         
-        <textarea name="" id="" style="height: 50px"></textarea>
-       
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
+           <div class="mus-skema-value-maintxt">
+           <p class="txtregu">Jeg deler min nye tilegnet viden med kolleger og dokumenterer dette.</p>
+            <label class="checkpurple">
+                <input type="checkbox">
+                <textarea id="input6" placeholder="Eksempel: Jeg opsøger selv pair programming"></textarea><span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg omgås med mine kolleger i og uden for arbejdstiden.</p>
+            <label class="checkpurple">
+                <input type="checkbox">
+                <textarea id="input7" placeholder="Eksempel: Tager i biografen, walk n’ talk, træner sammen"></textarea><span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg søger input på mine opgaver fra mine kolleger.</p>
+            <label class="checkpurple">
+                <input type="checkbox">
+                <textarea id="input8" placeholder="Eksempel: Inden jeg afleverer en opgave, får jeg altid en kollegas øjne til at se på det"></textarea><span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg giver feedback til mine kolleger på deres adfærd (konstruktiv såvel som positiv). </p>
+            <label class="checkpurple">
+                <input type="checkbox">
+                <textarea id="input9" placeholder="Eksempel: Tak fordi du altid tager i mod opgaver med et smil (Siges til en kollega)"></textarea><span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg går også op i at være en god ambassadør for House of Code overfor de eksterne relationer.</p>
+            <label class="checkpurple">
+                <input type="checkbox">
+                <textarea id="input10" placeholder="Eksempel: Jeg omtaler aldrig personer eller virksomheden negativt i eksterne relationer"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
         </div>
         
         </div>
         
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
     </div>
@@ -276,9 +450,29 @@
   <div class="mus-skema-box">
         <div class="top-color-side-red"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
         
-        
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
         
          <div class="mus-skema-value-wrapper">
         
@@ -286,8 +480,7 @@
             <div class="mus-skema-value-top-img"> <img src="images/iconred.png" alt=""></div>
             
             <div class="mus-skema-value-txt1">
-            <span style="color:#d36d75">
-            <p class="txthline-skema">God karma</p></span>
+            <p class="txthline-skema"><span style="color:#d36d75">God karma</span></p>
             <p class="txtbold">Vi møder alle med tillid og åbenhed; det gør en forskel</p></div>
             
         </div>
@@ -298,17 +491,52 @@
             </div>
         </div>
         
-        <div class="mus-skema-value-main">
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-       
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
+         <div class="mus-skema-value-main">
+           
+           <div class="mus-skema-value-maintxt">
+           <p class="txtregu">Jeg opsøger miner kolleger for at hjælpe dem.</p>
+            <label class="checkred">
+                <input type="checkbox">
+                <textarea id="input11" placeholder="Eksempel: Jeg spørger mine kollegaer, når jeg kan se de er gået død i en opgave, om jeg skal hjælpe"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg bidrager med en god og positiv stemning hos House of Code.</p>
+            <label class="checkred">
+                <input type="checkbox">
+                <textarea id="input12" placeholder="Eksempel: Siger godmorgen og farvel"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg gør noget godt for andre uden for House of Code.</p>
+            <label class="checkred">
+                <input type="checkbox">
+                <textarea id="input13" placeholder="Eksempel: Arbejder frivilligt - fx Røde Kors, Coding Pirates"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg møder mine kolleger individuelt for at opnå bedst muligt fællesskab.</p>
+            <label class="checkred">
+                <input type="checkbox">
+                <textarea id="input14" placeholder="Eksempel: Jeg tilpasser min kommunikation alt efter hvem jeg snakker med til trods for forskelligheder af meninger"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg gør en indsats i at arbejde med mig selv.</p>
+            <label class="checkred">
+                <input type="checkbox">
+                <textarea id="input15" placeholder="Eksempel: Jeg modtager feedback uden at sige andet end TAK"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
         </div>
         
         </div>
@@ -316,9 +544,9 @@
         
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
     </div>
@@ -329,7 +557,28 @@
   <div class="mus-skema-box">
         <div class="top-color-side-blue"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
         
         <div class="mus-skema-value-wrapper">
         
@@ -338,8 +587,8 @@
             
             <div class="mus-skema-value-txt1">
             <span style="color:#6696ad">
-            <p class="txthline-skema">God karma</p></span>
-            <p class="txtbold">Vi møder alle med tillid og åbenhed; det gør en forskel</p></div>
+            <p class="txthline-skema">Ha’ det sjovt</p></span>
+            <p class="txtbold">Vi har det sjovt, men arbejder hårdt og når vores mål.</p></div>
             
         </div>
         
@@ -349,26 +598,61 @@
             </div>
         </div>
         
-        <div class="mus-skema-value-main">
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-       
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
-        
-        <textarea name="" id="" style="height: 50px"></textarea>
+  <div class="mus-skema-value-main">
+           
+           <div class="mus-skema-value-maintxt">
+           <p class="txtregu">Jeg skaber eller oplever glæde når jeg er på arbejde.</p>
+            <label class="checkblue">
+                <input type="checkbox">
+                <textarea id="input16" placeholder="Eksempel: Jeg spørger en kollega om han/hun vil spille pool eller lignende"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg benytter mig af de muligheder, der stilles til rådighed af House of Code.</p>
+            <label class="checkblue">
+                <input type="checkbox">
+                <textarea id="input17" placeholder="Eksempel: Badminton, personaleevents, “legerum”"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg skaber nye muligheder for at vi kan have det sjovt sammen.</p>
+            <label class="checkblue">
+                <input type="checkbox">
+                <textarea id="input18" placeholder="Eksempel: Aktivitetsudvalg, foreslår noget vi lave sammen"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg når altid mine opgaver for ugen.</p>
+            <label class="checkblue">
+                <input type="checkbox">
+                <textarea id="input19" placeholder="Eksempel: Holder mig inden for deadlines"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg bliver på arbejde til mine opgaver for dagen er udført.</p>
+            <label class="checkblue">
+                <input type="checkbox">
+                <textarea id="input20" placeholder="Eksempel:"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
         </div>
         
         </div>
         
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
     </div>
@@ -379,8 +663,29 @@
   <div class="mus-skema-box">
         <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
         
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
           
            <div class="mus-skema8-txt">
                <p class="txthline-skema">Det kommende år</p>
@@ -394,22 +699,22 @@
           <div class="mus-skema8-box-wrapper">
            <div class="mus-skema8-box">
                <label for="" class="skema8-label"><p class="txtbold">Faglige stærke sider</p></label>
-               <textarea placeholder="Skriv her.." name="" id="skema8"></textarea>
+               <textarea placeholder="Skriv her.." id="input21" class="skema8"></textarea>
            </div>
                         
            <div class="mus-skema8-box">
-               <label for="" class="skema8-label"><p class="txtbold">Faglige stærke sider</p></label>
-               <textarea placeholder="Skriv her.." name="" id="skema8"></textarea>
+               <label for="" class="skema8-label"><p class="txtbold">Faglige udviklingsområder</p></label>
+               <textarea placeholder="Skriv her.." id="input22" class="skema8"></textarea>
            </div>
            
            <div class="mus-skema8-box">
-               <label for="" class="skema8-label"><p class="txtbold">Faglige stærke sider</p></label>
-               <textarea placeholder="Skriv her.." name="" id="skema8"></textarea>
+               <label for="" class="skema8-label"><p class="txtbold">Personlige stærke sider</p></label>
+               <textarea placeholder="Skriv her.." id="input23" class="skema8"></textarea>
            </div>
            
            <div class="mus-skema8-box">
-               <label for="" class="skema8-label"><p class="txtbold">Faglige stærke sider</p></label>
-                <textarea placeholder="Skriv her.." name="" id="skema8"></textarea>
+               <label for="" class="skema8-label"><p class="txtbold">Personlige udviklingsområder</p></label>
+                <textarea placeholder="Skriv her.." id="input24" class="skema8"></textarea>
            </div>
            </div>
         
@@ -417,9 +722,9 @@
         
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
     </div>
@@ -429,7 +734,29 @@
   <div class="mus-skema-box">
         <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
+        
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
         
         <div class="mus-skema8-txt">
            <p class="txthline-skema">Dine mål</p>
@@ -463,18 +790,18 @@
             
             <br>
             <div class="skema9-tal">1</div>
-            <textarea placeholder="Skrive her.." name="" id="skema9"></textarea>
+            <textarea placeholder="Skrive her.." id="input25" class="skema9"></textarea>
             <div class="skema9-tal">2</div>
-            <textarea placeholder="Skrive her.." name="" id="skema9"></textarea>
+            <textarea placeholder="Skrive her.." id="input26" class="skema9"></textarea>
             <div class="skema9-tal">3</div>
-            <textarea placeholder="Skrive her.." name="" id="skema9"></textarea>
+            <textarea placeholder="Skrive her.." id="input27" class="skema9"></textarea>
         </div>
         
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
     </div>
@@ -484,7 +811,29 @@
   <div class="mus-skema-box">
         <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
+        
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
         
         <div class="mus-skema8-txt">
             <p class="txthline-skema">Udviklingsplan</p>
@@ -496,28 +845,28 @@
             <br>
             
             <p class="txtbold">Hvad vil du udvikle?</p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." id="input28" class="skema10"></textarea>
         
             <p class="txtbold">Hvordan vil du gøre det? </p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..."  id="input29" class="skema10"></textarea>
             
             <p class="txtbold">Hvilke ressourcer får du brug for? </p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." id="input30" class="skema10"></textarea>
             
             <p class="txtbold">Hvordan vil du måle fremgang/resultater? </p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." id="input31" class="skema10"></textarea>
             
             <p class="txtbold">Hvornår vil du gøre det? </p>
-            <textarea placeholder="Skriv her..." name="" id="skema10" ></textarea>
+            <textarea placeholder="Skriv her..." id="input32" class="skema10"></textarea>
         </div>
         
         
         
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Næste</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Næste</a></li>
             </ul>
      </div>
     </div>
@@ -527,7 +876,29 @@
   <div class="mus-skema-box">
         <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
+        
+           <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                </ul>
+          </div>
         
         
         <div class="skema11-txt">
@@ -541,28 +912,49 @@
             </p>
             <br>
             <br>
-            <p class="txtbold">Karmapoint optjent</p>
-            <p class="karma-skema">100</p>
+    
         </div>
         
         
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
-              <li><a href="#" class="btn">Preview</a></li>
-              <li><a href="#" class="btn">Send nu</a></li>
+             <li><a href="#" class="btn" onclick="next(-1)">Tilbage</a></li>
+              <li><a href="#" class="btn" onclick="next(2);showPreview()">Preview</a></li>
+              <li><a href="#" class="btn" onclick="next(1)">Send nu</a></li>
             </ul>
      </div>
     </div>
     
                      <!----STEP 12----->
-                <!--Tak for din besvarelse-->
-
-  <div class="mus-skema-box">
+                        <!--Afslut-->
+                
+                
+  <div id="sendNu" class="mus-skema-box">
         <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
-    
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
+            <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                </ul>
+          </div>
+            
        <div class="skema11-txt">
        <img src="images/checkicon.png" alt="">
         <p class="txtbold">
@@ -574,10 +966,12 @@
             Dit skema er nu sendt til modtagerne og din karmascore er opdateret.
         </p>
         <br>
+        <p class="txtbold">Karmapoint optjent</p>
+            <p class="karma-skema">100</p>
         </div>
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Tilbage</a></li>
+              <li><a href="mus-side.html" class="btn" id="center">Afslut</a></li>
             </ul>
      </div>
     </div>
@@ -587,74 +981,287 @@
                            <!--Preview-->
 
   <div class="mus-skema-box">
+       
         <div class="top-color-side"> 
               <h3 class="boxheadlines">MUS-Skema</h3> </div>
-        <div class="top-color"></div>
-        
+        <div class="top-color">
+            <span class="close-skema">
+            <a class="close" href="mus-side.html">&times;</a>
+              </span>
+        </div>
+        <div class="previewtxt"> 
+                            <!-- Progressbar-->
+          <div class="container">
+              <ul class="progressbar">
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li class="active"></li>
+                  <li></li>
+                </ul>
+          </div>
+          
+          
+          
         <div class="mus-skema8-txt">
             <p class="txtbold">Herunder ser du et preview af det udfyldte MUS-skema. Du kan stadig redigere i skemaet ved at trykke på rediger-ikonet i højre hjørne af den grå boks. </p>
             <br>
-            <div class="pbox">
-               <div class="pbox-header">
-                  <img class="rediger"src="images/rediger.png" alt="">
-                   <img class="pbox-img" src="images/icongreen.png" alt="">
-                   <div class="pbox-hline">
+            <br>
+            
+        <!--preview skema1-->
+        <div class="pbox">
+            <div class="pbox-header">
+                <img class="rediger"src="images/rediger.png" alt="">
+                <img class="pbox-img" src="images/icongreen.png" alt="">
+                <div class="pbox-hline">
                    <p class="txthline-skema"><span style="color: #a6bb75">Højt drive</span>
-                   </p>
-                   </div>
-                   <div class="pbox-txt">
+                </p>
+                </div>
+                <div class="pbox-txt">
                    <p class="txtbold">Vi er passionerede appudviklere der brænder for at levere awesome løsninger</p>
-                   <br>
-                   </div>
-               </div>
+                    <br>
+                </div>
+             </div>
+                   
+                   
+                  <div class="mus-skema-value-maintxt">
+           <p class="txtregu">Jeg arbejder med mit eget fagområde uden for arbejdstiden.</p>
+            <label class="checkgreen">
+                <input type="checkbox" checked>
+                <textarea id="output1" placeholder="Eksempel: Når jeg har fri arbejder jeg på mine egne projekter" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg opsøger ny viden inden for mit eget og andres fagområder i og uden for arbejdstiden.</p>
+            <label class="checkgreen">
+                <input type="checkbox" checked>
+                <textarea id="output2" placeholder="Eksempel: Jeg læser fagbøger for at udvide min horisont" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg deler min nye tilegnet viden med kolleger og dokumenterer dette</p>
+            <label class="checkgreen">
+                <input type="checkbox" checked>
+                <textarea id="output3" placeholder="Eksempel: Best practice deles på Slack/Confluence" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg holder mig opdateret omkring apps, design og arbejdsmetoder.</p>
+            <label class="checkgreen">
+                <input type="checkbox" checked>
+                <textarea id="output4" placeholder="Eksempel: Når jeg er færdig med mine opgaver, spørger jeg om andre har brug for hjælp" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+              
+              <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg opsøger selv nye opgaver der skaber værdi for House of Code eller giver input til eksisterende opgaver der skaber værdi for House of Code eller vores samarbejdspartnere</p>
+            <label class="checkgreen">
+                <input type="checkbox" checked>
+                <textarea id="output5" placeholder="Eksempel: Jeg læser bøger, artikler, følger med på LinkedIn" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+               
             </div>
         </div>
 
+       <!--preview skema2-->
         <div class="mus-skema8-txt">
             <div class="pbox">
                <div class="pbox-header">
                   <img class="rediger"src="images/rediger.png" alt="">
-                   <img class="pbox-img" src="images/iconpurple.png" alt="">
+                  <img class="pbox-img" src="images/iconpurple.png" alt="">
                    <div class="pbox-hline">
-                   <p class="txthline-skema"><span style="color: #aa81ac">Et stærkt team</span></p>
+                       <p class="txthline-skema"><span style="color: #aa81ac">Et stærkt team</span></p>
                    </div>
                    <div class="pbox-txt">
-                   <p class="txtbold">Vi spiller hinanden bedre. Derfor bygger vi på tætte relationer og et stærkt samarbejde, internt såvel som eksternt</p>
+                       <p class="txtbold">Vi spiller hinanden bedre. Derfor bygger vi på tætte relationer og et stærkt samarbejde, internt såvel som eksternt</p>
                    <br>
                    </div>
-               </div>
+                </div>
+                   
+                   
+                   <div class="mus-skema-value-maintxt">
+           <p class="txtregu">Jeg deler min nye tilegnet viden med kolleger og dokumenterer dette.</p>
+            <label class="checkpurple">
+                <input type="checkbox" checked>
+                <textarea id="output6" placeholder="Eksempel: Jeg opsøger selv pair programming"></textarea><span class="checkmark"></span>
+            </label>
+            </div>
+                   
+                   <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg omgås med mine kolleger i og uden for arbejdstiden.</p>
+            <label class="checkpurple">
+                <input type="checkbox" checked>
+                <textarea id="output7" placeholder="Eksempel: Tager i biografen, walk n’ talk, træner sammen" style=" height: auto"></textarea><span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg søger input på mine opgaver fra mine kolleger.</p>
+            <label class="checkpurple">
+                <input type="checkbox" checked>
+                <textarea id="output8" placeholder="Eksempel: Inden jeg afleverer en opgave, får jeg altid en kollegas øjne til at se på det" style="height: auto"></textarea><span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg giver feedback til mine kolleger på deres adfærd (konstruktiv såvel som positiv). </p>
+            <label class="checkpurple">
+                <input type="checkbox" checked>
+                <textarea name="" id="output9" placeholder="Eksempel: Tak fordi du altid tager i mod opgaver med et smil (Siges til en kollega)" style="height: auto"></textarea><span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg går også op i at være en god ambassadør for House of Code overfor de eksterne relationer.</p>
+            <label class="checkpurple">
+                <input type="checkbox" checked>
+                <textarea name="" id="output10" placeholder="Eksempel: Jeg omtaler aldrig personer eller virksomheden negativt i eksterne relationer" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
             </div>
         </div>
-        
+
+      <!--preview skema2-->
        <div class="mus-skema8-txt">
             <div class="pbox">
                <div class="pbox-header">
                   <img class="rediger"src="images/rediger.png" alt="">
                    <img class="pbox-img" src="images/iconred.png" alt="">
                    <div class="pbox-hline">
-                   <p class="txthline-skema"><span style="color: #d36d75">God karma</span></p>
+                       <p class="txthline-skema"><span style="color: #d36d75">God karma</span></p>
                    </div>
                    <div class="pbox-txt">
-                   <p class="txtbold">Vi møder alle med tillid og åbenhed; det gør en forskel</p>
+                       <p class="txtbold">Vi møder alle med tillid og åbenhed; det gør en forskel</p>
                    <br>
                    </div>
-               </div>
+                </div>
+                   
+                   <div class="mus-skema-value-maintxt">
+           <p class="txtregu">Jeg opsøger miner kolleger for at hjælpe dem.</p>
+            <label class="checkred">
+                <input type="checkbox" checked>
+                <textarea id="output11" placeholder="Eksempel: Jeg spørger mine kollegaer, når jeg kan se de er gået død i en opgave, om jeg skal hjælpe" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg bidrager med en god og positiv stemning hos House of Code.</p>
+            <label class="checkred">
+                <input type="checkbox" checked>
+                <textarea id="output12" placeholder="Eksempel: Siger godmorgen og farvel" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg gør noget godt for andre uden for House of Code.</p>
+            <label class="checkred">
+                <input type="checkbox" checked>
+                <textarea id="output13" placeholder="Eksempel: Arbejder frivilligt - fx Røde Kors, Coding Pirates" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg møder mine kolleger individuelt for at opnå bedst muligt fællesskab.</p>
+            <label class="checkred">
+                <input type="checkbox" checked>
+                <textarea id="output14" placeholder="Eksempel: Jeg tilpasser min kommunikation alt efter hvem jeg snakker med til trods for forskelligheder af meninger" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg gør en indsats i at arbejde med mig selv.</p>
+            <label class="checkred">
+                <input type="checkbox" checked>
+                <textarea id="output15" placeholder="Eksempel: Jeg modtager feedback uden at sige andet end TAK" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+              
             </div>
         </div>
 
+      <!--preview skema4-->
        <div class="mus-skema8-txt">
             <div class="pbox">
                <div class="pbox-header">
                    <img class="rediger"src="images/rediger.png" alt="">
                    <img class="pbox-img" src="images/iconblue.png" alt="">
                    <div class="pbox-hline">
-                   <p class="txthline-skema"><span style="color: #6696ad">Ha’ det sjovt</span></p>
+                       <p class="txthline-skema"><span style="color: #6696ad">Ha’ det sjovt</span></p>
                    </div>
                    <div class="pbox-txt">
-                   <p class="txtbold">Vi har det sjovt, men arbejder hårdt og når vores mål.</p>
+                       <p class="txtbold">Vi har det sjovt, men arbejder hårdt og når vores mål.</p>
                    <br>
                    </div>
-               </div>
+                </div>
+                   
+                    <div class="mus-skema-value-maintxt">
+           <p class="txtregu">Jeg skaber eller oplever glæde når jeg er på arbejde.</p>
+            <label class="checkblue">
+                <input type="checkbox" checked>
+                <textarea id="output16" placeholder="Eksempel: Jeg spørger en kollega om han/hun vil spille pool eller lignende" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg benytter mig af de muligheder, der stilles til rådighed af House of Code.</p>
+            <label class="checkblue">
+                <input type="checkbox" checked>
+                <textarea id="output17" placeholder="Eksempel: Badminton, personaleevents, “legerum”" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg skaber nye muligheder for at vi kan have det sjovt sammen.</p>
+            <label class="checkblue">
+                <input type="checkbox" checked>
+                <textarea id="output18" placeholder="Eksempel: Aktivitetsudvalg, foreslår noget vi lave sammen" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg når altid mine opgaver for ugen.</p>
+            <label class="checkblue">
+                <input type="checkbox" checked>
+                <textarea id="output19" placeholder="Eksempel: Holder mig inden for deadlines" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            
+            <div class="mus-skema-value-maintxt">
+            <p class="txtregu">Jeg bliver på arbejde til mine opgaver for dagen er udført.</p>
+            <label class="checkblue">
+                <input type="checkbox" checked>
+                <textarea id="output20" placeholder="Eksempel:" style="height: auto"></textarea>
+                <span class="checkmark"></span>
+            </label>
+            </div>
+               
             </div>
         </div>
         
@@ -674,12 +1281,16 @@
                </p>
                <br>
                <p class="txtregu-skema">Faglige stærke sider:</p>
+               <textarea id="output21" class="txt-preview1"></textarea>
                <br>
                <p class="txtregu-skema">Faglige udviklingsområder:</p>
+               <textarea id="output22" class="txt-preview1"></textarea>
                <br>
                <p class="txtregu-skema">Personlige stærke sider:</p>
+               <textarea id="output23" class="txt-preview1"></textarea>
                <br>
                <p class="txtregu-skema">Personlige udviklingsområder:</p>
+               <textarea id="output24" class="txt-preview1"></textarea>
                <br>
                </div>
             </div>
@@ -725,10 +1336,13 @@
             </p>
             <br>
             <p class="pbox-maal">1.</p>
+            <textarea id="output25" class="txt-preview1"></textarea>
             <br>
             <p class="pbox-maal">2.</p>
+            <textarea id="output26" class="txt-preview1"></textarea>
             <br>
             <p class="pbox-maal">3.</p>
+            <textarea id="output27" class="txt-preview1"></textarea>
             
                <br>
                </div>
@@ -751,14 +1365,19 @@
                <br>
                <br>
                <p class="txtregu-skema">Hvad vil du udvikle?</p>
+               <textarea id="output28" class="txt-preview1"></textarea>
                <br>
                <p class="txtregu-skema">Hvordan vil du gøre det? </p>
+               <textarea id="output29" class="txt-preview1"></textarea>
                <br>
                <p class="txtregu-skema">Hvilke ressourcer får du brug for?</p>
+               <textarea id="output30" class="txt-preview1"></textarea>
                <br>
                <p class="txtregu-skema">Hvordan vil du måle fremgang/resultater?</p>
+               <textarea id="output31" class="txt-preview1"></textarea>
                <br>
                <p class="txtregu-skema">Hvornår vil du gøre det?</p>
+               <textarea id="output32" class="txt-preview1"></textarea>
                <br>
                </div>
             </div>
@@ -768,16 +1387,17 @@
        
          <div class="mus-skema-bottum">
             <ul>
-              <li><a href="#" class="btn">Afbryd</a></li>
+              <li><a href="#" class="btn" onclick="next(-2)">Tilbage</a></li>
               <li><a href="#" class="btn">Gem</a></li>
-              <li><a href="#" class="btn">Send nu</a></li>
+              <li><a href="#" class="btn" onclick="next(-1)">Send nu</a></li>
             </ul>
+     </div>
      </div>
     </div>
 
 
-</main>  
-
+</main> 
+ 
 
 </body>
 </html>
