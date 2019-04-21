@@ -4,6 +4,7 @@
 var currentSkema = 0; 
 showTab(currentSkema); 
 
+
 function showTab(n){
     
     var x = document.getElementsByClassName("mus-skema-box"); 
@@ -28,6 +29,7 @@ var x = document.getElementsByClassName("mus-skema-box");
 //Funktion som viser den skrevende tekst når brugeren trykker på preview 
 
 function showPreview() {
+
     
     //skema - Højt drive
     var outputSkema1 = document.getElementById("input1").value; 
