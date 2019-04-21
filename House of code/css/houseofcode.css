@@ -15,29 +15,40 @@ body{
   background-color: #515f6d;
 }
 video  {
-  height: auto;
-  vertical-align: middle;
-  width: 100%;
-  opacity: 0.3;
-
+ 	height: auto;
+  	vertical-align: middle;
+  	width: 100%;
+ 	opacity: 0.3;
 }
-
+.btnLP{
+	margin: 600px auto;
+    height: 40px;
+	width: 130px;
+    background-color: #dba45c;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    text-align: center;
+	justify-content: center;
+  	position: absolute;
+  	top: 0; right: 0; bottom: 0; left: 0;
+  	display: flex;
+}
 .overlay-head {
   color: #ffffff;
   align-items: top;
-  margin-top: 120px;
+  margin-top: 110px;
 }
 .overlay-mans {
-  margin-right: 10px;
-  margin-top: 200px;
+  margin: 200px auto;
+  
   font-size: 20px;
   text-align: center;
   
 }
 .overlay-bull {
-  margin-top: 430px;
+  margin: 450px auto;
   font-size: 16px;
-  margin-left: 30px;
 }
 .newspaper {
 	column-count: 2;
@@ -296,8 +307,10 @@ aside{
 /* TEXT */
 
 h1 {
-	font-size: 50px;
+	font-size: 60px;
 	color: #ffffff;
+	margin: 0px auto;
+	text-align: center;
 	
 }
 
@@ -2292,8 +2305,30 @@ img {
 
 /* responsiv LP */ 
 @media screen and (max-width: 600px) {
-    {
-  
 
-    }
+  .overlayall{
+  width: 90%;
+  position: block;
+}
+	h1{
+		font-size: 30px;
+	}
+.overlay-head {
+  align-items: top;
+  margin: 30px auto;
+}
+
+.overlay-bull {
+  margin: 200px auto;
+  font-size: 12px;
+}
+.hidden {
+		display: none;
+	}
+.btnLP{
+	margin: 350px auto;
+	width: auto;
+ 
+}
+
 }
