@@ -613,46 +613,66 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-.mus-skema progress{
-    width: 80%; 
-    display: table; 
-    margin-right: auto; 
-    margin-left: auto; 
-    margin-top: 80px;
-    background-color: beige; 
-    height: 5px; 
+/*progress bar*/
 
-}
-
-progress::-webkit-progress-bar {
-    background-color: white; 
-  /* style rules */
-}
-progress::-webkit-progress-value {
-    background-color: #515f6d; 
-  /* style rules */
-}
-
-.style-indicator{
-    width: 90%; 
+.container {
+    width: 80%;
     display: table; 
     margin-left: auto; 
     margin-right: auto; 
-    margin-top: -1.1%; 
+    padding-top: 20px; 
 }
+  .progressbar {
+      counter-reset: step;
+    
+  }
+
+  .progressbar li {
+      list-style-type: none;
+      width: 7%;
+      display: inline-block; 
+      position: relative;
+      color: white; 
+      font-size: 0pt; 
+      z-index: 1;
+  }
+
+  .progressbar li:before {
+      width: 10px;
+      height: 10px;
+      content: counter(step);
+      counter-increment: step;
+      line-height: 30px;
+      border: 2px solid #516f6d;
+      display: block;
+      text-align: center;
+      border-radius: 50%;
+      background-color: white;
+  }
+
+  .progressbar li:after {
+      width: 100%;
+      height: 2px;
+      content: '';
+      position: absolute;
+      background-color: transparent;  
+      top: 6px;
+      left: -80%;
+      z-index: -1;
+  }
+  .progressbar li:first-child:after {
+      content: none;
+  }
 
 
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 25.3px;
-  background-color: #515f6d;
-  border: none;  
-  border-radius: 50%;
-  display: inline-block; 
-}
-
+  .progressbar li.active:before {
+      border-color: #516f6d;
+      background-color: #516f6d;
+      
+  }
+  .progressbar li.active:after {
+      background-color: #516f6d; 
+  }
 
 
 /*indstillinger mus-skema-værdier*/
