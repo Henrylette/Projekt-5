@@ -12,9 +12,9 @@ body{
 
 .video-container {
   position: relative;
-		background-color: #515f6d;
+  background-color: #515f6d;
 }
-video {
+video  {
   height: auto;
   vertical-align: middle;
   width: 100%;
@@ -24,27 +24,31 @@ video {
 
 .overlay-head {
   color: #ffffff;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  display: flex;
   align-items: top;
-  justify-content: left;
-  margin-left: 60px;
   margin-top: 120px;
 }
 .overlay-mans {
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  display: flex;
-  margin-left: 62px;
+  margin-right: 10px;
   margin-top: 200px;
+  font-size: 20px;
+  text-align: center;
+  
 }
 .overlay-bull {
+  margin-top: 430px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+.newspaper {
+	column-count: 2;
+}
+.overlayall{
+  width: 100%;
+  justify-content: center;
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   display: flex;
-  margin-left: 35px;
-  margin-top: 300px;
+  color: white;
 }
 
 /* Landing Page end */
@@ -2294,4 +2298,10 @@ img {
     }
 }
 
+/* responsiv LP */ 
+@media screen and (max-width: 600px) {
+    {
+  
 
+    }
+}
