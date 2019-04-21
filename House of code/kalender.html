@@ -10,25 +10,27 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <script src="main.js" defer></script>
+    <script src="../House of code/javascript/kalender.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript/kalender.js" defer></script>
+    <script src="javascript/begivenhed.js" defer></script>
 </head>
 <body>
  
 <!--HEADER-->
 
 <header>
-  <div class="logo"><img class="logoimg" src="images/logo.png" /></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Dashboard</a></li>
-      <li><a href="mus-side.html">MUS-side</a></li>
-      <li><a class="active" href="kalender.html">Kalender</a></li>
-      <li><a href="noter.html">Noter</a></li>
-    </ul>
-    <ul class="rightside">
-      <li class="logknap"><a href="#">Log ud</a></li>
-    </ul>
-  </nav>
+  <div class="logo"><img class="logoimg" src="images/logo.png" alt="ed logo"/></div>
+  <div class="topnav" id="myTopnav">
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html">Dashboard</a>
+      <a href="mus-side.html">MUS-side</a>
+      <a class="active" href="kalender.html">Kalender</a>
+      <a href="noter.html">Noter</a>
+      <a class="logknap" href="#">Log ud</a>
+  </div>
 </header>
 
 <!--ASIDE-->
@@ -48,31 +50,39 @@
    
 <main class="main-style">
     <div class="column">
-       
+
         <div class="boxl">
             <div class="topdb">
                 <h3 class="boxheadlines">Kalender</h3>
-                <div class="container">
-                    <div class="month">
-                        <ul>
-                            <li class="prev">&#10094;</li>
-                            <li class="next">&#10095;</li>
-                            <li>April<br><span style="font-size:18px">2019</span></li>
-                        </ul>
-                    </div>
-                
-                    <ul class="weekdays">
-                        <li>Man</li>
-                        <li>Tirs</li>
-                        <li>Ons</li>
-                        <li>Tors</li>
-                        <li>Fre</li>
-                        <li>Lør</li>
-                        <li>Søn</li>
-                    </ul>
-                
-                    <ul class="days">
-                    </ul>
+            </div>
+
+
+            <div class="container">
+                <div class="monthbox">
+                <div class="month"><a class="prev" onclick="fetchCalendar('prev');">&#10094;</a> <a id="monthName">(dette bliver slettet af JS)</a>
+                    <a class="next" onclick="fetchCalendar('next');">&#10095;</a>
+                </div>
+            </div>  
+                <div class="week">
+                    <div class="weekdays">Man</div>
+                    <div class="weekdays">Tirs</div>
+                    <div class="weekdays">Ons</div>
+                    <div class="weekdays">Tors</div>
+                    <div class="weekdays">Fre</div>
+                    <div class="weekdays">Lør</div>
+                    <div class="weekdays">Søn</div>   
+                </div>
+                <div class="datoer" id="monthDays">
+                    <div class="dage"> <a>1</a> </div>
+                    <div class="dage"> <a>2</a> </div>
+                    <div class="dage"> <a>3</a> </div>
+                    <div class="dage"> <a>4</a> </div>
+                    <div class="dage"> <a>5</a> </div>
+                    <div class="dage"> <a>6</a> </div>
+                    <div class="dage"> <a>7</a> </div>
+                    <div class="dage"> <a>8</a> </div>
+                    <div class="dage"> <a>9</a> </div>
+                    <div class="dage"> <a>10</a> </div>
                 </div>
             </div>
         </div>
@@ -117,11 +127,79 @@
                 <h4>Husmøde</h4>
                 <p class="smalltxt">Kl. 09.00<br>House of Code</p>
             </div>
-                <ul><a href="#" class="btn">Opret begivenhed</a></ul>
+                <ul><button id="btn1" class="btn">Opret begivenhed</button></ul>
         </div>
         
     </div>
-</main>
     
+<!-- Pop-up -->
+<div id="myModal" class="modal">
+<!-- Pop-up content -->
+    <div class="popupbox1">
+        <div class="topdb">
+            <h3 class="boxheadlines">Ny note</h3>
+            <span class="close">&times;</span>
+        </div>
+             
+            <div class="poptxt">
+                <p class="txtbold">Her opretter du en begivenhed for alle eller udvalgte medarbejdere hos House of Code</p>    
+            </div>
+              
+                <div class="popfelt">
+                    
+                    <textarea id="subject1" name="subject" placeholder="Begivenhedens navn..."></textarea>
+           
+                    <textarea id="subject1" name="subject" placeholder="Lokation…"></textarea>
+  
+                    <textarea id="subject" name="subject" placeholder="Skriv din note her..." style="height:200px"></textarea>
+        
+                    <textarea id="subject2" name="subject" placeholder="Dato (dd-mm-yyyyy)" style="height: 42px"></textarea>
+        
+                    <textarea id="subject3" name="subject" placeholder="Tidspunkt (hh:mm)" style="height: 42px"></textarea>
+        
+                    <textarea id="subject1" name="subject" placeholder="Hvem skal inviteres? Start med at taste et navn…"></textarea>
+        
+                    <textarea id="subject1" name="subject" placeholder="Medorganisatorer? Start med at taste et navn…"></textarea>
+                 </div>
+                      
+                <div class="poptxt1">
+                <p class="txtregu">Vælg den værdi som matcher begivenheden:</p>    
+                </div>   
+                       <div>
+                        <label class="containerpopup1">Højt drive
+                            <input type="checkbox" checked="checked">
+                            <img src="images/icongreen.png">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerpopup2">Et stærkt team
+                            <input type="checkbox">
+                            <img src="images/iconpurple.png">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerpopup3">God karma
+                            <input type="checkbox">
+                            <img src="images/iconred.png">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerpopup4">Ha' det sjovt
+                            <input type="checkbox">
+                            <img src="images/iconblue.png">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+
+                        
+                    <ul>
+                        <a href="kalender.html" class="btn4">Gem &amp; opret</a>
+                    </ul>
+                        
+    </div>
+</div>
+                        
+</main>
 </body>
 </html>

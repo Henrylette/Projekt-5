@@ -10,24 +10,27 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript/burgermenu.js" defer></script>
+    <script src="javascript/Klip.js" defer></script>
+    <script src="javascript/Klipinputtxt.js" defer></script>
 </head>
 <body>
   
 <!--HEADER-->
  
 <header>
-  <div class="logo"><img class="logoimg" src="images/logo.png" /></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Dashboard</a></li>
-      <li><a class="active" href="mus-side.html">MUS-side</a></li>
-      <li><a href="kalender.html">Kalender</a></li>
-      <li><a href="noter.html">Noter</a></li>
-    </ul>
-    <ul class="rightside">
-      <li class="logknap"><a href="#">Log ud</a></li>
-    </ul>
-  </nav>
+  <div class="logo"><img class="logoimg" src="images/logo.png" alt="ed logo"/></div>
+  <div class="topnav" id="myTopnav">
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html">Dashboard</a>
+      <a class="active" href="mus-side.html">MUS-side</a>
+      <a href="kalender.html">Kalender</a>
+      <a href="noter.html">Noter</a>
+      <a class="logknap" href="#">Log ud</a>
+  </div>
 </header>
 
 <!--ASIDE-->
@@ -51,18 +54,19 @@
             <div class="topdb">
                 <h3 class="boxheadlines">MUS-skemaer til udfyldning</h3>
             </div>
-            <ul><a href="#" class="btn">Udfyld MUS-skema</a></ul>
+            <ul><a href="mus-skema.html" class="btn">Udfyld MUS-skema</a></ul>
         </div>
         
         <div class="boxs">
             <div class="topdb">
                 <h3 class="boxheadlines">MUS-klip</h3>
             </div>
+            <img src="images/Tickets-one-used.png" class="klip-musside">
             <div class="textpartmus">
                 <p class="txtbold">Har du brug for en ekstra eller opfølgende MUS-samtale med din leder? </p>
                 <p class="txtregu">Her kan du anmode om en samtale med nogle få klik - og du har hele 3 samtaler til rådighed, udover din obligatoriske samtale.</p>
             </div>
-            <ul><a href="#" class="btn">Anmod om samtale</a></ul>
+            <ul><button id="btn1" class="btn">Anmod om samtale</button></ul>
         </div>
     </div>
       
@@ -71,8 +75,38 @@
             <div class="topdb">
                 <h3 class="boxheadlines">MUS-skema arkiv</h3>
             </div>
+            <img src="images/folders.png" class="mapper-skemaer" alt="mapper til mus skemaer">
         </div>
     </div>
+    
+<!-- Pop-up -->
+<div id="myModal" class="modal">
+<!-- Pop-up content -->
+    <div class="popupbox">
+        <div class="topdb">
+            <h3 class="boxheadlines">Ny note</h3>
+            <span class="close">&times;</span>
+        </div>
+             
+
+            <div class="poptxt">
+               <img src="images/single-ticket.png" class="klip">
+                <p class="txtbold">Du bruger nu et af dine MUS-klip</p>
+                <p class="txtregu">Anmodningen sendes til: <br>xxxxxxxx@houseofcode.dk</p>
+            </div>
+            
+            <button onclick="myFunction()" id="Btn" class="btn5">+ Tilføj tekst</button>
+              
+               <div class="popfelt">        
+                <span id="dots"></span><span id="more"><textarea id="subject" name="subject" placeholder="Skriv en besked her…" style="height:200px"></textarea></span>
+                </div>
+           
+                    <ul>
+                       <a href="mus-side.html" class="btn3">Annuller</a>
+                        <a href="mus-side.html" class="btn3">Send</a>
+                    </ul>
+    </div>
+</div>
 </main>
     
 </body>
