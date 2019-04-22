@@ -1586,7 +1586,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     user-select: none;
 	color: #D8A55B;
 }
-.prev, .next {
+.prev-button, .next-button {
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -1600,7 +1600,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .next {
   right: 0;
 }
-.prev:hover, .next:hover {
+.prev-button:hover, .next-button:hover {
   color: #515f6d;
 }
 .numbertext {

@@ -49,13 +49,13 @@ function rotateCarousel() {
   carousel.style.transform = 'translateZ(-182px) rotateY(' + angle + 'deg)';
 }
 
-var prevButton = document.querySelector('.prev');
+var prevButton = document.querySelector('.prev-button');
 prevButton.addEventListener( 'click', function() {
   selectedIndex--;
   rotateCarousel();
 });
 
-var nextButton = document.querySelector('.next');
+var nextButton = document.querySelector('.next-button');
 nextButton.addEventListener( 'click', function() {
   selectedIndex++;
   rotateCarousel();
