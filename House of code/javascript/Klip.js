@@ -1,3 +1,21 @@
+
+function myFun() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("Btn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "- Tilføj tekst"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+      btnText.innerHTML = "+ Tilføj tekst";
+    moreText.style.display = "inline";
+  }
+}
+
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
