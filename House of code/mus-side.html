@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="javascript/Klip.js" defer></script>
+    <script src="javascript/popup.js" defer></script>
     <script src="javascript/burgermenu.js" defer></script>
 </head>
 <body>
@@ -67,7 +67,7 @@
                 <p class="txtbold">Har du brug for en ekstra eller opfølgende MUS-samtale med din leder? </p>
                 <p class="txtregu">Her kan du anmode om en samtale med nogle få klik - og du har hele 3 samtaler til rådighed, udover din obligatoriske samtale.</p>
             </div>
-            <ul><button id="btn1" class="btn">Anmod om samtale</button></ul>
+            <ul><button onclick="openKlip()" class="btn">Anmod om samtale</button></ul>
         </div>
     </div>
       
@@ -81,12 +81,12 @@
     </div>
        
       <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="klip" class="modal">
 <!-- Modal content -->
     <div class="popupbox">
         <div class="topdb">
             <h3 class="boxheadlines">Ny note</h3>
-            <span class="close">&times;</span>
+            <span onclick="closeKLip()" class="close">&times;</span>
         </div>
              
 
@@ -96,14 +96,12 @@
                 <p class="txtregu">Anmodningen sendes til: <br>xxxxxxxx@houseofcode.dk</p>
             </div>
             
-            <button onclick="myFun()" id="Btn" class="btn5">- Tilføj tekst</button>
-              <div class="popfelt"><span id="dots"></span>        
-                <span id="more"><textarea id="subject" name="subject" placeholder="Skriv en besked her…" style="height:200px"></textarea></span>
-                </div>
+                     
+       <textarea id="subject" name="subject" placeholder="Skriv en besked her…" style="height:200px"></textarea>
            
                     <ul>
-                       <a href="mus-side.html" class="btn3">Annuller</a>
-                        <a href="mus-side.html" class="btn3">Send</a>
+                       <button onclick="closeKlip()" class="btn3">Annuller</button>
+                       <buttom onclick="closeKlip()" class="btn3">Send</buttom>
                     </ul>
                 
     </div>
