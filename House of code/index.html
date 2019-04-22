@@ -8,8 +8,8 @@
     <link href="css/houseofcode.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="javascript/notergenvej.js" defer></script>
     <script src="javascript/burgermenu.js" defer></script>
+    <script src="javascript/popup.js" defer></script>
 </head>
 <body>
  
@@ -107,7 +107,7 @@
                 <h3 class="boxheadlines">MUS-klip overblik</h3>
             </div>
             <img class="klipimg" src="images/Tickets-one-used.png" alt="mus-klip">
-            <ul><a href="#" class="btn">Anmod om samtale</a></ul>
+            <ul><button onclick="openKlip()" class="btn">Anmod om samtale</button></ul>
         </div>
         
         <div class="boxxs">
@@ -123,18 +123,18 @@
                 <h3 class="boxheadlines">Noter</h3>
             </div>
             <img class="notesblok" src="images/notesblok.png" alt="notesblok">
-            <ul><button id="btn1" class="btn">Tilføj ny note</button></ul>
+            <ul><button onclick="openNoter()" class="btn">Tilføj ny note</button></ul>
         </div>
         
     </div>
     
 <!-- Pop-up -->
-<div id="myModal" class="modal">
+<div id="noter" class="modal">
 <!-- Pop-up content -->
     <div class="popupbox">
         <div class="topdb">
             <h3 class="boxheadlines">Ny note</h3>
-            <span class="close">&times;</span>
+            <span onclick="closeNoter()" class="close">&times;</span>
         </div>
              
             <div class="poptxt">
@@ -165,12 +165,38 @@
                         </label>
                     </div>
                     <ul>
-                       <a href="index.html" class="btn3">Annuller</a>
-                        <a href="index.html" class="btn3">Gem i Noter</a>
+                       <button onclick="closeNoter()" class="btn3">Anuller</button>
+                       <buttom onclick="closeNoter()" class="btn3">Gem i noter</buttom>
                     </ul>  
     </div>
 </div>
 
+<div id="klip" class="modal">
+<!-- Modal content -->
+    <div class="popupbox">
+        <div class="topdb">
+            <h3 class="boxheadlines">Ny note</h3>
+            <span onclick="closeKlip()" class="close">&times;</span>
+        </div>
+             
+
+            <div class="poptxt">
+               <img src="images/single-ticket.png" class="klip">
+                <p class="txtbold">Du bruger nu et af dine MUS-klip</p>
+                <p class="txtregu">Anmodningen sendes til: <br>xxxxxxxx@houseofcode.dk</p>
+            </div>
+        
+                      
+            <textarea id="subject" placeholder="Skriv en besked her…" style="height:200px"></textarea>
+                
+           
+                    <ul>
+                        <button onclick="closeKlip()" class="btn3">Anuller</button>
+                       <buttom onclick="closeKlip()" class="btn3">Send</buttom>
+                    </ul>
+                
+    </div>
+</div>
 </main>
     
 </body>
