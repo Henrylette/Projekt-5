@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"/>
 	<script src="main.js" defer></script>
-	<script src="javascript/noter.js" defer></script>
+	<script src="javascript/popup.js" defer></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/burgermenu.js" defer></script>
 </head>
@@ -78,7 +78,7 @@
 		
 							<!-- NY NOTE BOTTON-->   
                 <ul>
-                    <button id="btn1" class="btn">Tilføj ny note</button>
+                    <button onclick="openNoter1()" class="btn">Tilføj ny note</button>
                 </ul>
 </div>
         
@@ -115,7 +115,7 @@
 			
 			
                 <ul>
-                    <button id="btn2" class="btn">Tilføj ny note</button>
+                    <button onclick="openNoter1()" class="btn">Tilføj ny note</button>
                 </ul>
         </div>
     </div>
@@ -130,12 +130,12 @@
     </div>
     
 <!-- Pop-up -->
-<div id="myModal" class="modal">
+<div id="noter1" class="modal">
 <!-- Pop-up content -->
     <div class="popupbox">
         <div class="topdb">
             <h3 class="boxheadlines">Ny note</h3>
-            <span class="close">&times;</span>
+            <span onclick="closeNoter1" class="close">&times;</span>
         </div>
              
             <div class="poptxt">
@@ -159,8 +159,8 @@
 
                     </div>
                     <ul>
-                       <a href="noter.html" class="btn3">Annuller</a>
-                        <a href="noter.html" class="btn3">Gem i Noter</a>
+                       <button onclick="closeNoter1()" class="btn3">Anuller</button>
+                       <buttom onclick="closeNoter1()" class="btn3">Gem i noter</buttom>
                     </ul>
                 
     </div>
