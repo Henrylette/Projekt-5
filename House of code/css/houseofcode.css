@@ -6,13 +6,17 @@
 body{
     background-color: #f7f7f7;
     font-family: "roboto";
+	
 }
 
 /* Landing Page */
-
+main{
+	height: auto;
+}
 .video-container {
   position: relative;
   background-color: #515f6d;
+	
 }
 video  {
  	height: auto;
@@ -21,7 +25,7 @@ video  {
  	opacity: 0.3;
 }
 .btnLP{
-	margin: 600px auto;
+	margin: 600px auto 0px;
     height: 40px;
 	width: 130px;
     background-color: #dba45c;
@@ -35,13 +39,11 @@ video  {
   	display: flex;
 }
 .overlay-head {
-  color: #ffffff;
   align-items: top;
   margin-top: 110px;
 }
 .overlay-mans {
   margin: 200px auto;
-  
   font-size: 20px;
   text-align: center;
   
@@ -1592,7 +1594,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
   width: auto;
   color: #D8A55B;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 30px;
   transition: 0.6s ease;
 }
 
