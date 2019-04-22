@@ -50,7 +50,7 @@
    
 <main class="main-style">
     <div class="column">
-        <div class="boxl" id="responsiveboks">
+        <div class="boxl">
             <div class="topdb">
                 <h3 class="boxheadlines">MUS-skemaer til udfyldning</h3>
             </div>
@@ -61,19 +61,25 @@
             <button class="skiftv" onclick="plusDivs(-1)">&#10094;</button>
             <button class="skiftr" onclick="plusDivs(+1)">&#10095;</button>
             </div>
-            <ul><a href="mus-skema.html" class="btn">Udfyld MUS-skema</a></ul>
+            <div class="knapkasse">
+            <a href="mus-skema.html" class="btn">Udfyld MUS-skema</a></div>
         </div>
         
         <div class="boxs">
             <div class="topdb">
                 <h3 class="boxheadlines">MUS-klip</h3>
             </div>
+            <div class="skemacontainer">
             <img src="images/Tickets-one-used.png" class="klip-musside">
             <div class="textpartmus">
                 <p class="txtbold">Har du brug for en ekstra eller opfølgende MUS-samtale med din leder? </p>
                 <p class="txtregu">Her kan du anmode om en samtale med nogle få klik - og du har hele 3 samtaler til rådighed, udover din obligatoriske samtale.</p>
             </div>
+            </div>
+            
+
             <ul><li onclick="openKlip()" class="btn">Anmod om samtale</li></ul>
+
         </div>
     </div>
       

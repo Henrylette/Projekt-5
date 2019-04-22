@@ -288,7 +288,7 @@ aside{
 }
 
 
-/* MUS skema og kalender*/
+/* MUS skema box og kalender box*/
 .boxl{
     height: 600px;
     float: left;
@@ -456,7 +456,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 .klip-musside{
     width: 70%;
-    margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 15%;
 }
@@ -468,8 +467,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 .skemacontainer {
     width: 100%;
-    height: auto;
-    margin-bottom: 35px;
+    height: 350px;
+    margin-top: 100px;
 }
 .skiftv {
     font-size: 30px;
@@ -497,17 +496,15 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 80%; 
     margin-right: auto; 
     margin-left: auto; 
-    display: table; 
-    margin-top: 100px; 
+    display: table;  
 }
 
-@media screen and (max-width: 500px){
-    #responsiveboks{
-        height:auto;
-        padding-bottom: 5%; 
+.knapkasse{
+    width: 30%;
+    text-align: center;
+    height: 100px;
+    margin-left: 35%;
     }
-}
-
 
 
 /* KALENDER MAIN OMRÅDE*/
@@ -2381,6 +2378,21 @@ input[type=text], select {
         width: 92%;
         margin-left: 4%;
         margin-bottom: 20px;
+        height: 450px;
+    }
+    
+    .knapkasse{
+        width: 50%;
+        height: 100px;
+        text-align: center;
+        align-content: center;
+        margin-left: 25%;
+        margin-top: -100px;
+        
+    }
+    
+    .skemacontainer{
+        height: 350px;
     }
     
     .boxs{
