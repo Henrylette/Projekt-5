@@ -379,10 +379,10 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .txtregudb{                              /* ALT BRØDTEKST - REGULAR */
    float: left;
     font-weight: 300;
-    width: 85%;
-    font-size: 18px;
+    width: 75%;
+    font-size: 14px;
     color: #515f6d;
-    margin-top: 10px;
+    margin-top: 15px;
     padding-left: 20px;
 }
 
@@ -1569,7 +1569,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 	  margin: 40px auto;
 	  margin-top: 150px;
 	  perspective: 1000px;
-
 }
 
 .carousel {
@@ -1588,7 +1587,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 	  left: 10px;
 	  margin: 9px auto;
 	  padding: 5px 18px;
-	  border: 1px solid #515f6d;
+	  border: 1px solid #90a1a8;
 	  font-size: 10px;
 	  font-weight: bold;
 	  color: gray;
@@ -1610,40 +1609,51 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .carousel__cell:nth-child(3) { transform: rotateY( 120deg) translateZ(182px); }
 .carousel__cell:nth-child(4) { transform: rotateY(180deg) translateZ(182px); }
 .carousel__cell:nth-child(5) { transform: rotateY(240deg) translateZ(182px); }
-.carousel__cell:nth-child(6) { transform: rotateY(300deg) translateZ(182px); 
-}
+.carousel__cell:nth-child(6) { transform: rotateY(300deg) translateZ(182px); }
+
 .slideshow-container {
-    max-width: auto;
-    position: relative;
-	text-align: center;
-	margin-bottom: 90px;
-	cursor: pointer;
-    user-select: none;
-	color: #D8A55B;
+		max-width: 1000px;
+		position: relative;
+		text-align: center;
+		margin-bottom: 90px;
+		cursor: pointer;
+		user-select: none;
+		color: #D8A55B;
+		
 }
+
 .prev-button, .next-button {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  color: #D8A55B;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
+	  cursor: pointer;
+	  position: absolute;
+	  width: auto;
+	  color: #90a0a8;
+	  font-weight: bold;
+	  font-size: 30px;
+	  transition: 0.6s ease;
+	  margin: auto 23%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
 }
 .prev-button:hover, .next-button:hover {
-  color: #515f6d;
+ 	 color: #D8A55B;
 }
+
+.prev-button {
+		left: 0;
+		border-radius: 3px 0 0 3px;
+  }
+
+
 .numbertext {
-  color: #515f6d;
-  font-size: 11px;
-  padding: 10px 0px;
-  position: center;
-  top: 0;
+	  color: #515f6d;
+	  font-size: 11px;
+	  padding: 10px 0px;
+	  position: center;
+	  top: 0;
 }
 /* GULE KNAPPER */
 
