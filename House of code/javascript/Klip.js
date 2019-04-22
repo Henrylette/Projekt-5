@@ -6,11 +6,11 @@ function myFun() {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "- Tilføj tekst"; 
+    btnText.innerHTML = "+ Tilføj tekst"; 
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-      btnText.innerHTML = "+ Tilføj tekst";
+      btnText.innerHTML = "- Tilføj tekst";
     moreText.style.display = "inline";
   }
 }
