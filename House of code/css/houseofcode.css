@@ -2221,7 +2221,7 @@ input[type=text], select, textarea {
 
 /* indtil her */
 
-img {
+.imgicon {
   padding: 1px;
   width: 45px;
 }
@@ -2463,6 +2463,8 @@ main{
   margin: 510px auto;
   font-size: 13px;
   text-align: center;
-  
+    }
 }
-}
+
+/* responsiv til popuppen */
+
