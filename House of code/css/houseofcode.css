@@ -499,6 +499,12 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     display: table;  
 }
 
+.knapkasse{
+    width: 50%;
+    height: 100px;
+    margin-left: 25%;
+    }
+
 
 /* KALENDER MAIN OMRÅDE*/
 .containerkal{
