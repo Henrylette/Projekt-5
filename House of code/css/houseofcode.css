@@ -1831,7 +1831,8 @@ main ul{
 
 @media screen and (max-width: 600px){
     .popupbox{
-        width: 80%; 
+        width: 80%;
+        padding-bottom: 5%;
     }
     
 }
@@ -1916,6 +1917,12 @@ input[type=text], select {
     width: 50%; 
 }
 
+.tjek3{
+    float: left;
+    width: 100%;
+    padding-left: 40%;
+}
+
 @media screen and (max-width: 600px){
     .tjek1{
         width: 100%;
@@ -1925,6 +1932,10 @@ input[type=text], select {
     .tjek2{
         width: 100%;
         padding-left: 30%;
+    }
+    
+    .tjek3{
+        padding-left: 20%;
     }
     
 }
