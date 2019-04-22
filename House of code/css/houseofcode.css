@@ -457,11 +457,35 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-left: 15%;
     margin-top: 30px;
 }
+.skemacontainer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+.skiftv {
+    font-size: 30px;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    margin-left: 30%;
+    color: #90a0a8;
+    margin-top: 30px;  
+}
+.skiftr {
+    font-size: 30px;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    color: #90a0a8;
+}
+.skiftv:focus {outline:0;}
+.skiftr:focus {outline:0;}
+
 
 
 
 .skema-side{
-    width: 70%; 
+    width: 80%; 
     margin-right: auto; 
     margin-left: auto; 
     display: table; 
@@ -2483,6 +2507,4 @@ main{
   text-align: center;
     }
 }
-
-/* responsiv til popuppen */
 

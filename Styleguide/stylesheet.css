@@ -246,15 +246,39 @@ h1 {
     border: solid black 1px;
 }
 .iconbox {
+    width: 100%;
     display: inline-block;
-    margin-left: 35%;
+}
+.iconbox2 {
+    display: inline-block;
 }
 .icon1 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    background: red;
+}
+.icon2 {
     width: 100px;
     height: 100px;
     display: inline-block;
     box-sizing: border-box;
     padding: 10px 10px 10px 10px;
+}
+.icon3 {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+}
+.ibox {
+    width: 45%;
+    height: auto;
+    background: black;
+    display: inline-block;
 }
 
 
