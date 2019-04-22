@@ -48,6 +48,12 @@ video  {
   text-align: center;
   
 }
+.overlay-manssmart {
+  margin: 200px auto;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
 .overlay-bull {
   margin: 450px auto;
   font-size: 16px;
@@ -62,6 +68,9 @@ video  {
   top: 0; right: 0; bottom: 0; left: 0;
   display: flex;
   color: white;
+}
+.hiddentext{
+	visibility: hidden;
 }
 
 /* Landing Page end */
@@ -1658,8 +1667,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .prev-button {
 		left: 0;
 		border-radius: 3px 0 0 3px;
-  }
-
+ }
 
 .numbertext {
 	  color: #515f6d;
@@ -1714,64 +1722,6 @@ main ul{
 }
 
 
-.btn4 {
-    margin-left: auto;
-    margin-right: 7%;
-    margin-top: 20px;
-    width: auto;
-    height: 40px;
-    background-color: #dba45c;
-    font-family: 'Roboto';
-    color: white;
-    border: 0;
-    font-size: 16px;
-    padding: 12px;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    
-}
-
-.btn4:hover {
-    background: #515f6d;
-    transition: 0.4s;
-}
-
-.btn4:active {
-    background: #90a0a8;
-}
-
-.btn5 {
-    margin-left: 30%;
-    margin-right: 7%;
-    margin-top: 20px;
-    width: auto;
-    height: 40px;
-    background-color: white;
-    font-family: 'Roboto';
-    color: #90a0a8;
-    border: 0;
-    font-size: 16px;
-    padding: 12px;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    
-}
-
-.btn5:hover {
-    background: white;
-    transition: 0.4s;
-}
-
-.btn5:active {
-    background: #90a0a8;
-}
-
 /* herfra er det "pop-upes" kode */
 
 /* The Modal (background) */
@@ -1821,7 +1771,8 @@ main ul{
 
 @media screen and (max-width: 600px){
     .popupbox{
-        width: 80%; 
+        width: 80%;
+        padding-bottom: 5%;
     }
     
 }
@@ -1839,6 +1790,8 @@ main ul{
     color: #515f6d; 
     font-size: 10pt; 
 }
+
+
 
 
 .poptxt{
@@ -1906,6 +1859,12 @@ input[type=text], select {
     width: 50%; 
 }
 
+.tjek3{
+    float: left;
+    width: 100%;
+    padding-left: 40%;
+}
+
 @media screen and (max-width: 600px){
     .tjek1{
         width: 100%;
@@ -1915,6 +1874,10 @@ input[type=text], select {
     .tjek2{
         width: 100%;
         padding-left: 30%;
+    }
+    
+    .tjek3{
+        padding-left: 20%;
     }
     
 }
@@ -2266,25 +2229,40 @@ input[type=text], select {
     float: left;
 }
 
-
-#subject1{
-    font-family: "roboto";
-    height: 42px;
+#field-s{
+    height: 50px;
+    margin-bottom: -3%; 
 }
 
-#subject2{
-    font-family: "roboto";
-    height: 42px;
-    width: 175px;
+#field-xs{
+    height: 50px; 
+    width: 38%;
+    float: left; 
 }
 
-#subject3{
-    font-family: "roboto";
-    height: 42px;
-    width: 175px;
-    margin-left: 20px
+#field-xs1{
+    height: 50px; 
+    width: 35%;
+    float: left;
+    margin-left: 2%; 
 }
-        
+
+.field-xs{
+    width: 80%;
+    margin: auto; 
+    margin-left: 20%;
+    float: left; 
+    margin-bottom: -2%
+}
+
+#field-m{
+    height: 150px; 
+    margin-bottom: -2%; 
+}
+
+
+
+
 @media screen and (max-width: 800px) {
     
     aside {
@@ -2476,13 +2454,9 @@ input[type=text], select {
 
 /* responsiv LP */ 
 @media screen and (max-width: 600px) {
-	body{
-		background-color: #515f6d;
-	}
-main{
-	height: auto;
+	body.someclass  {
+		background-color: #515f6d;}
 	
-}
 	  .overlayall{
 	  width: 90%;
 	  position: block;
@@ -2492,24 +2466,27 @@ main{
 		}
 	.overlay-head {
 	  align-items: top;
-	  margin: 18px auto;
+	  margin: 280px auto 0px;
 	}
 
 	.overlay-bull {
-	  margin: 400px auto;
-	  font-size: 12px;
+		margin: 540px auto 0px;
+		font-size: 12px;
 	}
 	.hidden {
 			display: none;
+		}
+	.hiddentext {
+			visibility: visible;
 		}
 	.btnLP{
 		margin: 330px auto 0px;
 		width: auto;
 	}
-.overlay-manssmart {
-  margin: 510px auto;
-  font-size: 13px;
-  text-align: center;
-    }
-}
 
+	.overlay-manssmart {
+	  margin: 440px auto 0px;
+	  font-size: 13px;
+	  text-align: center;
+  
+}
