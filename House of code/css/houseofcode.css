@@ -48,6 +48,12 @@ video  {
   text-align: center;
   
 }
+.overlay-manssmart {
+  margin: 200px auto;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
 .overlay-bull {
   margin: 450px auto;
   font-size: 16px;
@@ -62,6 +68,9 @@ video  {
   top: 0; right: 0; bottom: 0; left: 0;
   display: flex;
   color: white;
+}
+.hiddentext{
+	visibility: hidden;
 }
 
 /* Landing Page end */
@@ -1668,8 +1677,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .prev-button {
 		left: 0;
 		border-radius: 3px 0 0 3px;
-  }
-
+ }
 
 .numbertext {
 	  color: #515f6d;
@@ -2482,13 +2490,9 @@ input[type=text], select {
 
 /* responsiv LP */ 
 @media screen and (max-width: 600px) {
-	body{
-		background-color: #515f6d;
-	}
-main{
-	height: auto;
+	body.someclass  {
+		background-color: #515f6d;}
 	
-}
 	  .overlayall{
 	  width: 90%;
 	  position: block;
@@ -2498,24 +2502,27 @@ main{
 		}
 	.overlay-head {
 	  align-items: top;
-	  margin: 18px auto;
+	  margin: 280px auto 0px;
 	}
 
 	.overlay-bull {
-	  margin: 400px auto;
-	  font-size: 12px;
+		margin: 540px auto 0px;
+		font-size: 12px;
 	}
 	.hidden {
 			display: none;
+		}
+	.hiddentext {
+			visibility: visible;
 		}
 	.btnLP{
 		margin: 330px auto 0px;
 		width: auto;
 	}
-.overlay-manssmart {
-  margin: 510px auto;
-  font-size: 13px;
-  text-align: center;
-    }
-}
 
+	.overlay-manssmart {
+	  margin: 440px auto 0px;
+	  font-size: 13px;
+	  text-align: center;
+  
+}
