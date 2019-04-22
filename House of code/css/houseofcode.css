@@ -1638,7 +1638,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(182px); }
 .carousel__cell:nth-child(2) { transform: rotateY( 60deg) translateZ(182px); }
-.carousel__cell:nth-child(3) { transform: rotateY( 120deg) translateZ(182px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 120deg) translateZ(182px);}
 .carousel__cell:nth-child(4) { transform: rotateY(180deg) translateZ(182px); }
 .carousel__cell:nth-child(5) { transform: rotateY(240deg) translateZ(182px); }
 .carousel__cell:nth-child(6) { transform: rotateY(300deg) translateZ(182px); }
@@ -1666,7 +1666,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 /* Position the "next button" to the right */
-.next {
+.next-button {
 	  right: 0;
 	  border-radius: 3px 0 0 3px;
 }
