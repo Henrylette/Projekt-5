@@ -2138,7 +2138,7 @@ input[type=text], select, textarea {
   position: relative;
   padding-left: 35px;
     margin-left: 15px;
-  margin-bottom: 12px;
+    margin-bottom: 12px;
     width: 17%;
     float: left;
   cursor: pointer;
@@ -2254,17 +2254,23 @@ img {
     }
     
     .h1-karma{
-        display: none;
+        float: right;
+        display: block;
+        font-size: 40px;
+        width: 20%;
+        margin-right: 10px;
+        margin-top: 5px;
     }
 
     .profilnavn{
         float: left;
-        width: 70%;
+        width: 50%;
         margin-top: 7px;
     }
     
     .profiltxt{
         float: left;
+        width: 40%
     }
     
     .karma-headline{
