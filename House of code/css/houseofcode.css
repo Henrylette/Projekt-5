@@ -457,18 +457,39 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-left: 15%;
     margin-top: 30px;
 }
-
-#top-skema{
-    padding-top: 5%;  
+.skemacontainer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
 }
+.skiftv {
+    font-size: 30px;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    margin-left: 30%;
+    color: #90a0a8;
+    margin-top: 30px;  
+}
+.skiftr {
+    font-size: 30px;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    color: #90a0a8;
+}
+.skiftv:focus {outline:0;}
+.skiftr:focus {outline:0;}
+
+
+
 
 .skema-side{
     width: 80%; 
     margin-right: auto; 
     margin-left: auto; 
     display: table; 
-    margin-top: 10%; 
-    margin-top: 5%; 
+    margin-top: 100px; 
 }
 
 @media screen and (max-width: 500px){
@@ -565,8 +586,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 /*skema billede*/ 
 .skemam{
     width: 90%; 
-    margin-top: 30%; 
-    margin-bottom: 5%;
+    margin-top: 90px;
+    margin-bottom: 20px; 
     margin-left: auto; 
     margin-right: auto; 
     display: table; 
@@ -1838,6 +1859,7 @@ main ul{
     background-color: white;
 }
 
+
 .poptxt{
     width: 60%;
     margin: auto; 
@@ -2220,7 +2242,7 @@ input[type=text], select, textarea {
 
 /* indtil her */
 
-img {
+.imgicon {
   padding: 1px;
   width: 45px;
 }
@@ -2462,6 +2484,6 @@ main{
   margin: 510px auto;
   font-size: 13px;
   text-align: center;
-  
+    }
 }
-}
+

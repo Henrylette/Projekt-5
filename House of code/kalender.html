@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/burgermenu.js" defer></script>
     <script src="javascript/kalender.js" defer></script>
-    <script src="javascript/begivenhed.js" defer></script>
+    <script src="javascript/popup.js" defer></script>
     
 </head>
 <body>
@@ -129,18 +129,18 @@
                 <h4>Husmøde</h4>
                 <p class="smalltxt">Kl. 09.00<br>House of Code</p>
             </div>
-                <ul><button id="btn1" class="btn">Opret begivenhed</button></ul>
+                <ul><button onclick="openBegiven()" class="btn">Opret begivenhed</button></ul>
         </div>
         
     </div>
     
 <!-- Pop-up -->
-<div id="myModal" class="modal">
+<div id="begivenhed" class="modal">
 <!-- Pop-up content -->
     <div class="popupbox1">
         <div class="topdb">
             <h3 class="boxheadlines">Ny note</h3>
-            <span class="close">&times;</span>
+            <span onclick="closeBegiven()" class="close">&times;</span>
         </div>
              
             <div class="poptxt">
@@ -170,25 +170,25 @@
                        <div>
                         <label class="containerpopup1">Højt drive
                             <input type="checkbox" checked="checked">
-                            <img src="images/icongreen.png">
+                            <img class="imgicon" src="images/icongreen.png">
                             <span class="checkmark"></span>
                         </label>
                         
                         <label class="containerpopup2">Et stærkt team
                             <input type="checkbox">
-                            <img src="images/iconpurple.png">
+                            <img class="imgicon" src="images/iconpurple.png">
                             <span class="checkmark"></span>
                         </label>
                         
                         <label class="containerpopup3">God karma
                             <input type="checkbox">
-                            <img src="images/iconred.png">
+                            <img class="imgicon" src="images/iconred.png">
                             <span class="checkmark"></span>
                         </label>
                         
                         <label class="containerpopup4">Ha' det sjovt
                             <input type="checkbox">
-                            <img src="images/iconblue.png">
+                            <img class="imgicon" src="images/iconblue.png">
                             <span class="checkmark"></span>
                         </label>
 
@@ -196,7 +196,7 @@
 
                         
                     <ul>
-                        <a href="kalender.html" class="btn4">Gem &amp; opret</a>
+                        <button onclick="closeBegiven()" class="btn3">Opret begivenhed</button>
                     </ul>
                         
     </div>
