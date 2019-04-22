@@ -392,7 +392,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
     
     .txtregudb{
-        font-size: 16px;
+        font-size: 14px;
+        width: 80%;
     }
 }
 
@@ -456,6 +457,28 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-left: 15%;
     margin-top: 30px;
 }
+
+#top-skema{
+    padding-top: 5%;  
+}
+
+.skema-side{
+    width: 80%; 
+    margin-right: auto; 
+    margin-left: auto; 
+    display: table; 
+    margin-top: 10%; 
+    margin-top: 5%; 
+}
+
+@media screen and (max-width: 500px){
+    #responsiveboks{
+        height:auto;
+        padding-bottom: 5%; 
+    }
+}
+
+
 
 /* KALENDER MAIN OMRÅDE*/
 .containerkal{
@@ -2115,7 +2138,7 @@ input[type=text], select, textarea {
   position: relative;
   padding-left: 35px;
     margin-left: 15px;
-  margin-bottom: 12px;
+    margin-bottom: 12px;
     width: 17%;
     float: left;
   cursor: pointer;
@@ -2174,6 +2197,27 @@ input[type=text], select, textarea {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+#myBtn {
+    width: 5%;
+    display: none; 
+    position: fixed; 
+    bottom: 55px;
+    right: 2%; 
+    z-index: 1;
+    border: none;
+    outline: none;
+    background-color: #dba45c;*/
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #515f6d;
+}
+
 /* indtil her */
 
 img {
@@ -2231,17 +2275,23 @@ img {
     }
     
     .h1-karma{
-        display: none;
+        float: right;
+        display: block;
+        font-size: 40px;
+        width: 20%;
+        margin-right: 10px;
+        margin-top: 5px;
     }
 
     .profilnavn{
         float: left;
-        width: 70%;
+        width: 50%;
         margin-top: 7px;
     }
     
     .profiltxt{
         float: left;
+        width: 40%
     }
     
     .karma-headline{
