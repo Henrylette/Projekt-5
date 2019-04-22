@@ -459,7 +459,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 #top-skema{
-    padding-top: 5%;  
+    padding-top:20px;  
 }
 
 .skema-side{
@@ -467,8 +467,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-right: auto; 
     margin-left: auto; 
     display: table; 
-    margin-top: 10%; 
-    margin-top: 5%; 
+    margin-top: 50px; 
+    margin-top: 10px; 
 }
 
 @media screen and (max-width: 500px){
@@ -565,8 +565,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 /*skema billede*/ 
 .skemam{
     width: 90%; 
-    margin-top: 30%; 
-    margin-bottom: 5%;
+    margin-top: 90px;
+    margin-bottom: 20px; 
     margin-left: auto; 
     margin-right: auto; 
     display: table; 
