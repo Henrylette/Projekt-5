@@ -129,7 +129,7 @@
                 <h4>Husmøde</h4>
                 <p class="smalltxt">Kl. 09.00<br>House of Code</p>
             </div>
-                <ul><button onclick="openBegiven()" class="btn">Opret begivenhed</button></ul>
+                <ul><li onclick="openBegiven()" class="btn">Opret begivenhed</li ></ul>
         </div>
         
     </div>
@@ -139,7 +139,7 @@
 <!-- Pop-up content -->
     <div class="popupbox">
         <div class="topdb">
-            <h3 class="boxheadlines">Ny note</h3>
+            <h3 class="boxheadlines">Opret begivenhed</h3>
             <span onclick="closeBegiven()" class="close">&times;</span>
         </div>
              
@@ -149,46 +149,52 @@
               
                 <div class="popfelt">
                     
-                    <textarea id="subject1" name="subject" placeholder="Begivenhedens navn..."></textarea>
+                    <textarea id="field-s" placeholder="Begivenhedens navn..."></textarea>
            
-                    <textarea id="subject1" name="subject" placeholder="Lokation…"></textarea>
+                    <textarea id="field-s" placeholder="Lokation…"></textarea>
   
-                    <textarea id="subject" name="subject" placeholder="Skriv din note her..." style="height:200px"></textarea>
+                    <textarea id="field-m" placeholder="Skriv din note her..." ></textarea>
         
-                    <textarea id="subject2" name="subject" placeholder="Dato (dd-mm-yyyyy)" style="height: 42px"></textarea>
+                    <div class="field-xs">
+                    <textarea id="field-xs" placeholder="Dato (dd-mm-yyyyy)"></textarea>
+                    
+                    <textarea id="field-xs1" placeholder="Tidspunkt (hh:mm)"></textarea>
+                    </div>
         
-                    <textarea id="subject3" name="subject" placeholder="Tidspunkt (hh:mm)" style="height: 42px"></textarea>
+                    <textarea id="field-s" placeholder="Hvem skal inviteres? Start med at taste et navn…"></textarea>
         
-                    <textarea id="subject1" name="subject" placeholder="Hvem skal inviteres? Start med at taste et navn…"></textarea>
-        
-                    <textarea id="subject1" name="subject" placeholder="Medorganisatorer? Start med at taste et navn…"></textarea>
+                    <textarea id="field-s" placeholder="Medorganisatorer? Start med at taste et navn…"></textarea>
                  </div>
                       
                 <div class="poptxt1">
                 <p class="txtregu">Vælg den værdi som matcher begivenheden:</p>    
                 </div>   
-                       <div>
-                        <label class="containerpopup1">Højt drive
-                            <input type="checkbox" checked="checked">
-                            <img class="imgicon" src="images/icongreen.png">
+                       <div class="icontjek">
+                        <label class="containerpopup1">
+                          <img class="imgicon" src="images/icongreen.png">
+                           <div class="tjektxt">Højt drive</div>
+                            <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
                         
-                        <label class="containerpopup2">Et stærkt team
+                        <label class="containerpopup2">
+                          <img class="imgicon" src="images/iconpurple.png">
+                           <div class="tjektxt">Et stærkt team</div>
                             <input type="checkbox">
-                            <img class="imgicon" src="images/iconpurple.png">
                             <span class="checkmark"></span>
                         </label>
                         
-                        <label class="containerpopup3">God karma
-                            <input type="checkbox">
+                        <label class="containerpopup3">
                             <img class="imgicon" src="images/iconred.png">
+                            <div class="tjektxt">God karma</div>
+                            <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
                         
-                        <label class="containerpopup4">Ha' det sjovt
+                        <label class="containerpopup4">
+                           <img class="imgicon" src="images/iconblue.png">
+                           <div class="tjektxt">Ha' det sjovt</div>
                             <input type="checkbox">
-                            <img class="imgicon" src="images/iconblue.png">
                             <span class="checkmark"></span>
                         </label>
 
@@ -196,7 +202,7 @@
 
                         
                     <ul>
-                        <button onclick="closeBegiven()" class="btn">Opret begivenhed</button>
+                        <li onclick="closeBegiven()" class="btn">Gem og opret</li>
                     </ul>
                         
     </div>

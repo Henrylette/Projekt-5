@@ -288,7 +288,7 @@ aside{
 }
 
 
-/* MUS skema og kalender*/
+/* MUS skema box og kalender box*/
 .boxl{
     height: 600px;
     float: left;
@@ -456,7 +456,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 .klip-musside{
     width: 70%;
-    margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 15%;
 }
@@ -468,8 +467,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 .skemacontainer {
     width: 100%;
-    height: auto;
-    margin-bottom: 35px;
+    height: 350px;
+    margin-top: 100px;
 }
 .skiftv {
     font-size: 30px;
@@ -497,17 +496,15 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 80%; 
     margin-right: auto; 
     margin-left: auto; 
-    display: table; 
-    margin-top: 100px; 
+    display: table;  
 }
 
-@media screen and (max-width: 500px){
-    #responsiveboks{
-        height:auto;
-        padding-bottom: 5%; 
+.knapkasse{
+    width: 30%;
+    text-align: center;
+    height: 100px;
+    margin-left: 35%;
     }
-}
-
 
 
 /* KALENDER MAIN OMRÅDE*/
@@ -1732,64 +1729,6 @@ main ul{
 }
 
 
-.btn4 {
-    margin-left: auto;
-    margin-right: 7%;
-    margin-top: 20px;
-    width: auto;
-    height: 40px;
-    background-color: #dba45c;
-    font-family: 'Roboto';
-    color: white;
-    border: 0;
-    font-size: 16px;
-    padding: 12px;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    
-}
-
-.btn4:hover {
-    background: #515f6d;
-    transition: 0.4s;
-}
-
-.btn4:active {
-    background: #90a0a8;
-}
-
-.btn5 {
-    margin-left: 30%;
-    margin-right: 7%;
-    margin-top: 20px;
-    width: auto;
-    height: 40px;
-    background-color: white;
-    font-family: 'Roboto';
-    color: #90a0a8;
-    border: 0;
-    font-size: 16px;
-    padding: 12px;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    
-}
-
-.btn5:hover {
-    background: white;
-    transition: 0.4s;
-}
-
-.btn5:active {
-    background: #90a0a8;
-}
-
 /* herfra er det "pop-upes" kode */
 
 /* The Modal (background) */
@@ -1839,7 +1778,8 @@ main ul{
 
 @media screen and (max-width: 600px){
     .popupbox{
-        width: 80%; 
+        width: 80%;
+        padding-bottom: 5%;
     }
     
 }
@@ -1857,6 +1797,8 @@ main ul{
     color: #515f6d; 
     font-size: 10pt; 
 }
+
+
 
 
 .poptxt{
@@ -1924,6 +1866,23 @@ input[type=text], select {
     width: 50%; 
 }
 
+.tjek3{
+    float: left;
+    width: 100%;
+    padding-left: 40%;
+}
+
+.icontjek{ 
+    width: 60%; 
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.tjektxt{
+    float: left; 
+}
+
 @media screen and (max-width: 600px){
     .tjek1{
         width: 100%;
@@ -1933,6 +1892,10 @@ input[type=text], select {
     .tjek2{
         width: 100%;
         padding-left: 30%;
+    }
+    
+    .tjek3{
+        padding-left: 20%;
     }
     
 }
@@ -1945,6 +1908,7 @@ input[type=text], select {
     height: 0;
     width: 0;
 }
+
 
 .checkmark {
     position: absolute;
@@ -1991,9 +1955,8 @@ input[type=text], select {
   display: block;
   position: relative;
   padding-left: 35px;
-    margin-left: 100px;
   margin-bottom: 12px;
-    width: 17%;
+    width: 20%;
     float: left;
   cursor: pointer;
   font-size: 13px;
@@ -2003,6 +1966,7 @@ input[type=text], select {
   user-select: none;
     color: #515f6d;
 }
+
 
 .containerpopup1 input {
   position: absolute;
@@ -2059,7 +2023,7 @@ input[type=text], select {
   padding-left: 35px;
     margin-left: 15px;
   margin-bottom: 12px;
-    width: 17%;
+    width: 20%;
     float: left;
   cursor: pointer;
   font-size: 13px;
@@ -2125,7 +2089,7 @@ input[type=text], select {
   padding-left: 35px;
     margin-left: 15px;
   margin-bottom: 12px;
-    width: 17%;
+    width: 20%;
     float: left;
   cursor: pointer;
   font-size: 13px;
@@ -2192,7 +2156,7 @@ input[type=text], select {
   padding-left: 35px;
     margin-left: 15px;
     margin-bottom: 12px;
-    width: 17%;
+    width: 20%;
     float: left;
   cursor: pointer;
   font-size: 13px;
@@ -2201,6 +2165,26 @@ input[type=text], select {
   -ms-user-select: none;
   user-select: none;
     color: #515f6d;
+}
+
+@media screen and (max-width: 800px){
+    .containerpopup1{
+        width: 100%;
+        margin-left: 7%; 
+    }
+    
+    .containerpopup2{
+        width: 100%; 
+    }
+    
+    .containerpopup3{
+        width: 100%; 
+    }
+    
+    .containerpopup4{
+        width: 100%; 
+    }
+    
 }
 
 .containerpopup4 input {
@@ -2275,7 +2259,13 @@ input[type=text], select {
 
 .imgicon {
   padding: 1px;
-  width: 45px;
+  width: 90%;
+}
+
+@media screen and (max-width: 800px){
+    .imgicon{
+        width: 20%; 
+    }
 }
 
 .klip {
@@ -2284,25 +2274,40 @@ input[type=text], select {
     float: left;
 }
 
-
-#subject1{
-    font-family: "roboto";
-    height: 42px;
+#field-s{
+    height: 50px;
+    margin-bottom: -3%; 
 }
 
-#subject2{
-    font-family: "roboto";
-    height: 42px;
-    width: 175px;
+#field-xs{
+    height: 50px; 
+    width: 38%;
+    float: left; 
 }
 
-#subject3{
-    font-family: "roboto";
-    height: 42px;
-    width: 175px;
-    margin-left: 20px
+#field-xs1{
+    height: 50px; 
+    width: 35%;
+    float: left;
+    margin-left: 2%; 
 }
-        
+
+.field-xs{
+    width: 80%;
+    margin: auto; 
+    margin-left: 20%;
+    float: left; 
+    margin-bottom: -2%
+}
+
+#field-m{
+    height: 150px; 
+    margin-bottom: -2%; 
+}
+
+
+
+
 @media screen and (max-width: 800px) {
     
     aside {
@@ -2373,6 +2378,21 @@ input[type=text], select {
         width: 92%;
         margin-left: 4%;
         margin-bottom: 20px;
+        height: 450px;
+    }
+    
+    .knapkasse{
+        width: 50%;
+        height: 100px;
+        text-align: center;
+        align-content: center;
+        margin-left: 25%;
+        margin-top: -100px;
+        
+    }
+    
+    .skemacontainer{
+        height: 350px;
     }
     
     .boxs{
