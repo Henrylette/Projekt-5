@@ -1875,6 +1875,17 @@ input[type=text], select {
     padding-left: 40%;
 }
 
+.icontjek{ 
+    width: 60%; 
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.tjektxt{
+    float: left; 
+}
+
 @media screen and (max-width: 600px){
     .tjek1{
         width: 100%;
@@ -1900,6 +1911,7 @@ input[type=text], select {
     height: 0;
     width: 0;
 }
+
 
 .checkmark {
     position: absolute;
@@ -1946,9 +1958,8 @@ input[type=text], select {
   display: block;
   position: relative;
   padding-left: 35px;
-    margin-left: 100px;
   margin-bottom: 12px;
-    width: 17%;
+    width: 20%;
     float: left;
   cursor: pointer;
   font-size: 13px;
@@ -1958,6 +1969,7 @@ input[type=text], select {
   user-select: none;
     color: #515f6d;
 }
+
 
 .containerpopup1 input {
   position: absolute;
@@ -2014,7 +2026,7 @@ input[type=text], select {
   padding-left: 35px;
     margin-left: 15px;
   margin-bottom: 12px;
-    width: 17%;
+    width: 20%;
     float: left;
   cursor: pointer;
   font-size: 13px;
@@ -2080,7 +2092,7 @@ input[type=text], select {
   padding-left: 35px;
     margin-left: 15px;
   margin-bottom: 12px;
-    width: 17%;
+    width: 20%;
     float: left;
   cursor: pointer;
   font-size: 13px;
@@ -2147,7 +2159,7 @@ input[type=text], select {
   padding-left: 35px;
     margin-left: 15px;
     margin-bottom: 12px;
-    width: 17%;
+    width: 20%;
     float: left;
   cursor: pointer;
   font-size: 13px;
@@ -2156,6 +2168,26 @@ input[type=text], select {
   -ms-user-select: none;
   user-select: none;
     color: #515f6d;
+}
+
+@media screen and (max-width: 800px){
+    .containerpopup1{
+        width: 100%;
+        margin-left: 7%; 
+    }
+    
+    .containerpopup2{
+        width: 100%; 
+    }
+    
+    .containerpopup3{
+        width: 100%; 
+    }
+    
+    .containerpopup4{
+        width: 100%; 
+    }
+    
 }
 
 .containerpopup4 input {
@@ -2230,7 +2262,13 @@ input[type=text], select {
 
 .imgicon {
   padding: 1px;
-  width: 45px;
+  width: 90%;
+}
+
+@media screen and (max-width: 800px){
+    .imgicon{
+        width: 20%; 
+    }
 }
 
 .klip {
