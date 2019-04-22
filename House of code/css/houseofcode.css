@@ -374,9 +374,23 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 30px;
 }
 
+.txtregudb{                              /* ALT BRØDTEKST - REGULAR */
+   float: left;
+    font-weight: 300;
+    width: 85%;
+    font-size: 18px;
+    color: #515f6d;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
 @media screen and (max-width: 500px){
     .txtregu{
         font-size: 12pt; 
+    }
+    
+    .txtregudb{
+        font-size: 16px;
     }
 }
 
