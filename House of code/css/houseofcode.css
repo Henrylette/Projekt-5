@@ -1860,6 +1860,8 @@ main ul{
 }
 
 
+
+
 .poptxt{
     width: 60%;
     margin: auto; 
@@ -2295,25 +2297,40 @@ input[type=text], select {
     float: left;
 }
 
-
-#subject1{
-    font-family: "roboto";
-    height: 42px;
+#field-s{
+    height: 50px;
+    margin-bottom: -3%; 
 }
 
-#subject2{
-    font-family: "roboto";
-    height: 42px;
-    width: 175px;
+#field-xs{
+    height: 50px; 
+    width: 38%;
+    float: left; 
 }
 
-#subject3{
-    font-family: "roboto";
-    height: 42px;
-    width: 175px;
-    margin-left: 20px
+#field-xs1{
+    height: 50px; 
+    width: 35%;
+    float: left;
+    margin-left: 2%; 
 }
-        
+
+.field-xs{
+    width: 80%;
+    margin: auto; 
+    margin-left: 20%;
+    float: left; 
+    margin-bottom: -2%
+}
+
+#field-m{
+    height: 150px; 
+    margin-bottom: -2%; 
+}
+
+
+
+
 @media screen and (max-width: 800px) {
     
     aside {
