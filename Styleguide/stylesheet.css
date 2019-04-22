@@ -151,83 +151,135 @@ h1 {
       margin-left: auto; 
       margin-right: auto; 
       box-shadow: 0 10px 15px rgba(0,0,0,0.6);
-      margin-bottom: 30px; 
+      margin-bottom: 30px;    
 }
 
 /*Farve bokse*/
 /*boks nr. 1*/
 .container-color{
-    background-color: ; 
     height: 60px; 
 }
 
  .colorbox1 {
     height: 60px;
-    width: 30%; 
+    width: 50%; 
+    margin-left: 25%;
     background-color: #515F6D;
-    float: left; 
+    border: solid black 1px;
 }
 
 .colortext-container{
-    width: 50%; 
-    float: left; 
+    width: 100%; 
     height: 60px;  
 }
 /*boks 2*/
 .colorbox2 {
     height: 60px;
-    width:  30%; 
+    width:  50%; 
+    margin-left: 25%;
     background-color:#6696AD;
+    border: solid black 1px;
+    margin-bottom: 200px;
 }
 
 .colorbox3 {
     height: 60px;
-    width:  30%; 
+    width:  50%; 
+    margin-left: 25%;
     background-color: #90A0A8;
+    border: solid black 1px;
 }
 
 .colorbox4 {
     height: 60px;
-    width:  30%;
+    width:  50%;
+    margin-left: 25%;
     background-color: #E8ECED;
+    border: solid black 1px;
 }
 
 .colorbox5 {
     height: 60px;
-    width:  30%;
+    width:  50%;
+    margin-left: 25%;
     background-color: #F7F7F7; 
+    border: solid black 1px;
 }
 
 .colorbox6 {
     height: 60px;
-    width: 30%;
+    width: 50%;
+    margin-left: 25%;
     background-color: #FFFFFF; 
+    border: solid black 1px;
 }
 
 .colorbox7 {
     height: 60px;
-    width: 30%;
+    width: 50%;
+    margin-left: 25%;
     background-color: #A6BB75;
+    border: solid black 1px;
 }
 
 .colorbox8 {
     height: 60px;
-    width: 30%;
+    width: 50%;
+    margin-left: 25%;
     background-color: #D8A55B;
+    border: solid black 1px;
 }
 
 .colorbox9 {
     height: 60px;
-    width: 30%;
+    width: 50%;
+    margin-left: 25%;
     background-color: #D36D75;
+    border: solid black 1px;
 }
 
 .colorbox10 {
     height: 60px;
-    width: 30%;
+    width: 50%;
+    margin-left: 25%;
     background-color: #AA81Ac;
+    border: solid black 1px;
 }
-
+.iconbox {
+    width: 100%;
+    display: inline-block;
+}
+.iconbox2 {
+    display: inline-block;
+}
+.icon1 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    background: red;
+}
+.icon2 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+}
+.icon3 {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+}
+.ibox {
+    width: 45%;
+    height: auto;
+    background: black;
+    display: inline-block;
+}
 
 
 
@@ -245,9 +297,9 @@ h1 {
 .textbox {
   height: 20vh;
   width: 100%;
-  background-color: black;
   text-align: center;
-  color: white;
+  margin-top: 100px;
+  color: black;
   text-transform: uppercase;
   font-size: 100px;
 }
