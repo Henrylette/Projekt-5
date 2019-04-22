@@ -2378,30 +2378,40 @@ img {
 
 /* responsiv LP */ 
 @media screen and (max-width: 600px) {
-
+	body{
+		background-color: #515f6d;
+	}
+main{
+	height: auto;
+	
+}
 	  .overlayall{
 	  width: 90%;
 	  position: block;
 	}
 		h1{
-			font-size: 30px;
+			font-size: 25px;
 		}
 	.overlay-head {
 	  align-items: top;
-	  margin: 30px auto;
+	  margin: 18px auto;
 	}
 
 	.overlay-bull {
-	  margin: 200px auto;
+	  margin: 400px auto;
 	  font-size: 12px;
 	}
 	.hidden {
 			display: none;
 		}
 	.btnLP{
-		margin: 350px auto;
+		margin: 330px auto 0px;
 		width: auto;
-
 	}
-
+.overlay-manssmart {
+  margin: 510px auto;
+  font-size: 13px;
+  text-align: center;
+  
+}
 }
