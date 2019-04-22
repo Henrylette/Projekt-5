@@ -457,6 +457,28 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 30px;
 }
 
+#top-skema{
+    padding-top: 5%;  
+}
+
+.skema-side{
+    width: 80%; 
+    margin-right: auto; 
+    margin-left: auto; 
+    display: table; 
+    margin-top: 10%; 
+    margin-top: 5%; 
+}
+
+@media screen and (max-width: 500px){
+    #responsiveboks{
+        height:auto;
+        padding-bottom: 5%; 
+    }
+}
+
+
+
 /* KALENDER MAIN OMRÅDE*/
 .containerkal{
     width: 100%;
