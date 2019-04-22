@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/popup.js" defer></script>
     <script src="javascript/burgermenu.js" defer></script>
+    <script src="javascript/skemagalleri.js" defer></script>
 </head>
 <body>
   
@@ -112,26 +113,6 @@
     </div>
 </div>
     </main>
-    
-    <script>
-        var slideIndex = 1; 
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-            showDivs(slideIndex +=n);
-        } 
-        
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("skema-side");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length};
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-        }
-    </script>
     
 </body>
 </html>
