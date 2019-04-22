@@ -143,15 +143,13 @@
             </div>
               
                 <div class="popfelt">
-                    <textarea id="subject" name="subject" placeholder="Skriv din note her..." style="height:200px"></textarea>
+                    <textarea placeholder="Skriv din note her..."></textarea>
                 </div>
                         
-                    <div>
+                    <div class="tjek">
+                       
+                       <div class="tjek1">
                         <label class="containerpopup">Private noter
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="containerpopup">Mus note
                             <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
@@ -159,14 +157,23 @@
                             <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
+                        </div>
+                        
+                        <div class="tjek2">
+                        <label class="containerpopup">MUS noter
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
                         <label class="containerpopup">Walk &amp; talk note
                             <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                     </div>
+                    
                     <ul>
-                       <button onclick="closeNoter()" class="btn3">Anuller</button>
-                       <buttom onclick="closeNoter()" class="btn3">Gem i noter</buttom>
+                      <li onclick="closeNoter()" class="btn">Anuller</li>
+                       <li onclick="closeNoter()" class="btn">Gem i noter</li>
                     </ul>  
     </div>
 </div>

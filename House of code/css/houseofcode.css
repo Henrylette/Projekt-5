@@ -580,6 +580,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 .mus-skema textarea::placeholder {
     color: #dba45c;
+    color: #dba45c;
     font-size: 11pt;
     opacity: 0.6;
 }
@@ -1698,34 +1699,6 @@ main ul{
     background: #90a0a8;
 }
 
-.btn3 {
-    margin-left: auto;
-    margin-right: 16%;
-    margin-top: 15px;
-    width: auto;
-    height: 40px;
-    background-color: #D8A55B;
-    font-family: 'Roboto';
-    color: white;
-    border: 0;
-    font-size: 16px;
-    padding: 12px;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    
-}
-
-.btn3:hover {
-    background: #515f6d;
-    transition: 0.4s;
-}
-
-.btn3:active {
-    background: #90a0a8;
-}
 
 .btn4 {
     margin-left: auto;
@@ -1803,6 +1776,8 @@ main ul{
 }
 
 
+
+
 /* The Close Button */
 .close {
     color: #ffffff;
@@ -1822,17 +1797,33 @@ main ul{
 }
 
 .popupbox{
-    height: 620px;
+    height: auto;
     margin: auto;
     width: 50%;
     background-color: white;
+    padding-bottom: 2%; 
+    margin-bottom: 5%; 
 }
 
-.popupbox1{
-    height: 1060px;
-    margin: auto;
-    width: 50%;
-    background-color: white;
+@media screen and (max-width: 600px){
+    .popupbox{
+        width: 80%; 
+    }
+    
+}
+
+.popupbox textarea{
+    border: none;
+    height: 150px; 
+    background-color: #E8ECED;
+    display: block; 
+    margin-right: auto; 
+    margin-left: auto; 
+    width: 60%; 
+    margin-bottom: 5%; 
+    margin-top: 5%; 
+    color: #515f6d; 
+    font-size: 10pt; 
 }
 
 
@@ -1848,7 +1839,7 @@ main ul{
     padding-bottom: 40px;
 }
 
-input[type=text], select, textarea {
+input[type=text], select {
     width: 60%;
     margin-left: 20%;
     padding: 12px;
@@ -1866,10 +1857,9 @@ input[type=text], select, textarea {
 
 /* ---container til tjek knapperne--- */
 .containerpopup {
-    display: block;
+    display: inline-block;
     position: relative;
     padding-left: 35px;
-    margin-left: 150px;
     margin-bottom: 12px;
     width: 17%;
     cursor: pointer;
@@ -1880,8 +1870,41 @@ input[type=text], select, textarea {
     user-select: none;
     color: #515f6d;
     float: left;
+    width: 100%;
     
 }
+
+.tjek{
+    float: left;
+    width: 100%; 
+}
+
+
+.tjek1{
+    float: left; 
+    width: 50%; 
+    padding-left: 25%; 
+    
+}
+
+.tjek2{
+    float: left;  
+    width: 50%; 
+}
+
+@media screen and (max-width: 600px){
+    .tjek1{
+        width: 100%;
+        padding-left: 30%; 
+    }
+    
+    .tjek2{
+        width: 100%;
+        padding-left: 30%;
+    }
+    
+}
+
 
 .containerpopup input {
     position: absolute;
@@ -2228,9 +2251,7 @@ input[type=text], select, textarea {
   width: 80px;
     float: left;
 }
-#subject{
-    font-family: "roboto";
-}
+
 
 #subject1{
     font-family: "roboto";
