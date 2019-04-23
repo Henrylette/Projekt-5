@@ -615,7 +615,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     text-decoration: none; 
 }
 
-<<<<<<< HEAD
+
 .label-container{ 
     width: 95%; 
     margin-left: 8%; 
@@ -626,8 +626,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     height: 70px; 
 }
 
-=======
->>>>>>> a7ef7d5a349e00579f8369b9bf8d81eba8aa2466
+
 /*indstillinger til mus skema side*/
 .mus-skema-box{
     background-color: white; 
@@ -638,7 +637,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-left: auto; 
     margin-right: auto; 
     box-shadow: 0 10px 15px #A3A1A8;
-    display: table; 
+    display: none; 
 }
 
 @media screen and (max-width: 500px){
