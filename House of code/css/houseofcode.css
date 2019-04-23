@@ -6,7 +6,6 @@
 body{
     background-color: #f7f7f7;
     font-family: "roboto";
-	
 }
 
 /* Landing Page */
@@ -2546,6 +2545,11 @@ input[type=text], select {
         font-size: 14px;
     }
 }
+
+.someclass{
+    background-color: #515f6d;  
+}
+
 
 /* responsiv LP */ 
 @media screen and (max-width: 600px) {
