@@ -280,7 +280,7 @@ aside{
 
 /* MUS/noter arkiv*/
 .boxxl{
-    height: 300px;
+    height: auto;
     float: left;
     margin-left: 2%;
     margin-bottom: 50px;
@@ -477,6 +477,31 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     height: 100px;
     margin-left: 35%;
     }
+.folder-container1{
+    padding-bottom: 4%; 
+}
+
+.folder-container2{
+    float: left; 
+    width: 100%; 
+    padding-bottom: 3%;
+    display: none; 
+
+}
+
+.skema-liste{
+    padding-left: 2%; 
+    padding-top: 1%; 
+    padding-bottom: 1%;
+    margin-top: 1%; 
+    margin-bottom: 1%; 
+    margin-left: 15%; 
+    margin-right: 15%; 
+    background-color: #e8eced; 
+}
+
+
+
 
 /* KALENDER MAIN OMRÅDE*/
 
