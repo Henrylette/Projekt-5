@@ -624,7 +624,15 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     text-decoration: none; 
 }
 
+.label-container{ 
+    width: 95%; 
+    margin-left: 8%; 
+}
 
+.label-container textarea{
+    width: 80%;
+    height: 70px; 
+}
 
 /*indstillinger til mus skema side*/
 .mus-skema-box{
@@ -636,7 +644,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-left: auto; 
     margin-right: auto; 
     box-shadow: 0 10px 15px #A3A1A8;
-    display: none; 
+    display: table; 
 }
 
 @media screen and (max-width: 500px){
@@ -839,10 +847,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left; 
     height: auto;
     padding-left: 5%; 
-}
-
-.mus-skema-value-maintxt{
-    padding-top: 8%; 
 }
 
 .mus-skema-value-maintxt1{
@@ -1059,10 +1063,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .checkgreen{
     display: block; 
     position: relative;
-    padding-left: 35px;
-    margin-left: 5%; 
+    padding-left: 35px; 
     margin-bottom: 12px;
-    width: 100%;
     float: left;
     cursor: pointer;
     font-size: 13px;
@@ -1145,9 +1147,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     display: block; 
     position: relative;
     padding-left: 35px;
-    margin-left: 5%; 
     margin-bottom: 12px;
-    width: 100%;
     float: left;
     cursor: pointer;
     font-size: 13px;
@@ -1228,9 +1228,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     display: block; 
     position: relative;
     padding-left: 35px;
-    margin-left: 5%; 
     margin-bottom: 12px;
-    width: 100%;
     float: left;
     cursor: pointer;
     font-size: 13px;
@@ -1311,9 +1309,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     display: block; 
     position: relative;
     padding-left: 35px;
-    margin-left: 5%; 
     margin-bottom: 12px;
-    width: 100%;
     float: left;
     cursor: pointer;
     font-size: 13px;
@@ -1381,15 +1377,10 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 100%;
     float: left; 
     padding-left: 10%; 
-    padding-top: 5%;
-    padding-right: 10%; 
+    padding-top: 2%;
+    padding-right: 10%;
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema8-txt{
-        padding-right: 10%; 
-    }
-}
 
 .mus-skema8-box{
     height: auto; 
@@ -1413,7 +1404,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .skema8-label{ 
     float: left; 
     width: 100%;
-    padding-top: 5%;
 }
 
 .skema8{
@@ -1501,8 +1491,10 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .pbox{
     background-color: #e8eced; 
     width: 100%;
-    float: left; 
+    float: left;
+    padding-bottom: 5%; 
 }
+
 
 .pbox-header{
     width: 100%; 
