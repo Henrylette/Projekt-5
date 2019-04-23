@@ -1788,6 +1788,37 @@ main ul{
     
 }
 
+.popupbox-logind{ 
+    display: table; 
+    margin-right: auto; 
+    margin-left: auto; 
+    width: 50%;
+    background-color: white;
+    padding-bottom: 2%; 
+    margin-bottom: 5%; 
+}
+
+.popupbox-logind textarea{
+    background-color: #e8eced; 
+    border: none; 
+    height: 40px; 
+    width: 100%; 
+}
+
+.popupbox-logind a{
+    text-decoration: none;
+    color: white; 
+}
+
+@media screen and (max-width: 600px){
+    .popupbox-logind{
+        width: 85%; 
+        padding-bottom: 5%; 
+    }
+}
+
+
+
 .popupbox textarea{
     border: none;
     height: 150px; 
@@ -1823,10 +1854,10 @@ main ul{
     padding-left: 20%;
 }
 
-.center-knapper-nk{ 
+.center-knapper{ 
+    width: 100%; 
     float: left; 
     text-align: center;
-    background-color: aqua; 
 }
 
 input[type=text], select {
@@ -2321,13 +2352,7 @@ input[type=text], select {
     margin-bottom: -2%; 
 }
 
-#logintxt{
-    float: left;
-    height: 1%;
-    width: 100%;
-}
-
-.txtregulogin{                        
+.txtregulogin{                     
     font-weight: 300;
     width: 100%;
     font-size: 18px;
