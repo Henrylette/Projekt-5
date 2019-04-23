@@ -21,3 +21,6 @@ nextButton.addEventListener( 'click', function() {
   selectedIndex++;
   rotateCarousel();
 });
+
+
+
