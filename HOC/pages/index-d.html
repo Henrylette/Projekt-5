@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>ED PLANNING</title>
+    <meta name="description" content="ED PLANNING dashboard hjælper dig med at få overblik over din udvikling i virksomheden. Her finder du også noter, kommende events, statistikker og meget mere.">
+    <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
+    <link href="../css/houseofcode.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascript/burgermenu.js" defer></script>
+    <script src="../javascript/popup.js" defer></script>
+    <script src="../javascript/musskema.js" defer></script>
+</head>
+<body>
+ 
+<!--HEADER-->
+
+<header>
+  <div class="logo"><img class="logoimg" src="../images/logo.png" alt="ed planning logo"/></div>
+  
+  <div class="topnav" id="myTopnav">
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a class="active" href="index.html">Dashboard</a>
+      <a href="mus-side.html">MUS-side</a>
+      <a href="kalender.html">Kalender</a>
+      <a href="noter.html">Noter</a>
+      <a class="logknap" href="../index.html">Log ud</a>
+  </div>
+</header>
+
+<!--ASIDE-->
+
+<aside>
+        <div class="container-aside">
+        <h3 class="karma-headline">Din karmascore</h3>
+        <h1 class="h1-karma">370</h1>
+        <img class="profilimg" src="../images/Image%203.png" alt="profilbillede">
+        <h3 class="profilnavn">Martin Gjeldsted</h3>
+        <p class="profiltxt">Udvikler<br>House of Code</p>
+        </div>
+        <div class="trekantbox"><img class="trekant" src="../images/trekant.png" alt="trekant"></div> 
+      
+</aside>
+  
+<!--MAIN-->
+   
+<main class="main-style">
+    <div class="column">
+        <div class="boxxs">
+            <div class="topdb">
+                <h3 class="boxheadlines">Mine mål</h3>
+            </div>
+            <div class="contentbox">
+                <h2>1</h2>
+                <p class="txtregudb">Jeg vil deltage i flere sociale arrangementer på min arbejdsplads</p>
+            </div>
+            <div class="contentbox">
+                <h2>2</h2>
+                <p class="txtregudb">Jeg ønsker at forbedre mine kompetencer indenfor JavaScript</p>
+            </div>
+            <div class="contentbox">
+                <h2>3</h2>
+                <p class="txtregudb">Jeg vil gerne have mere viden om projektledelse</p>
+                
+            </div>
+            <ul><li><a href="preview.html" class="btn">Genbesøg dit skema</a></li></ul>
+        </div>
+        
+        <div class="boxxs">
+            <div class="topdb">
+                <h3 class="boxheadlines">Værdibarometer</h3>
+            </div>
+            <img class="barometer" src="../images/barometer.png" alt="værdibarometer">
+        </div>
+        
+        <div class="boxxs">
+            <div class="topdb">
+                <h3 class="boxheadlines">Kommende events</h3>
+            </div>
+            <div class="contentbox">
+                <h2>04</h2>
+                <p class="date">Maj</p>
+                <h4>Fodbold og Fadøl</h4>
+                <p class="smalltxt">Kl. 17.00<br>EVII Park Odense</p>
+            </div>
+            <div class="contentbox">
+                <h2>30</h2>
+                <p class="date">Apr</p>
+                <h4>Teambuilding dag</h4>
+                <p class="smalltxt">Kl. 10.00<br>Nyborg Friluftscenter</p>
+            </div>
+            <div class="contentbox">
+                <h2>06</h2>
+                <p class="date">Jun</p>
+                <h4>Sommerfest med grill</h4>
+                <p class="smalltxt">Kl. 18.00<br>House of Codes terrasse</p>
+            </div>
+             <ul><li><a href="kalender.html" class="btn">Se kalender</a></li></ul>
+        </div>
+    </div>
+      
+    <div class="column2">
+        <div class="boxxs">
+            <div class="topdb">
+                <h3 class="boxheadlines">MUS-klip overblik</h3>
+            </div>
+            <img class="klipimg" src="../images/Tickets-one-used.png" alt="mus-klip">
+            <ul><li onclick="openKlip()" class="btn">Anmod om samtale</li></ul>
+        </div>
+        
+        <div class="boxxs">
+            <div class="topdb">
+                <h3 class="boxheadlines">MUS-skemaer til udfyldning</h3>
+            </div>
+            <img class="skemam" src="../images/skema-martin.jpg" alt="Mus-skema Martin">
+            <ul><li><a href="mus-side.html" class="btn">Se skemaer</a></li></ul>
+         </div>
+         
+         <div class="boxxs">
+            <div class="topdb">
+                <h3 class="boxheadlines">Noter</h3>
+            </div>
+            <img class="notesblok" src="../images/notesblok.png" alt="notesblok">
+            <ul><li onclick="openNoter()" class="btn">Tilføj ny note</li></ul>
+        </div>
+        
+    </div>
+    
+<!-- Pop-up -->
+<div id="noter" class="modal">
+<!-- Pop-up content -->
+    <div class="popupbox">
+        <div class="topdb">
+            <h3 class="boxheadlines">Ny note</h3>
+            <span onclick="closeNoter()" class="close">&times;</span>
+        </div>
+             
+            <div class="poptxt">
+                <p class="txtbold">Her kan du oprette en ny note, for at skabe overblik over de samtaler du har med din leder</p>
+                <p class="txtregu">Du kan også vælge om din note skal kunne ses af både dig og din leder eller om den skal være privat.</p>
+            </div>
+              
+                <div class="popfelt">
+                    <textarea placeholder="Skriv din note her..."></textarea>
+                </div>
+                        
+                    <div class="tjek">
+                       
+                       <div class="tjek1">
+                        <label class="containerpopup">Private noter
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerpopup">Delte noter
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        </div>
+                        
+                        <div class="tjek2">
+                        <label class="containerpopup">MUS noter
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerpopup">Walk &amp; talk note
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        </div>
+                    </div>
+                    
+                    <ul>
+                      <li onclick="closeNoter()" class="btn">Anuller</li>
+                       <li onclick="closeNoter()" class="btn">Gem i noter</li>
+                    </ul>  
+    </div>
+</div>
+<!-- Pop-up -->
+<div id="klip" class="modal">
+<!-- Pop-up content -->
+    <div class="popupbox">
+        <div class="topdb">
+            <h3 class="boxheadlines">Anmod om samtale</h3>
+            <span onclick="closeKlip()" class="close">&times;</span>
+        </div>
+             
+
+            <div class="poptxt">
+               <img src="../images/single-ticket.png" class="klip" alt="ticket">
+                <p class="txtbold">Du bruger nu et af dine MUS-klip</p>
+                <p class="txtregu">Anmodningen sendes til: <br>xxxxxxxx@houseofcode.dk</p>
+            </div>
+        
+                      
+            <textarea placeholder="Skriv en besked her…"></textarea>
+                
+           
+                    <ul>
+                        <li onclick="closeKlip()" class="btn">Annuller</li>
+                       <li onclick="closeKlip()" class="btn">Send</li>
+                    </ul>
+                
+    </div>
+</div>
+</main>
+    
+</body>
+</html>
