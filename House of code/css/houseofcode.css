@@ -617,7 +617,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 
 .mus-skema textarea::placeholder {
     color: #dba45c;
-    color: #dba45c;
     font-size: 11pt;
     opacity: 0.6;
 }
@@ -2291,7 +2290,7 @@ input[type=text], select {
     z-index: 1;
     border: none;
     outline: none;
-    background-color: #dba45c;*/
+    background-color: #dba45c;
     color: white;
     cursor: pointer;
     padding: 0px;
@@ -2583,6 +2582,7 @@ input[type=text], select {
 	.overlay-manssmart {
 	  margin: 440px auto 0px;
 	  font-size: 13px;
-	  text-align: center;
-  
+		text-align: center;
+	}
 }
+	
