@@ -1925,9 +1925,6 @@ input[type=text], select {
     margin-right: auto; 
 }
 
-.tjektxt{
-    float: left; 
-}
 
 @media screen and (max-width: 600px){
     .tjek1{
@@ -2012,7 +2009,6 @@ input[type=text], select {
   user-select: none;
     color: #515f6d;
 }
-
 
 .containerpopup1 input {
   position: absolute;
@@ -2325,10 +2321,26 @@ input[type=text], select {
     float: left;
 }
 
-#field-s{
+#field1{
     height: 50px;
     margin-bottom: -3%; 
 }
+
+#field2{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
+#field3{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
+#field4{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
 
 #field-xs{
     height: 50px; 
