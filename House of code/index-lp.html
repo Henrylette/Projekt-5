@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/burgermenu.js" defer></script>
+    <script src="javascript/popup.js" defer></script>
+    
 </head>
 <body>
  
@@ -26,7 +28,33 @@
       <a class="active" href="index-lp.html">Forside</a>
       <a href="#">Priser</a>
       <a href="#">Om os</a>
-      <a class="logknap" href="#">Log ind</a>
+      <a onclick="openLogin()"class="logknap" href="#">Log ind</a>
+  
+<!-- Pop-up -->
+<div id="login" class="modal">
+<!-- Pop-up content -->
+    <div class="popupbox">
+        <div class="topdb">
+            <h3 class="boxheadlines">Log ind</h3>
+            <span onclick="closeLogin()" class="close">&times;</span>
+        </div>
+             
+
+            <div class="poptxt">
+              <p class="txtregu">Burgernavn</p>
+               <textarea id="logintxt"></textarea>
+                   <p class="txtregu">Kodeord</p>
+                    <textarea id="logintxt"></textarea>
+            </div>
+                
+           
+                    <ul>
+                        <li onclick="closeLogin()" class="btnLI">Annuller</li>
+                       <li onclick="closeLogin()" class="btnLI">Log ind</li>
+                    </ul>
+                
+    </div>
+</div>
   </div>
 </header>
 

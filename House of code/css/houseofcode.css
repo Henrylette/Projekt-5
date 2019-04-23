@@ -1725,6 +1725,34 @@ main ul{
     background: #90a0a8;
 }
 
+.btnLI {
+    margin-left: 30%;
+    margin-right: -20%;
+    margin-top: 20px;
+    width: auto;
+    height: 40px;
+    background-color: #D8A55B;
+    font-family: 'Roboto';
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.btnLI:hover {
+    background: #515f6d;
+    transition: 0.4s;
+}
+
+.btnLI:active {
+    background: #90a0a8;
+}
+
 
 /* herfra er det "pop-upes" kode */
 
@@ -2302,7 +2330,13 @@ input[type=text], select {
     margin-bottom: -2%; 
 }
 
-
+#logintxt{
+    float: left;
+    height: 1%;
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
 
 
 @media screen and (max-width: 800px) {
