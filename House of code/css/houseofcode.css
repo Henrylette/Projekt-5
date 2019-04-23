@@ -2554,18 +2554,17 @@ input[type=text], select {
 	
 	  .overlayall{
 	  width: 90%;
-	  position: block;
 	}
 		h1{
 			font-size: 25px;
 		}
 	.overlay-head {
 	  align-items: top;
-	  margin: 280px auto 0px;
+	  margin: 300px auto auto;
 	}
 
 	.overlay-bull {
-		margin: 540px auto 0px;
+		margin: 540px auto auto;
 		font-size: 12px;
 	}
 	.hidden {
@@ -2575,12 +2574,12 @@ input[type=text], select {
 			visibility: visible;
 		}
 	.btnLP{
-		margin: 330px auto 0px;
+		margin: 360px auto auto;
 		width: auto;
 	}
 
 	.overlay-manssmart {
-	  margin: 440px auto 0px;
+	  margin: 440px auto auto;
 	  font-size: 13px;
 		text-align: center;
 	}
