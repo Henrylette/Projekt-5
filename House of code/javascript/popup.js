@@ -22,6 +22,14 @@ function closeNoter1(){
 document.getElementById("noter1").style.display="none";}
 
 
+//Pop-uppen til note-siden pop-uppen på walk&talk
+function openNoter2(){
+document.getElementById("noter2").style.display="block"; }
+
+function closeNoter2(){
+document.getElementById("noter2").style.display="none";}
+
+
 //Pop-uppen til begivenheden
 function openBegiven(){
 document.getElementById("begivenhed").style.display="block"; }
