@@ -2283,22 +2283,27 @@ input[type=text], select {
 
 #myBtn {
     width: 5%;
+    height: 50px;
     display: none; 
     position: fixed; 
     bottom: 55px;
     right: 2%; 
-    z-index: 1;
+    z-index: 99;
     border: none;
     outline: none;
     background-color: #dba45c;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
-    padding: 0px;
+    padding: 5px;
     font-size: 18px;
 }
 
 #myBtn:hover {
     background-color: #515f6d;
+}
+
+.totopimg{
+    width: 60%;
 }
 
 /* indtil her */
