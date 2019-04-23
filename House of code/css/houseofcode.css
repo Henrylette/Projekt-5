@@ -1925,9 +1925,6 @@ input[type=text], select {
     margin-right: auto; 
 }
 
-.tjektxt{
-    float: left; 
-}
 
 @media screen and (max-width: 600px){
     .tjek1{
