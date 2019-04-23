@@ -113,10 +113,8 @@ h1 {
       margin: 0;
       background-color:#f7f7f7;
       float: right; 
-}
-
+}   
 .colortext { 
-    text-align: left;
     color: black;
     margin-top: 20px; 
     font-size: 15pt; 
@@ -145,7 +143,6 @@ h1 {
 /*------ COLORS SIDE ------*/
   .colors-side {
       height: auto;
-      width: 100%;
       background-color:#ffffff; 
       width: 80%; 
       margin-left: auto; 
@@ -157,7 +154,7 @@ h1 {
 /*Farve bokse*/
 /*boks nr. 1*/
 .container-color{
-    height: 60px; 
+    height: auto; 
 }
 
  .colorbox1 {
@@ -179,7 +176,6 @@ h1 {
     margin-left: 25%;
     background-color:#6696AD;
     border: solid black 1px;
-    margin-bottom: 200px;
 }
 
 .colorbox3 {
@@ -244,13 +240,18 @@ h1 {
     margin-left: 25%;
     background-color: #AA81Ac;
     border: solid black 1px;
+    margin-bottom: 5px;
 }
 .iconbox {
     width: 100%;
-    display: inline-block;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 .iconbox2 {
     display: inline-block;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 5%;
 }
 .icon1 {
     width: 200px;
@@ -258,27 +259,23 @@ h1 {
     display: inline-block;
     box-sizing: border-box;
     padding: 10px 10px 10px 10px;
-    background: red;
+    border: solid black 1px;
 }
 .icon2 {
-    width: 100px;
-    height: 100px;
+    width: 225px;
+    height: 200px;
     display: inline-block;
     box-sizing: border-box;
     padding: 10px 10px 10px 10px;
+    border: solid black 1px;
 }
 .icon3 {
-    width: 200px;
-    height: 100px;
+    width: 425px;
+    height: 200px;
     display: inline-block;
     box-sizing: border-box;
     padding: 10px 10px 10px 10px;
-}
-.ibox {
-    width: 45%;
-    height: auto;
-    background: black;
-    display: inline-block;
+    border: solid black 1px;
 }
 
 
@@ -286,7 +283,6 @@ h1 {
 /*------ TYPOGRAPHY SIDE ------*/
 .typography-side {
       height: 400px;
-      width: 100%;
       background-color:#ffffff; 
       width: 80%; 
       margin-left: auto; 
@@ -309,7 +305,6 @@ h1 {
 /*------ BUTTONS SIDE ------*/
   .buttons-side {
       height: 200px;
-      width: 100%;
       background-color:#ffffff; 
       width: 80%; 
       margin-left: auto; 
