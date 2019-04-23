@@ -2325,10 +2325,26 @@ input[type=text], select {
     float: left;
 }
 
-#field-s{
+#field1{
     height: 50px;
     margin-bottom: -3%; 
 }
+
+#field2{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
+#field3{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
+#field4{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
 
 #field-xs{
     height: 50px; 
