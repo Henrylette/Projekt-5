@@ -485,11 +485,18 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     background-color: transparent;
     border: none;
     color: #90a0a8;
+    transition: 0.6s;
 }
 .skiftv:focus {outline:0;}
 .skiftr:focus {outline:0;}
 
+.skiftv:hover {
+    color: #dba45c;
+}
 
+.skiftr:hover {
+    color: #dba45c;
+}
 
 
 .skema-side{
