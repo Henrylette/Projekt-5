@@ -28,3 +28,11 @@ document.getElementById("begivenhed").style.display="block"; }
 
 function closeBegiven(){
 document.getElementById("begivenhed").style.display="none";}
+
+
+//Pop-uppen til login
+function openLogin(){
+document.getElementById("login").style.display="block"; }
+
+function closeLogin(){
+document.getElementById("login").style.display="none";}

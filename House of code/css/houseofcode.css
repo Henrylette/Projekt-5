@@ -1796,8 +1796,6 @@ main ul{
 }
 
 
-
-
 .poptxt{
     width: 60%;
     margin: auto; 
@@ -1809,6 +1807,7 @@ main ul{
     margin: auto; 
     padding-bottom: 40px;
 }
+
 
 input[type=text], select {
     width: 60%;
@@ -2302,8 +2301,18 @@ input[type=text], select {
     margin-bottom: -2%; 
 }
 
+#logintxt{
+    float: left;
+    height: 1%;
+    width: 100%;
+}
 
-
+.txtregulogin{                        
+    font-weight: 300;
+    width: 100%;
+    font-size: 18px;
+    color: #515f6d;
+}
 
 @media screen and (max-width: 800px) {
     
