@@ -1801,6 +1801,7 @@ main ul{
     border: none; 
     height: 40px; 
     width: 100%; 
+    color: #515f6d; 
 }
 
 .popupbox-logind a{
@@ -1881,7 +1882,6 @@ input[type=text], select {
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
-    width: 17%;
     cursor: pointer;
     font-size: 16px;
     -webkit-user-select: none;
@@ -2550,7 +2550,6 @@ input[type=text], select {
 .someclass{
     background-color: #515f6d;  
 }
-
 
 /* responsiv LP */ 
 @media screen and (max-width: 600px) {
