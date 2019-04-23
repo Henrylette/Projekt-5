@@ -6,17 +6,14 @@
     <meta name="description" content="ED PLANNING dashboard hjælper dig med at få overblik over din udvikling i virksomheden. Her finder du også noter, kommende events, statistikker og meget mere.">
     <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
     <link href="css/houseofcode.css" rel="stylesheet" type="text/css">
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/burgermenu.js" defer></script>
     <script src="javascript/popup.js" defer></script>
     
 </head>
-<body>
- 
+
+ <body class="someclass">
 <!--HEADER-->
 
 <header>
@@ -30,31 +27,31 @@
       <a href="#">Om os</a>
       <a onclick="openLogin()"class="logknap" href="#">Log ind</a>
   
+  </div>
+</header>
+
 <!-- Pop-up -->
 <div id="login" class="modal">
 <!-- Pop-up content -->
-    <div class="popupbox">
+    <div class="popupbox-logind">
         <div class="topdb">
             <h3 class="boxheadlines">Log ind</h3>
             <span onclick="closeLogin()" class="close">&times;</span>
         </div>
             <div class="poptxt2">
                 <p class="txtregulogin">Burgernavn</p>
-                 <textarea id="logintxt"></textarea>
+                 <textarea></textarea>
                 <p class="txtregulogin">Kodeord</p>
-                  <textarea id="logintxt"></textarea>
+                  <textarea></textarea>
                 </div>
 
-               <ul>
+               <ul class="center-knapper">
                 <li onclick="closeLogin()" class="btn"><a href="">Annuller</a></li>
                 <li onclick="closeLogin()" class="btn"><a href="">Log ind</a></li>
                </ul>
     </div>
 </div>
-  </div>
-</header>
 
-<body class="someclass">
 <!--Landing page - video-->
 <div class="video-container">
 	   <video autoplay loop muted>
@@ -88,6 +85,7 @@
 			ED PLANNING er et strategisk ledelsesværktøj der skal sikre overensstemmelse mellem medarbejderens kompetencer og udviklingsønsker sammenholdt med virksomhedens <br> strategiske retning og mål.
 	</div>
 		</div>
+		
 </body>
-</body>
+
 </html>
