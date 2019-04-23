@@ -6,7 +6,6 @@
 body{
     background-color: #f7f7f7;
     font-family: "roboto";
-	
 }
 
 /* Landing Page */
@@ -1830,6 +1829,7 @@ main ul{
     margin-top: 5%; 
     color: #515f6d; 
     font-size: 10pt; 
+    font-family: "Roboto"
 }
 
 
@@ -2546,6 +2546,11 @@ input[type=text], select {
         font-size: 14px;
     }
 }
+
+.someclass{
+    background-color: #515f6d;  
+}
+
 
 /* responsiv LP */ 
 @media screen and (max-width: 600px) {
