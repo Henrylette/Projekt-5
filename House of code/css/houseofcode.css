@@ -13,8 +13,8 @@ main{
 	height: auto;
 }
 .video-container {
-  position: relative;
-  background-color: #515f6d;
+    position: relative;
+    background-color: #515f6d;
 	
 }
 video  {
@@ -38,35 +38,35 @@ video  {
   	display: flex;
 }
 .overlay-head {
-  align-items: top;
-  margin-top: 110px;
+    align-items: top;
+    margin-top: 110px;
 }
 .overlay-mans {
-  margin: 200px auto;
-  font-size: 20px;
-  text-align: center;
+    margin: 200px auto;
+    font-size: 20px;
+    text-align: center;
   
 }
 .overlay-manssmart {
-  margin: 200px auto;
-  font-size: 20px;
-  text-align: center;
-  display: none;
+    margin: 200px auto;
+    font-size: 20px;
+    text-align: center;
+    display: none;
 }
 .overlay-bull {
-  margin: 450px auto;
-  font-size: 16px;
+    margin: 450px auto;
+    font-size: 16px;
 }
 .newspaper {
 	column-count: 2;
 }
 .overlayall{
-  width: 100%;
-  justify-content: center;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  display: flex;
-  color: white;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    color: white;
 }
 .hiddentext{
 	visibility: hidden;
@@ -137,9 +137,6 @@ header {
     transition-timing-function: linear;
 }
 
-
-
-
 @media (max-width: 600px) {
     .p2 {
         font-size: 14px;   
@@ -151,7 +148,6 @@ header {
         width: 20%;
     }
 }
-
 
 /* ASIDE PROFIL + KARMAPOINT */
 
@@ -192,8 +188,6 @@ aside{
     font-size: 20px;
 
 }
-
-
 
 /* BOX SETTINGS GENERAL */
 .column{
@@ -413,7 +407,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: white;
 }
 
-
 /* DASHBOARD MAIN-OMRÅDE*/
 
 .main-style {
@@ -497,7 +490,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #dba45c;
 }
 
-
 .skema-side{
     width: 80%; 
     margin-right: auto; 
@@ -511,7 +503,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     height: 100px;
     margin-left: 35%;
     }
-
 
 /* KALENDER MAIN OMRÅDE*/
 .containerkal{
@@ -588,11 +579,11 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     cursor: pointer;
   }
 .date {
-        float: left;
-        margin: 25px 0px 10px 0px;
-        font-weight: 300;
-        font-size: 20px;
-        color: #90a1a8;
+    float: left;
+    margin: 25px 0px 10px 0px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #90a1a8;
 }
 
 /*skema billede*/ 
@@ -624,6 +615,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     text-decoration: none; 
 }
 
+<<<<<<< HEAD
 .label-container{ 
     width: 95%; 
     margin-left: 8%; 
@@ -634,6 +626,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     height: 70px; 
 }
 
+=======
+>>>>>>> a7ef7d5a349e00579f8369b9bf8d81eba8aa2466
 /*indstillinger til mus skema side*/
 .mus-skema-box{
     background-color: white; 
@@ -726,58 +720,57 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-right: auto; 
     padding-top: 20px; 
 }
-  .progressbar {
-      counter-reset: step;
+.progressbar {
+    counter-reset: step;
     
   }
 
-  .progressbar li {
-      list-style-type: none;
-      width: 7%;
-      display: inline-block; 
-      position: relative;
-      color: white; 
-      font-size: 0pt; 
-      z-index: 1;
+.progressbar li {
+    list-style-type: none;
+    width: 7%;
+    display: inline-block; 
+    position: relative;
+    color: white; 
+    font-size: 0pt; 
+    z-index: 1;
   }
 
-  .progressbar li:before {
-      width: 10px;
-      height: 10px;
-      content: counter(step);
-      counter-increment: step;
-      line-height: 30px;
-      border: 2px solid #516f6d;
-      display: block;
-      text-align: center;
-      border-radius: 50%;
-      background-color: white;
+.progressbar li:before {
+    width: 10px;
+    height: 10px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid #516f6d;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
   }
 
-  .progressbar li:after {
-      width: 100%;
-      height: 2px;
-      content: '';
-      position: absolute;
-      background-color: transparent;  
-      top: 6px;
-      left: -80%;
-      z-index: -1;
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: transparent;  
+    top: 6px;
+    left: -80%;
+    z-index: -1;
   }
-  .progressbar li:first-child:after {
-      content: none;
+.progressbar li:first-child:after {
+    content: none;
   }
 
 
-  .progressbar li.active:before {
-      border-color: #516f6d;
-      background-color: #516f6d;
+.progressbar li.active:before {
+    border-color: #516f6d;
+    background-color: #516f6d;
       
   }
-  .progressbar li.active:after {
-      background-color: #516f6d; 
+.progressbar li.active:after {
+    background-color: #516f6d; 
   }
-
 
 /*indstillinger mus-skema-værdier*/
 
@@ -817,7 +810,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left; 
     padding-right: 4%;
 }
-
 
 .mus-skema-value-txt2{
     width: 90%;
@@ -873,7 +865,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
         padding-left: 18%;
     }
 }
-
 
 /*mus skema step 1*/
 
@@ -1044,7 +1035,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 }
 
-
 /*mus skema step 4*/
 
 .top-color-side-green{
@@ -1126,7 +1116,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 0; 
     margin-bottom: 0; 
 }
-
 
 /*mus skema step 5*/
 
@@ -1577,8 +1566,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     font-weight: 100; 
 }
 
-
-
 /*-------MUS skema slut-------*/
 
 
@@ -1588,36 +1575,36 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 .scene {
-	  border: 1px solid #ccc;
-	  position: relative;
-	  width: 210px;
-	  height: 240px;
-	  margin: 40px auto;
-	  margin-top: 150px;
-	  perspective: 1000px;
+    border: 1px solid #ccc;
+    position: relative;
+    width: 210px;
+    height: 240px;
+    margin: 40px auto;
+    margin-top: 150px;
+    perspective: 1000px;
 }
 
 .carousel {
-	  width: 100%;
-	  height: 100%;
-	  position: absolute;
-	  transform: translateZ(-182px);
-	  transform-style: preserve-3d;
-	  transition: transform 2s;	
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-182px);
+    transform-style: preserve-3d;
+    transition: transform 2s;	
 }
 
 .carousel__cell {
-	  position: absolute;
-	  width: 190px;
-	  height: 220px;
-	  left: 10px;
-	  margin: 9px auto;
-	  padding: 5px 18px;
-	  border: 1px solid #90a1a8;
-	  font-size: 10px;
-	  font-weight: bold;
-	  color: gray;
-	  text-align: center;
+    position: absolute;
+    width: 190px;
+    height: 220px;
+    left: 10px;
+    margin: 9px auto;
+    padding: 5px 18px;
+    border: 1px solid #90a1a8;
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    text-align: center;
 }
 
 .carousel__cell:nth-child(6n+1) { background: hsla(  0, 0%, 100%, 100); }
@@ -1635,50 +1622,50 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .carousel__cell:nth-child(6) { transform: rotateY(300deg) translateZ(182px); }
 
 .slideshow-container {
-		max-width: 1000px;
-		position: relative;
-		text-align: center;
-		margin-bottom: 90px;
-		cursor: pointer;
-		user-select: none;
-		color: #D8A55B;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 90px;
+    cursor: pointer;
+    user-select: none;
+    color: #D8A55B;
 		
 }
 
 .prev-button, .next-button {
-	  cursor: pointer;
-	  position: absolute;
-	  width: auto;
-	  color: #90a0a8;
-	  font-weight: bold;
-	  font-size: 30px;
-	  transition: 0.6s ease;
-	  margin: auto 23%;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    color: #90a0a8;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    margin: auto 23%;
 }
 
 /* Position the "next button" to the right */
 .next-button {
-	  right: 0;
-	  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 .prev-button:hover, .next-button:hover {
- 	 color: #D8A55B;
+    color: #D8A55B;
 }
 
 .prev-button {
-		left: 0;
-		border-radius: 3px 0 0 3px;
+    left: 0;
+    border-radius: 3px 0 0 3px;
  }
 
 .numbertext {
-	  color: #515f6d;
-	  font-size: 11px;
-	  padding: 10px 0px;
-	  position: center;
-	  top: 0;
+    color: #515f6d;
+    font-size: 11px;
+    padding: 10px 0px;
+    position: center;
+    top: 0;
 }
-/* GULE KNAPPER */
 
+/* GULE KNAPPER */
 
 main li{
     display: inline;
@@ -1691,7 +1678,6 @@ main ul{
     margin-left: auto;
     text-align: center;
 }
-
 
 .btn {
     margin-left: auto;
@@ -1709,8 +1695,7 @@ main ul{
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    display: inline-block;
-    
+    display: inline-block;   
 }
 
 .btn:hover {
@@ -1721,7 +1706,6 @@ main ul{
 .btn:active {
     background: #90a0a8;
 }
-
 
 /* herfra er det "pop-upes" kode */
 
@@ -1739,9 +1723,6 @@ main ul{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-
-
 
 /* The Close Button */
 .close {
@@ -1808,8 +1789,6 @@ main ul{
     }
 }
 
-
-
 .popupbox textarea{
     border: none;
     height: 150px; 
@@ -1824,7 +1803,6 @@ main ul{
     font-size: 10pt; 
     font-family: "Roboto"
 }
-
 
 .poptxt{
     width: 60%;
@@ -1891,7 +1869,6 @@ input[type=text], select {
     width: 100%; 
 }
 
-
 .tjek1{
     float: left; 
     width: 50%; 
@@ -1917,10 +1894,6 @@ input[type=text], select {
     margin-right: auto; 
 }
 
-.tjektxt{
-    float: left; 
-}
-
 @media screen and (max-width: 600px){
     .tjek1{
         width: 100%;
@@ -1937,7 +1910,6 @@ input[type=text], select {
     }
     
 }
-
 
 .containerpopup input {
     position: absolute;
@@ -1990,218 +1962,217 @@ input[type=text], select {
 
 /* ---til den grønne tjek knap--- */
 .containerpopup1 {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
     width: 20%;
     float: left;
-  cursor: pointer;
-  font-size: 13px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     color: #515f6d;
 }
 
-
 .containerpopup1 input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #E8ECED;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #E8ECED;
     border-radius: 2px;
 }
 
 .containerpopup1:hover input ~ .checkmark {
-  background-color: #90A0A8;
+    background-color: #90A0A8;
 }
 
 .containerpopup1 input:checked ~ .checkmark {
-  background-color: #A6BB75;
+    background-color: #A6BB75;
 }
 
 .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 .containerpopup1 input:checked ~ .checkmark:after {
-  display: block;
+    display: block;
 }
 
 .containerpopup1 .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid #ffffff;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 /* ---til den lilla tjek knap--- */
 .containerpopup2 {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-    margin-left: 15px;
-  margin-bottom: 12px;
-    width: 20%;
-    float: left;
-  cursor: pointer;
-  font-size: 13px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-    color: #515f6d;
-}
-
-.containerpopup2 input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #E8ECED;
-    border-radius: 2px;
-}
-
-.containerpopup2:hover input ~ .checkmark {
-  background-color: #90A0A8;
-}
-
-.containerpopup2 input:checked ~ .checkmark {
-  background-color: #AA81Ac;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.containerpopup2 input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.containerpopup2 .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid #ffffff;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-/* ---til den røde tjek knap--- */
-.containerpopup3 {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-    margin-left: 15px;
-  margin-bottom: 12px;
-    width: 20%;
-    float: left;
-  cursor: pointer;
-  font-size: 13px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-    color: #515f6d;
-}
-
-.containerpopup3 input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #E8ECED;
-    border-radius: 2px;
-}
-
-.containerpopup3:hover input ~ .checkmark {
-  background-color: #90A0A8;
-}
-
-
-.containerpopup3 input:checked ~ .checkmark {
-  background-color: #D36D75;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.containerpopup3 input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.containerpopup3 .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid #ffffff;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-/* ---til den blå tjek knap--- */
-.containerpopup4 {
-  display: block;
-  position: relative;
-  padding-left: 35px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
     margin-left: 15px;
     margin-bottom: 12px;
     width: 20%;
     float: left;
-  cursor: pointer;
-  font-size: 13px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup2:hover input ~ .checkmark {
+    background-color: #90A0A8;
+}
+
+.containerpopup2 input:checked ~ .checkmark {
+    background-color: #AA81Ac;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerpopup2 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.containerpopup2 .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ---til den røde tjek knap--- */
+.containerpopup3 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #515f6d;
+}
+
+.containerpopup3 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #E8ECED;
+    border-radius: 2px;
+}
+
+.containerpopup3:hover input ~ .checkmark {
+    background-color: #90A0A8;
+}
+
+
+.containerpopup3 input:checked ~ .checkmark {
+    background-color: #D36D75;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerpopup3 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.containerpopup3 .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ---til den blå tjek knap--- */
+.containerpopup4 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     color: #515f6d;
 }
 
@@ -2226,66 +2197,67 @@ input[type=text], select {
 }
 
 .containerpopup4 input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #E8ECED;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #E8ECED;
     border-radius: 2px;
 }
 
 .containerpopup4:hover input ~ .checkmark {
-  background-color: #90A0A8;
+    background-color: #90A0A8;
 }
 
 .containerpopup4 input:checked ~ .checkmark {
-  background-color: #6696AD;
+    background-color: #6696AD;
 }
 
 .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 .containerpopup4 input:checked ~ .checkmark:after {
-  display: block;
+    display: block;
 }
 
 .containerpopup4 .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid #ffffff;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 #myBtn {
     width: 5%;
+    height: 50px;
     display: none; 
     position: fixed; 
     bottom: 55px;
     right: 2%; 
-    z-index: 1;
+    z-index: 99;
     border: none;
     outline: none;
     background-color: #dba45c;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
-    padding: 0px;
+    padding: 5px;
     font-size: 18px;
 }
 
@@ -2293,11 +2265,15 @@ input[type=text], select {
     background-color: #515f6d;
 }
 
+.totopimg{
+    width: 60%;
+}
+
 /* indtil her */
 
 .imgicon {
-  padding: 1px;
-  width: 90%;
+    padding: 1px;
+    width: 90%;
 }
 
 @media screen and (max-width: 800px){
@@ -2307,15 +2283,31 @@ input[type=text], select {
 }
 
 .klip {
-  padding-right: 20px;
-  width: 80px;
+    padding-right: 20px;
+    width: 80px;
     float: left;
 }
 
-#field-s{
+#field1{
     height: 50px;
     margin-bottom: -3%; 
 }
+
+#field2{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
+#field3{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
+#field4{
+    height: 50px;
+    margin-bottom: -3%; 
+}
+
 
 #field-xs{
     height: 50px; 
@@ -2496,7 +2488,6 @@ input[type=text], select {
         text-align: left;
         margin-top: 20px;
     }
-    
     
     .topnav .logknap{
         margin-bottom: 40px;
