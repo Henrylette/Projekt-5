@@ -87,29 +87,18 @@
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+		
 			
 		
 							<!-- NY NOTE BOTTON-->   
                 <ul>
-                    <li onclick="openNoter1()" class="btn">Tilføj ny note</li>
+                    <li onclick="openNoter1()" class="btn">Tilføj ny MUS-note</li>
                 </ul>
 </div>
         
         <div class="boxm">
             <div class="topdb">
-                <h3 class="boxheadlines">Walk & Talk noter</h3>
+                <h3 class="boxheadlines">Walk &amp; talk noter</h3>
             </div>
 			
 										<!-- Slider2--> 
@@ -140,7 +129,7 @@
 			
 			
                 <ul>
-                    <li onclick="openNoter1()" class="btn">Tilføj ny note</li>
+                    <li onclick="openNoter2()" class="btn">Tilføj ny Walk &amp; talk note</li>
                 </ul>
         </div>
     </div>
@@ -159,7 +148,7 @@
 <!-- Pop-up content -->
     <div class="popupbox">
         <div class="topdb">
-            <h3 class="boxheadlines">Ny note</h3>
+            <h3 class="boxheadlines">Ny note - MUS-samtale</h3>
             <span onclick="closeNoter1()" class="close">&times;</span>
         </div>
              
@@ -169,7 +158,7 @@
             </div>
               
                 <div class="popfelt">
-                    <textarea placeholder="Skriv din note her..." style="height:200px"></textarea>
+                    <textarea placeholder="Skriv din note her..."></textarea>
                 </div>
                         
                     <div class="tjek3">
@@ -186,6 +175,42 @@
                     <ul>
                        <li onclick="closeNoter1()" class="btn">Anuller</li>
                        <li onclick="closeNoter1()" class="btn">Gem i noter</li>
+                    </ul>
+                
+    </div>
+</div>
+
+<div id="noter2" class="modal">
+<!-- Pop-up content -->
+    <div class="popupbox">
+        <div class="topdb">
+            <h3 class="boxheadlines">Ny note - Walk &amp; talk</h3>
+            <span onclick="closeNoter2()" class="close">&times;</span>
+        </div>
+             
+            <div class="poptxt">
+                <p class="txtbold">Her kan du oprette en ny note, for at skabe overblik over de samtaler du har med din leder</p>
+                <p class="txtregu">Du kan også vælge om din note skal kunne ses af både dig og din leder eller om den skal være privat.</p>
+            </div>
+              
+                <div class="popfelt">
+                    <textarea placeholder="Skriv din note her..."></textarea>
+                </div>
+                        
+                    <div class="tjek3">
+                        <label class="containerpopup">Private noter
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerpopup">Delte noter
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+                    <ul>
+                       <li onclick="closeNoter2()" class="btn">Anuller</li>
+                       <li onclick="closeNoter2()" class="btn">Gem i noter</li>
                     </ul>
                 
     </div>
