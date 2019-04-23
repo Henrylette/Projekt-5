@@ -8,7 +8,7 @@ body{
     font-family: "roboto";
 }
 
-/* Landing Page */
+/* LANDING PAGE START */
 main{
 	height: auto;
 }
@@ -38,7 +38,6 @@ video  {
   	display: flex;
 }
 .overlay-head {
-    align-items: top;
     margin-top: 110px;
 }
 .overlay-mans {
@@ -72,7 +71,7 @@ video  {
 	visibility: hidden;
 }
 
-/* Landing Page end */
+/* LANDING PAGE END */
 
 /* HEADER */
 
@@ -137,17 +136,7 @@ header {
     transition-timing-function: linear;
 }
 
-@media (max-width: 600px) {
-    .p2 {
-        font-size: 14px;   
-    }
-}
-
-@media screen and (min-width: 0-600px){
-    .main {
-        width: 20%;
-    }
-}
+/* HEADER END */
 
 /* ASIDE PROFIL + KARMAPOINT */
 
@@ -222,8 +211,6 @@ aside{
     bottom: 0;
     margin-bottom: 0;
 }
-
-/* BOX SETTINGS GENERAL */
 
 .topdb {
     float: left;
@@ -364,11 +351,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #515f6d;
 }
 
-@media screen and (max-width: 500px){
-    .txtbold{
-        font-size: 12pt; 
-    }
-}
+
 
 .txtregu{                              /* ALT BRØDTEKST - REGULAR */
     font-weight: 300;
@@ -388,16 +371,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     padding-left: 20px;
 }
 
-@media screen and (max-width: 500px){
-    .txtregu{
-        font-size: 12pt; 
-    }
-    
-    .txtregudb{
-        font-size: 14px;
-        width: 80%;
-    }
-}
+
 
 .profiltxt{
     float: left;
@@ -505,6 +479,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     }
 
 /* KALENDER MAIN OMRÅDE*/
+
 .containerkal{
     width: 100%;
     height: auto;
@@ -596,7 +571,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     display: table; 
 }
 
-/* ----- Side med MUS SKEMA ------ */
+/* MUS-SKEMA SIDE */
 
 .mus-skema textarea{
     border: none;
@@ -627,7 +602,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 }
 
 
-/*indstillinger til mus skema side*/
+/*INDSTILLINGER TIL MUS-SKEMA SIDE*/
+
 .mus-skema-box{
     background-color: white; 
     height:auto; 
@@ -640,11 +616,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     display: none; 
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema-box{
-        width: 85%
-    }
-}
+
 
 .top-color-side{
     background-color: #90A0A8; 
@@ -653,11 +625,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left; 
 }
 
-@media screen and (max-width: 500px){
-    .top-color-side{
-        width: 50%; ; 
-    }
-}
+
 
 .top-color{
     background-color: #515f6d; 
@@ -665,11 +633,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 80%; 
     float: left; 
 }
-@media screen and (max-width: 500px){
-    .top-color{
-        width: 50%; ; 
-    }
-}
+
 
 .mus-skema-bottum{
     width: 100%; 
@@ -685,11 +649,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #515f6d;
 }
 
-@media screen and (max-width: 500px){
-    .txtregu-skema{
-        font-size: 15px; 
-    }
-}
+
 
 .txthline-skema{
     font-weight: 700; 
@@ -704,13 +664,9 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left; 
 }
 
-@media screen and (max-width: 500px){
-    .top-color-side-green{
-        width: 50%; ; 
-    }
-}
 
-/*progress bar*/
+
+/*PROGRESS BAR*/
 
 .container {
     width: 80%;
@@ -771,7 +727,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     background-color: #516f6d; 
   }
 
-/*indstillinger mus-skema-værdier*/
+/*INSTILLINGER MUS-SKEMA VÆRDIER*/
 
 .mus-skema-value-wrapper{
     float: left; 
@@ -786,11 +742,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     float: left;
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema-value-top1{
-        width: 100%; 
-    }
-}
+
 
 .mus-skema-value-top-img{
     height: auto;  
@@ -814,11 +766,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     width: 90%;
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema-value-txt2{
-        padding-left: 14%; 
-    }
-}
+
 
 .mus-skema-value-top2{
     height: 100px;
@@ -827,11 +775,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     padding-left: 4%; 
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema-value-top2{
-        width: 100%; 
-    }
-}
+
 
 .mus-skema-value-main{
     width: 100%;
@@ -855,29 +799,14 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     padding-right: 13%;
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema-value-maintxt p{
-        padding-left: 18%; 
-    }
-    
-    .mus-skema-value-maintxt1 p{
-        padding-left: 18%;
-    }
-}
 
-/*mus skema step 1*/
+
+/*MUS SKEMA STEP 1*/
 
 .mus-skema1-sidea{ 
     width: 59%; 
     float: left; 
     height: auto; 
-}
-
-
-@media screen and (max-width: 500px){
-    .mus-skema1-sidea{
-        width: 100%; 
-    }
 }
 
 .mus-skema-1-txt{
@@ -886,36 +815,13 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     padding-left: 60px; 
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema-1-txt{
-        padding-left: 30px;
-        padding-top: 20px; 
-        padding-right: 30px; 
-    }
-}
-
 .mus-skema1-sideb{
     width: 41%;  
     float: left;
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema1-sideb{
-        width: 100%; 
-        height: auto; 
-    }
-} 
-
 .mus-skema1-input-wrapper{
     margin-top: 60px; 
-}
-
-
-@media screen and (max-width: 500px){
-    .mus-skema1-input-wrapper{
-        margin-top: 20px;
-        margin-right: -10%; 
-    }
 }
 
 .skema1{
@@ -926,7 +832,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-left: 5%; 
 }
 
-/*mus skema step 2*/
+/*MUS SKEMA STEP 2*/
 
 .mus-skema2-txt{
     float: left; 
@@ -937,11 +843,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     padding-top: 60px; 
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema2-txt{
-        padding-top: 20px; 
-    }
-}
 
 .mus-skema2-headline{
     text-transform: uppercase; 
@@ -956,7 +857,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 3%; 
 }
 
-/*mus skema step 3*/
+/*MUS SKEMA STEP 3*/
 
 .mus-skema3-wrapper{
     width: 90%; 
@@ -964,13 +865,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-left: auto; 
     display: table; 
     padding-top: 20px; 
-}
-
-@media screen and (max-width: 500px){
-    .mus-skema3-wrapper{
-        width: 80%;
-        padding-top: 20px; 
-    }
 }
 
 .mus-skema3-txt{
@@ -984,12 +878,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 0;
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema3-txt{
-        width: 100%; 
-    }
-}
-
 .skema3-txt-top{
     font-size: 25px;
 }
@@ -997,13 +885,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .mus-skema3-icons{
     width: 15%; 
     float: left; 
-}
-
-@media screen and (max-width: 500px){
-    .mus-skema3-icons{
-        width: 100%; 
-        padding-left: 5%; 
-    }
 }
 
 #skema3-clear{
@@ -1015,38 +896,18 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-left: 40%; 
 }
 
-@media screen and (max-width: 500px){
-    
-    .mus-skema3-icons img{
-        width: 15%; 
-    }
-}
-
 .mus-skema3{
     width: 50%; 
     float: left;
 }
 
-@media screen and (max-width: 500px){
-    .mus-skema3{
-        width: 100%; 
-        margin-bottom: 10%; 
-    }
-}
-
-/*mus skema step 4*/
+/*MUS SKEMA STEP 4*/
 
 .top-color-side-green{
     background-color:#a6bb75; 
     height: 50px; 
     width: 20%; 
     float: left; 
-}
-
-@media screen and (max-width: 500px){
-    .top-color-side-green{
-        width: 50%; ; 
-    }
 }
 
 .checkgreen{
@@ -1097,7 +958,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     display: block;
 }
 
-
 .checkgreen .checkmark:after {
     left: 9px;
     top: 5px;
@@ -1116,19 +976,13 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-bottom: 0; 
 }
 
-/*mus skema step 5*/
+/*MUS SKEMA STEP 5*/
 
 .top-color-side-purple{
     background-color:#aa81ac; 
     height: 50px; 
     width: 20%; 
     float: left; 
-}
-
-@media screen and (max-width: 500px){
-    .top-color-side-purple{
-        width: 50%; ; 
-    }
 }
 
 .checkpurple{
@@ -1197,19 +1051,13 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 0; 
 }
 
-/*mus skema step 6*/
+/*MUS SKEMA STEP 6*/
 
 .top-color-side-red{
     background-color:#d36d75; 
     height: 50px; 
     width: 20%; 
     float: left; 
-}
-
-@media screen and (max-width: 500px){
-    .top-color-side-red{
-        width: 50%; ; 
-    }
 }
 
 .checkred{
@@ -1278,19 +1126,13 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 0; 
 }
 
-/*mus skema step 7*/
+/*MUS SKEMA STEP 7*/
 
 .top-color-side-blue{
     background-color:#6696ad; 
     height: 50px; 
     width: 20%; 
     float: left; 
-}
-
-@media screen and (max-width: 500px){
-    .top-color-side-blue{
-        width: 50%; ; 
-    }
 }
 
 .checkblue{
@@ -1359,7 +1201,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 0; 
 }
 
-/*mus skema step 8*/
+/*MUS SKEMA STEP 8*/
+
 .mus-skema8-txt{
     height: auto; 
     width: 100%;
@@ -1374,13 +1217,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     height: auto; 
     width: 50%; 
     float: left; 
-}
-
-
-@media screen and (max-width: 500px){
-    .mus-skema8-box{
-        width: 100%; 
-    }
 }
 
 .mus-skema8-box-wrapper{
@@ -1402,14 +1238,8 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 2%; 
 }
 
-@media screen and (max-width: 500px){
-    .skema8{
-        width: 100%; 
-        margin-bottom: 0; 
-    }
-}
 
-/*mus skema step 9*/
+/*MUS SKEMA STEP 9*/
 
 .skema9-txt-wrapper{
     text-align: center; 
@@ -1434,17 +1264,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     padding-left: 2%; 
 }
 
-@media screen and (max-width: 500px){
-    .skema9-tal{
-        width: 10%; 
-    }
-    
-    .skema9{
-        width: 90%; 
-    }
-}
-
-/*mus skema step 10*/
+/*MUS SKEMA STEP 10*/
 
 .skema10{
     width: 100%; 
@@ -1452,7 +1272,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 0; 
 }
 
-/*mus skema step 11 - Tak for din besvarelse*/
+/*MUS SKEMA STEP 11 - TAK FOR BESVARELSE*/
 
 .skema11-txt{
     text-align: center;
@@ -1474,7 +1294,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-bottom: 2%; 
 }
 
-/*mus skema step 13 - preview*/
+/*MUS SKEMA STEP 13 PREVIEW*/
 
 .pbox{
     background-color: #e8eced; 
@@ -1505,13 +1325,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
 .pbox-txt{
     width: 70%; 
 }
-@media screen and (max-width: 500px){
-    .pbox-txt{
-        width: 100%;
-        padding-top: 15%;
-        padding-left: 10%
-    }
-}
+
 
 .rediger{
     width: 5%; 
@@ -1521,13 +1335,7 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     margin-top: 1%; 
 }
 
-@media screen and (max-width: 500px){
-    .rediger{
-        width: 10%;
-        margin-top: 2%; 
-        margin-right: 2%; 
-    }
-}
+
 
 .pbox-header-2{
     width: 100%; 
@@ -1565,10 +1373,10 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     font-weight: 100; 
 }
 
-/*-------MUS skema slut-------*/
+/*MUS SKEMA SLUT*/
 
 
-/*---Note slider--- */
+/*NOTE SLIDER */
 
 * { box-sizing: border-box;
 }
@@ -1660,7 +1468,6 @@ h4{                                    /* TITEL PÅ EVENT PÅ KALENDER SIDE */
     color: #515f6d;
     font-size: 11px;
     padding: 10px 0px;
-    position: center;
     top: 0;
 }
 
@@ -1706,9 +1513,10 @@ main ul{
     background: #90a0a8;
 }
 
-/* herfra er det "pop-upes" kode */
+/* POP-UP KODE */
 
-/* The Modal (background) */
+/* THE MODAL (background) */
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -1723,7 +1531,7 @@ main ul{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* The Close Button */
+/* THE CLOSE BUTTON */
 .close {
     color: #ffffff;
     float: right;
@@ -1750,14 +1558,6 @@ main ul{
     margin-bottom: 5%; 
 }
 
-@media screen and (max-width: 600px){
-    .popupbox{
-        width: 80%;
-        padding-bottom: 5%;
-    }
-    
-}
-
 .popupbox-logind{ 
     display: table; 
     margin-right: auto; 
@@ -1781,12 +1581,6 @@ main ul{
     color: white; 
 }
 
-@media screen and (max-width: 600px){
-    .popupbox-logind{
-        width: 85%; 
-        padding-bottom: 5%; 
-    }
-}
 
 .popupbox textarea{
     border: none;
@@ -1845,7 +1639,8 @@ input[type=text], select {
     opacity: 0.6;
 }
 
-/* ---container til tjek knapperne--- */
+/* ---CONTAINER TIL TJEK KNAPPERNE--- */
+
 .containerpopup {
     display: inline-block;
     position: relative;
@@ -1893,22 +1688,7 @@ input[type=text], select {
     margin-right: auto; 
 }
 
-@media screen and (max-width: 600px){
-    .tjek1{
-        width: 100%;
-        padding-left: 30%; 
-    }
-    
-    .tjek2{
-        width: 100%;
-        padding-left: 30%;
-    }
-    
-    .tjek3{
-        padding-left: 20%;
-    }
-    
-}
+
 
 .containerpopup input {
     position: absolute;
@@ -1959,7 +1739,8 @@ input[type=text], select {
     transform: rotate(45deg);
 }
 
-/* ---til den grønne tjek knap--- */
+/* ---GRØN TJEK KNAP--- */
+
 .containerpopup1 {
     display: block;
     position: relative;
@@ -2024,7 +1805,8 @@ input[type=text], select {
     transform: rotate(45deg);
 }
 
-/* ---til den lilla tjek knap--- */
+/* ---LILLA TJEK KNAP--- */
+
 .containerpopup2 {
     display: block;
     position: relative;
@@ -2090,7 +1872,8 @@ input[type=text], select {
     transform: rotate(45deg);
 }
 
-/* ---til den røde tjek knap--- */
+/* ---RØD TJEK KNAP--- */
+
 .containerpopup3 {
     display: block;
     position: relative;
@@ -2157,7 +1940,8 @@ input[type=text], select {
     transform: rotate(45deg);
 }
 
-/* ---til den blå tjek knap--- */
+/* ---BLÅ TJEK KNAP--- */
+
 .containerpopup4 {
     display: block;
     position: relative;
@@ -2173,26 +1957,6 @@ input[type=text], select {
     -ms-user-select: none;
     user-select: none;
     color: #515f6d;
-}
-
-@media screen and (max-width: 800px){
-    .containerpopup1{
-        width: 100%;
-        margin-left: 7%; 
-    }
-    
-    .containerpopup2{
-        width: 100%; 
-    }
-    
-    .containerpopup3{
-        width: 100%; 
-    }
-    
-    .containerpopup4{
-        width: 100%; 
-    }
-    
 }
 
 .containerpopup4 input {
@@ -2268,18 +2032,13 @@ input[type=text], select {
     width: 60%;
 }
 
-/* indtil her */
+/* SLUT */
 
 .imgicon {
     padding: 1px;
     width: 90%;
 }
 
-@media screen and (max-width: 800px){
-    .imgicon{
-        width: 20%; 
-    }
-}
 
 .klip {
     padding-right: 20px;
@@ -2341,7 +2100,25 @@ input[type=text], select {
     color: #515f6d;
 }
 
-@media screen and (max-width: 800px) {
+
+
+
+/* ------------------------- MEDIA QUERYS ------------------------ */
+
+@media (max-width: 600px) {
+    .p2 {
+        font-size: 14px;   
+    }
+}
+
+@media screen and (min-width: 0-600px){
+    .main {
+        width: 20%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
     
     aside {
         width: 92%;
@@ -2545,7 +2322,6 @@ input[type=text], select {
 			font-size: 25px;
 		}
 	.overlay-head {
-	  align-items: top;
 	  margin: 300px auto auto;
 	}
 
@@ -2569,5 +2345,235 @@ input[type=text], select {
 	  font-size: 13px;
 		text-align: center;
 	}
+}
+
+@media screen and (max-width: 600px){
+    .txtbold{
+        font-size: 12pt; 
+    }
+}
+@media screen and (max-width: 600px){
+    .txtregu{
+        font-size: 12pt; 
+    }
+    
+    .txtregudb{
+        font-size: 14px;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema-box{
+        width: 85%
+    }
+}
+@media screen and (max-width: 600px){
+    .top-color-side{
+        width: 50%; ; 
+    }
+}
+@media screen and (max-width: 600px){
+    .top-color{
+        width: 50%; ; 
+    }
+}
+@media screen and (max-width: 600px){
+    .txtregu-skema{
+        font-size: 15px; 
+    }
+}
+@media screen and (max-width: 600px){
+    .top-color-side-green{
+        width: 50%; ; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema-value-top1{
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema-value-txt2{
+        padding-left: 14%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema-value-top2{
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema-value-maintxt p{
+        padding-left: 18%; 
+    }
+    
+    .mus-skema-value-maintxt1 p{
+        padding-left: 18%;
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema1-sidea{
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema-1-txt{
+        padding-left: 30px;
+        padding-top: 20px; 
+        padding-right: 30px; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema1-sideb{
+        width: 100%; 
+        height: auto; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema1-input-wrapper{
+        margin-top: 20px;
+        margin-right: -10%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema2-txt{
+        padding-top: 20px; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema3-wrapper{
+        width: 80%;
+        padding-top: 20px; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema3-txt{
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema3-icons{
+        width: 100%; 
+        padding-left: 5%; 
+    }
+}
+@media screen and (max-width: 600px){
+    
+    .mus-skema3-icons img{
+        width: 15%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema3{
+        width: 100%; 
+        margin-bottom: 10%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .top-color-side-green{
+        width: 50%; ; 
+    }
+}
+@media screen and (max-width: 600px){
+    .top-color-side-purple{
+        width: 50%; ; 
+    }
+}
+@media screen and (max-width: 600px){
+    .top-color-side-red{
+        width: 50%; ; 
+    }
+}
+@media screen and (max-width: 600px){
+    .top-color-side-blue{
+        width: 50%; ; 
+    }
+}
+@media screen and (max-width: 600px){
+    .mus-skema8-box{
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .skema8{
+        width: 100%; 
+        margin-bottom: 0; 
+    }
+}
+@media screen and (max-width: 600px){
+    .skema9-tal{
+        width: 10%; 
+    }
+    
+    .skema9{
+        width: 90%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .pbox-txt{
+        width: 100%;
+        padding-top: 15%;
+        padding-left: 10%
+    }
+}
+@media screen and (max-width: 600px){
+    .rediger{
+        width: 10%;
+        margin-top: 2%; 
+        margin-right: 2%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .popupbox{
+        width: 80%;
+        padding-bottom: 5%;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .popupbox-logind{
+        width: 85%; 
+        padding-bottom: 5%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .tjek1{
+        width: 100%;
+        padding-left: 30%; 
+    }
+    
+    .tjek2{
+        width: 100%;
+        padding-left: 30%;
+    }
+    
+    .tjek3{
+        padding-left: 20%;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .containerpopup1{
+        width: 100%;
+        margin-left: 7%; 
+    }
+    
+    .containerpopup2{
+        width: 100%; 
+    }
+    
+    .containerpopup3{
+        width: 100%; 
+    }
+    
+    .containerpopup4{
+        width: 100%; 
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .imgicon{
+        width: 20%; 
+    }
 }
 	
